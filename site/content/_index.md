@@ -1,5 +1,5 @@
 ---
-title: Beautiful Hugo
+title: Roxxog 3D Portfolio
 ---
 
 ## A Beautiful Hugo Theme

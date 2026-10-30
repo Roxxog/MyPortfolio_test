@@ -56,3 +56,15 @@ The theme uses the Hugo 0.146 template layout: `baseof.html`, `page.html`, `list
 - **No unit tests exist.** The CI only confirms the example site builds cleanly across the Hugo version matrix. Run the build command above before opening a PR.
 - **Use `relURL` instead of `absURL` for all asset and page URLs in templates.** `absURL` produces absolute URLs that break when the site is deployed under a subpath (e.g. `example.com/blog/`). `relURL` generates relative URLs that work correctly regardless of the `baseURL` configuration. Similarly, prefer `relLangURL` over `absLangURL`. Note: `absURL` is still acceptable in structured-data JSON-LD and Open Graph / Twitter meta tags where absolute URLs are required by the spec.
 - **Features must be documented in the example site.** When adding or changing a feature, update the relevant page under `exampleSite/content/page/` (especially `configuration.md` and `pages-and-layouts.md`).
+
+## Portfolio Site Work
+
+This repository contains both the Beautiful Hugo theme source and the prepared site that is published for the class project. Keep those roles separate:
+
+- Edit the deployed portfolio under `site/` (configuration, content, menu, and site-specific assets). The GitHub Pages workflow builds Hugo from this directory and publishes the generated output; files in the repository root, including this `AGENTS.md`, are not site pages.
+- The public site URL is `https://roxxog.github.io/MyPortfolio_test/`. Preserve the project subpath when changing configuration or links.
+- The current `site/` content began as the theme's example site. Replace theme-demo pages, posts, and menu entries with the student's portfolio and Blender 3D work as appropriate; do not change theme source under the repository root unless a site need cannot be met through `site/` overrides.
+- Organize each Blender project as a Hugo page bundle under `site/content/projects/<project-slug>/`, with an `index.md` and its project images/files. Use project pages to explain purpose, the student's role, process and choices, output/results, lessons, and next improvements. Keep public-facing text factual; ask the user for facts that are missing instead of inventing them.
+- Align public content and checks with the supplied assignment rubric: personal interests and learning plan, skills with real examples, at least one real activity with its purpose/role/process/results/reflection, working navigation and direct URLs, and desktop/mobile usability. Keep evidence for the report (URLs, screenshots, check results, commit links, and AI-use decisions) tied to actual work and observed results.
+- After a content or configuration change is deployed, inspect the public URL and relevant pages, links, and responsive layouts when access is available. Distinguish local build results from the live deployed result, and record any access limitation instead of claiming a live check succeeded.
+- The rubric and report template are stored outside this repository in the sibling `MyPortfolio지침` folder; they are source documents, not website content.
