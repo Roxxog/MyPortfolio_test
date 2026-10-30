@@ -1,7 +1,6 @@
 ---
 title: Classic Chocolate Chip Cookies
 type: recipe
-draft: true
 date: 2026-05-12
 subtitle: Chewy, golden, and loaded with chocolate chips
 tags: ["baking", "dessert", "cookies"]
