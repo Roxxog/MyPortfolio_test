@@ -21,13 +21,14 @@ site/content/projects/first-blender-project/
 
 ## 작업 소개
 
-캐릭터를 만들며 블랜더를 배우기
-캐릭터명 : 윤슬 (좀비고등학교의 AU 시리즈 마법고등학교의 캐릭터)
+캐릭터를 만들며 블랜더를 배우기<br>
 
-## 완성 이미지
+>캐릭터명 : 윤슬 (좀비고등학교의 AU 시리즈 마법고등학교의 캐릭터)
 
-![원본 캐릭터를 만든 게임 회사의 초기 아트 모습](<마법고 윤슬 레퍼런스.png>)
-![윤슬 모델](yoonseul.png "대략적인 모습")
+## 이미지
+
+{{< beautifulfigure src="마법고 윤슬 레퍼런스.png" caption="원본 캐릭터를 만든 게임 회사의 초기 아트 모습" >}}<br>
+{{< beautifulfigure src="yoonseul.png" caption="3D로 구현된 윤슬 모델 대략적인 모습" >}}
 
 ## 제작 과정
 
