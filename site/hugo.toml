@@ -1,7 +1,7 @@
 # This gets overridden when building for production
 baseurl = "http://localhost:1313/"
 DefaultContentLanguage = "en"
-title = "Roxxog 3D"
+title = "Roxxog 3D Portfolio"
 enableGitInfo = true
 
 [[module.imports]]
@@ -55,8 +55,8 @@ enableGitInfo = true
 #     includes = ["**"]
 
 [Params]
-  subtitle = "Build a beautiful and simple website in minutes"
-  mainSections = ["post", "recipe"]
+  subtitle = "2D Anime Style in 3D"
+  mainSections = ["post", "recipe", "projects"]
   logo = "/img/avatar-icon.png" # Expecting square dimensions
   favicon = "/img/favicon.ico"
   # share_img = "/img/share.jpg" # Default social image, used instead of logo
