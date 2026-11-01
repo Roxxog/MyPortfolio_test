@@ -1,5 +1,5 @@
 ---
-title: "첫 번째 Blender 작업"
+title: "yoonseul"
 subtitle: "첫 모델"
 date: 2026-10-31
 summary: "2025년 1월 1일 처음 블랜더를 접하며 2개월 동안 만든 첫 3D 모델"
