@@ -1,8 +1,8 @@
 ---
 title: "Yoonsea"
-subtitle: ""
+subtitle: "두 번째 모델"
 date: 2026-11-01
-summary: ""
+summary: "완벽한 모델에 대한 집착"
 tags: ["Blender", "3D"]
 # 표지 이미지를 이 폴더에 추가한 뒤 파일명에 맞춰 주석을 풀어 주세요.
 # thumbnail: cover.png
