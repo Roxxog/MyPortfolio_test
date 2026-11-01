@@ -7,6 +7,7 @@ thumbnail: forest.jpg
 bigimg:
   - src: forest.jpg
     desc: "A page resource"
+draft: true
 ---
 
 This post is a [page bundle](https://gohugo.io/content-management/page-bundles/). The `bigimg` entry `forest.jpg` is resolved as a page resource, so the image can live in the same directory as `index.md`.

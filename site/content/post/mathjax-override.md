@@ -5,6 +5,7 @@ type: post
 mathEngine: "mathjax"
 tags: ["math", "demo"]
 summary: "Demonstrates overriding the site-level math engine to use MathJax on a single post."
+draft: true
 ---
 
 This post overrides the site-level `mathEngine` setting via front matter to use **MathJax** instead of the default KaTeX:
