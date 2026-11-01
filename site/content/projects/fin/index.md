@@ -30,8 +30,8 @@ thumbnail: FinShapekey.png
 
 ## 영상
 
-{{< beautifulfigure src="FinShoulderTest.mp4" caption="애니메이션을 위한 팔 토폴로지 수정 작업 중" >}}<br>
-{{< beautifulfigure src="comealongwithme.mp4" caption="페이셜 테스트" >}}<br>
+{{< video src="FinShoulderTest.mp4" caption="애니메이션을 위한 팔 토폴로지 수정 작업 중" >}}<br>
+{{< video src="comealongwithme.mp4" caption="페이셜 테스트" >}}<br>
 
 
 ## 제작 과정
