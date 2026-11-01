@@ -24,12 +24,10 @@ tags: ["Blender", "3D"]
 ## 이미지
 
 {{< beautifulfigure src="마법고 양양궁 초기아트.jpg" caption="원본 캐릭터를 만든 게임 회사의 초기 아트 모습" >}}<br>
-{{< beautifulfigure src="양양궁 모델링" caption="모델링 작업" >}}<br>
-{{< beautifulfigure src="양양궁 텍스쳐" caption="텍스쳐 작업" >}}<br>
-{{< beautifulfigure src="양양궁 실루엣" caption="전체 실루엣" >}}<br>
-{{< beautifulfigure src="양양궁 ShaderTest1" caption="Shader 테스트 과정" >}}<br>
-{{< beautifulfigure src="yoonsea.png" caption="Shader 적용 후" >}}<br>
-
+{{< beautifulfigure src="양양궁 모델링.png" caption="모델링 작업" >}}<br>
+{{< beautifulfigure src="양양궁 텍스쳐.png" caption="텍스쳐 작업" >}}<br>
+{{< beautifulfigure src="양양궁 실루엣.png" caption="전체 실루엣" >}}<br>
+{{< beautifulfigure src="양양궁 ShaderTest1.png" caption="Shader 테스트 과정" >}}<br>
 
 ## 제작 과정
 
