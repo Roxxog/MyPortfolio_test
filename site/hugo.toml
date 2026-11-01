@@ -94,10 +94,10 @@ enableGitInfo = true
 # For AI search summary limits, see [Params.seo] in the SEO & i18n docs.
 
 [Params.author]
-  name = "Some Person"
+  name = "Roxxog"
   website = "yourwebsite.com"
   email = "youremail@domain.com"
-  github = "halogenica/beautifulhugo"
+  github = "Roxxog/MyPortfolio_test"
   twitter = "username"
   linkedin = "in/username" # company/username
 
