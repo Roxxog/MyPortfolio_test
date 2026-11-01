@@ -2,48 +2,16 @@
 title: Roxxog 3D Portfolio
 ---
 
-## A Beautiful Hugo Theme
+## 소개
 
-[Beautiful Hugo](https://github.com/halogenica/beautifulhugo) is a feature-rich Hugo theme with dark mode, math support, image galleries, code highlighting, and more.
+3D 캐릭터를 2D 캐릭터처럼 만드는 방법을 공부하고 기록한 곳입니다.
 
 {{< columns >}}
-**Layout & Theming**
-- Dark/light/auto color scheme
-- Bootstrap 5 responsive design
-- Full-width page option
-- Big image headers
-- Slide-out TOC panel
 
-**Shortcodes**
-- `details` — collapsible sections
-- `tabs` / `tab` — tabbed content
-- `columns` — two-column layout
-- `gallery` / `beautifulfigure` — images
-- `mermaid` — diagrams
-- `callout` — Bootstrap alert boxes
-- `include-code` — external source files
-- `no-ai-summary` — exclude from AI summaries
-- `video` — visualise self-hosted/local videos
-- `icon` — render Font Awesome icon
+이곳에서는 블랜더에서 3D 캐릭터를 만들고 2D 애니메이션 스타일로 만드는 것을 중심으로 공부하고 기록합니다.<br>
+많은 시행착오를 기록하고 더 효율적인 1인 제작 워크플로우를 연구합니다.<br><br>
 
-{{< column >}}
-
-**Content Features**
-- KaTeX & MathJax math rendering
-- Mermaid diagrams
-- PhotoSwipe image lightbox
-- Select Chroma or Highlight.js syntax highlighting
-- Recipe content type (schema.org Recipe + recipe card)
-- Robot meta tags & AI summary limits
-- "View source" button
-
-**Integrations**
-- 5 comment systems (Disqus, Giscus, Utterances, Cusdis, Staticman)
-- 42 social icon links
-- GitHub buttons
-- SEO (schema.org, Open Graph, Twitter Cards)
-- 20 languages
-
-{{< /columns >}}
-
-Browse the **Features** menu above for detailed documentation with live examples!
+**추구하는 방향성**
+기존의 2D 애니메이션은 아주 많은 인력과 시간이 소모되며 역동적인 움직임과 입체성을 만들어내는데 아주 많은 자원이 소모됩니다.<br>
+또한 캐릭터를 만들면 모든 프레임에서 같은 캐릭터를 여러번 그리게 됩니다.<br>
+그러므로 3D의 장점인 캐릭터 모델의 재활용성과 자동적인 입체성을 기반으로 2D 애니메이션을 더욱 편리하게 만들어낼 방법을 공부합니다.
