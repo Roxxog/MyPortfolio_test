@@ -28,7 +28,11 @@ site/content/projects/first-blender-project/
 ## 이미지
 
 {{< beautifulfigure src="마법고 윤슬 레퍼런스.png" caption="원본 캐릭터를 만든 게임 회사의 초기 아트 모습" >}}<br>
-{{< beautifulfigure src="yoonseul.png" caption="3D로 구현된 윤슬 모델 대략적인 모습" >}}
+{{< beautifulfigure src="yoonseul.png" caption="3D로 구현된 윤슬 모델 대략적인 모습" >}}<br>
+{{< beautifulfigure src="yoonseulBefore.png" caption="튜토리얼의 기본 카툰 렌더링을 적용 전" >}}<br>
+{{< beautifulfigure src="yoonseulShaderTest.png" caption="Shader 적용하기" >}}<br>
+{{< beautifulfigure src="yoonseulRunAnimation.png" caption="달리기 애니메이션" >}}<br>
+
 
 ## 제작 과정
 
