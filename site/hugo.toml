@@ -63,7 +63,7 @@ enableGitInfo = true
   # mobileMenuPosition = "left" # Side of the hamburger menu on narrow screens ("right" by default)
   dateFormat = ":date_long"
   commit = false
-  rss = true
+  rss = false
   readingTime = true
   wordCount = true
   colorScheme = "auto"
@@ -95,18 +95,18 @@ enableGitInfo = true
 
 [Params.author]
   name = "Roxxog"
-  website = "yourwebsite.com"
-  email = "youremail@domain.com"
+#  website = "cdd0922@gmail.com"
+  email = "cdd0922@gmail.com"
   github = "Roxxog/MyPortfolio_test"
-  twitter = "username"
-  linkedin = "in/username" # company/username
+#  twitter = "username"
+#  linkedin = "in/username" # company/username
 
 # Any platform the built-in registry does not cover. "icon" is a CSS class,
 # so a site can also load its own icon font from head_custom.html.
-[[Params.author.custom]]
-  href = "https://matrix.to/#/@username:example.org"
-  title = "Matrix"
-  icon = "fas fa-comments"
+# [[Params.author.custom]]
+#   href = "https://matrix.to/#/@username:example.org"
+#   title = "Matrix"
+#   icon = "fas fa-comments"
 
 [markup.highlight]
   noClasses = false
