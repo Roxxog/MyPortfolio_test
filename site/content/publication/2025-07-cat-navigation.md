@@ -2,6 +2,7 @@
 title: Do Cats Prefer Hamburger Menus? A Longitudinal Study
 type: publication
 date: 2025-07-02
+draft: true
 tags: ["accessibility", "cats"]
 publication:
   authors: ["Some Person", "Professor Whiskers"]

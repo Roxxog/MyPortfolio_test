@@ -2,6 +2,7 @@
 title: A Survey of Lorem Ipsum Dialects in the Wild
 type: publication
 date: 2024-11-20
+draft: true
 tags: ["markdown"]
 publication:
   authors: ["Bartholomew Q. Kettle", "Some Person"]

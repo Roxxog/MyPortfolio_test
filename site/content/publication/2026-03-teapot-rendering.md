@@ -2,6 +2,7 @@
 title: On the Optimal Steeping Time of Static Site Generators
 type: publication
 date: 2026-03-14
+draft: true
 tags: ["hugo", "tea"]
 publication:
   authors: ["Ada Teapot", "Some Person", "Bartholomew Q. Kettle"]
