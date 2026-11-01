@@ -154,6 +154,11 @@ enableGitInfo = true
     block = [['\[', '\]'], ['$$', '$$']]
     inline = [['\(', '\)']]
 
+[[menu.main]]
+  name = "작품 보기"
+  url = "/#projects"
+  weight = 1
+
 # [[menu.main]]
 #     identifier = "setup"
 #     name = "Setup"
