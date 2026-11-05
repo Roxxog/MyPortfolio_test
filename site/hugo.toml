@@ -1,6 +1,6 @@
 # This gets overridden when building for production
 baseurl = "http://localhost:1313/"
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "ko"
 title = "Roxxog 3D Portfolio"
 enableGitInfo = true
 
