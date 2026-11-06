@@ -8,22 +8,15 @@ tags: ["Blender", "3D"]
 # thumbnail: cover.png
 ---
 
-<!-- more -->
 
-<!--
-작품 폴더 위치:
-site/content/projects/first-blender-project/
-
-이 index.md와 이미지·영상 파일을 같은 폴더에 둡니다.
-예: cover.png, final-front.png, final-detail.png, process.mp4
-실제 파일명에 맞춰 아래 예시의 파일명도 바꿔 주세요.
--->
 
 ## 작업 소개
 
 캐릭터를 만들며 블랜더를 배우기<br>
 
->캐릭터명 : 윤슬 (좀비고등학교의 AU 시리즈 마법고등학교의 캐릭터)
+>캐릭터명 : 마법고 윤슬 (좀비고등학교의 AU 시리즈 마법고등학교의 캐릭터)<br>
+사용된 원본 아트의 소스 링크 : https://www.youtube.com/watch?v=xIcxxcdKIyU (제작사인 어썸피스의 마법고 제작 비하인드에 대해 정리한 영상에서 사진을 참고자료로 사용함, 사진의 라이선스는 확인할 수 없음)
+
 
 ## 이미지
 
