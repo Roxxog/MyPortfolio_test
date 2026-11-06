@@ -1,0 +1,651 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ko" itemscope itemtype="https://schema.org/WebPage">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><script>
+      (function() {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else if (saved === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+
+
+  
+  <title>Math &amp; Diagrams - Roxxog 3D Portfolio</title>
+
+  <meta name="description" content="KaTeX, MathJax, and Mermaid for math and diagrams">
+  <meta name="author" content="Roxxog"/>
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "http://localhost:1313/#website",
+      "@type": "WebSite",
+      "name": "Roxxog 3D Portfolio",
+      "publisher": {
+        "@id": "http://localhost:1313/#organization"
+      },
+      "url": "http://localhost:1313/"
+    },
+    {
+      "@id": "http://localhost:1313/#organization",
+      "@type": "Organization",
+      "name": "Roxxog",
+      "url": "http://localhost:1313/"
+    },
+    {
+      "@id": "http://localhost:1313/page/math-and-diagrams/#breadcrumb",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "item": "http://localhost:1313/",
+          "name": "홈",
+          "position": 1
+        },
+        {
+          "@type": "ListItem",
+          "item": "http://localhost:1313/page/",
+          "name": "Pages",
+          "position": 2
+        },
+        {
+          "@type": "ListItem",
+          "item": "http://localhost:1313/page/math-and-diagrams/",
+          "name": "Math \u0026 Diagrams",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:1313/page/math-and-diagrams/#webpage",
+      "@type": "WebPage",
+      "breadcrumb": {
+        "@id": "http://localhost:1313/page/math-and-diagrams/#breadcrumb"
+      },
+      "isPartOf": {
+        "@id": "http://localhost:1313/#website"
+      },
+      "name": "Math \u0026 Diagrams",
+      "url": "http://localhost:1313/page/math-and-diagrams/"
+    },
+    {
+      "@id": "http://localhost:1313/#author-roxxog",
+      "@type": "Person",
+      "name": "Roxxog",
+      "url": "http://localhost:1313/"
+    },
+    {
+      "@id": "http://localhost:1313/page/math-and-diagrams/#article",
+      "@type": "Article",
+      "author": [
+        {
+          "@id": "http://localhost:1313/#author-roxxog"
+        }
+      ],
+      "dateCreated": "0001-01-01T00:00:00+00:00",
+      "dateModified": "2026-10-30T12:21:14+09:00",
+      "datePublished": "0001-01-01T00:00:00+00:00",
+      "description": "Beautiful Hugo includes built-in support for KaTeX, MathJax, and Mermaid (diagrams and flowcharts). Mermaid needs no configuration. For math, enable the Goldmark passthrough extension (see below).\nMath Rendering Choose the math rendering engine via mathEngine in your config. See Configuration — Math Engine for the full option reference and selfHosted behavior.\nPassthrough Markdown removes backslashes and other characters from LaTeX before the browser sees it. The Goldmark passthrough extension keeps the math unchanged. Hugo does not merge the [markup] section of a theme configuration, so put this in your site configuration:\n",
+      "headline": "Math \u0026 Diagrams",
+      "image": "http://localhost:1313/img/avatar-icon.png",
+      "inLanguage": "ko",
+      "keywords": [],
+      "mainEntityOfPage": {
+        "@id": "http://localhost:1313/page/math-and-diagrams/#webpage"
+      },
+      "publisher": {
+        "@id": "http://localhost:1313/#organization"
+      },
+      "wordCount": 729
+    }
+  ]
+}
+</script>
+<meta property="og:url" content="http://localhost:1313/page/math-and-diagrams/">
+	<meta property="og:site_name" content="Roxxog 3D Portfolio">
+	<meta property="og:title" content="Math &amp; Diagrams">
+	<meta property="og:description" content="Beautiful Hugo includes built-in support for KaTeX, MathJax, and Mermaid (diagrams and flowcharts). Mermaid needs no configuration. For math, enable the Goldmark passthrough extension (see below).
+Math Rendering Choose the math rendering engine via mathEngine in your config. See Configuration — Math Engine for the full option reference and selfHosted behavior.
+Passthrough Markdown removes backslashes and other characters from LaTeX before the browser sees it. The Goldmark passthrough extension keeps the math unchanged. Hugo does not merge the [markup] section of a theme configuration, so put this in your site configuration:">
+	<meta property="og:locale" content="ko">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="page">
+		<meta property="article:modified_time" content="2026-10-30T12:21:14+09:00">
+<link rel="canonical" href="http://localhost:1313/page/math-and-diagrams/" />
+  <meta name="twitter:title" content="Math &amp; Diagrams" />
+  <meta name="twitter:description" content="KaTeX, MathJax, and Mermaid for math and diagrams">
+  <meta name="twitter:image" content="http://localhost:1313/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link href='/img/favicon.ico' rel='icon' type='image/x-icon'/>
+<meta name="generator" content="Hugo 0.169.0">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="Roxxog 3D Portfolio">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/katex.min.css" integrity="sha384-UA8juhPf75SzzAMA/4fo3yOU7sBJ0om7SCD2GHq0fZqZco6tr1UCV7nUbk9J90JM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.2.0/css/all.css" integrity="sha384-EXatlQyrOJgDaM9/a74ArMzy7/2bTMSrZj8ID1IPeVmc3GncfCugefCFWSLj8JL/" crossorigin="anonymous">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8&#43;LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+<link rel="stylesheet" href="/css/beautifulhugo-f9fdff79.37bd1123df63c5239a538f54f4acba4db8ce4fc432b8f40025f1fd0d5bfba63f.css" integrity="sha256-N70RI99jxSOaU49U9Ky6TbjOT8QyuPQAJfH9DVv7pj8=" crossorigin="anonymous" />
+  
+<link rel="stylesheet" media="print" href="/css/print.9ea1f3dd144aefb5611357af9799c2d7ffcc61e2aeec77d2770b857a9b85f3e7.css" integrity="sha256-nqHz3RRK77VhE1evl5nC1//MYeKu7HfSdwuFepuF8&#43;c=" crossorigin="anonymous" />
+  
+      
+<script defer src="/js/mermaid.217b66ef4279c33c141b4afe22effad10a91c02558dc70917be2c0981e78ed87.js" integrity="sha256-IXtm70J5wzwUG0r&#43;Iu/60QqRwCVY3HCRe&#43;LAmB547Yc=" crossorigin="anonymous"></script>
+      
+<script defer src="/js/mermaid-render.0e25e662b452ff15bc6ddc86234851183e5b354cd4ef00a0b6299e576dff88f2.js" integrity="sha256-DiXmYrRS/xW8bdyGI0hRGD5bNUzU7wCgtimeV23/iPI=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" />
+<link rel="stylesheet" id="hljs-dark" media="(prefers-color-scheme: dark)" href="/css/syntax-dark.bcab7cbda70172cbe05403f32b3e40267f820f627c6b8ea82f1cad666b2c97b4.css" integrity="sha256-vKt8vacBcsvgVAPzKz5AJn&#43;CD2J8a46oLxytZmssl7Q=" crossorigin="anonymous" />
+  <script>
+    
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var hljsDark = document.getElementById('hljs-dark');
+      if (hljsDark && (saved === 'dark' || saved === 'light')) {
+        hljsDark.media = (saved === 'dark') ? 'all' : 'not all';
+      }
+    })();
+  </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous">
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light navbar-custom fixed-top">
+  <div class="container-fluid">
+    
+    <a class="navbar-brand" href="/">Roxxog 3D Portfolio</a>
+    <div class="d-flex align-items-center">
+      
+      
+      
+      <button class="theme-toggle" id="toc-toggle" aria-controls="toc-panel" aria-expanded="false" aria-label="목차" data-bs-toggle="tooltip" data-bs-placement="bottom" title="목차">
+        <span class="fas fa-list"></span>
+      </button>
+      
+      
+      
+      <button class="theme-toggle" id="theme-toggle" aria-label="테마" data-bs-toggle="tooltip" data-bs-placement="bottom" data-tooltip-auto="자동 (시스템 따름)" data-tooltip-light="라이트 모드" data-tooltip-dark="다크 모드" title="자동 (시스템 따름)">
+        <span class="fas fa-circle-half-stroke" id="theme-icon-auto"></span>
+        <span class="fas fa-sun" id="theme-icon-light" style="display: none;"></span>
+        <span class="fas fa-moon" id="theme-icon-dark" style="display: none;"></span>
+      </button>
+      
+      
+      <button class="theme-toggle" id="search-toggle" aria-label="검색" data-bs-toggle="tooltip" data-bs-placement="bottom" title="검색">
+        <span class="fas fa-magnifying-glass"></span>
+      </button>
+      
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="네비게이션 토글">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="navbar-nav ms-auto">
+        
+          
+          
+            <li class="nav-item" >
+              <a class="nav-link" title="작품 보기" href="/#projects">작품 보기</a>
+            </li>
+          
+        
+          
+          
+            <li class="nav-item" >
+              <a class="nav-link" title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+
+          
+
+        
+      </ul>
+      
+
+
+    </div>
+
+    
+    
+      
+        <div class="avatar-container">
+          <div class="avatar-img-border">
+            <a title="Roxxog 3D Portfolio" href="/">
+              <img class="avatar-img" src="/img/avatar-icon.png" alt="Roxxog 3D Portfolio" />
+             
+            </a>
+          </div>
+        </div>
+      
+    
+
+  </div>
+</nav>
+
+
+
+<div id="navbar-search-overlay" class="navbar-search-overlay" aria-hidden="true" role="search">
+  <div class="navbar-search-inner container-fluid">
+    <span class="fas fa-magnifying-glass navbar-search-icon" aria-hidden="true"></span>
+    <input type="search" id="navbar-search-input" class="navbar-search-input"
+           placeholder="게시물과 페이지 검색…"
+           aria-label="검색"
+           autocomplete="off">
+    <button id="navbar-search-close" class="theme-toggle" aria-label="검색 닫기">
+      <span class="fas fa-xmark"></span>
+    </button>
+  </div>
+  <div id="navbar-search-results" class="navbar-search-results container-fluid" aria-live="polite"></div>
+</div>
+<script>
+  window.searchProviderConfig = {
+    provider: "fuse",
+    searchIndexURL: "/index.json",
+    searchPageURL: "/search"
+  };
+  window.searchConfig = {
+    noResultsText: "결과 없음: ",
+    untitledText: "제목 없음"
+  };
+</script>
+
+
+
+
+
+
+    
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <div class="page-heading">
+              
+              <h1>Math &amp; Diagrams</h1>
+              
+              
+                <hr class="small">
+              
+              
+
+  
+    <span class="page-subheading">KaTeX, MathJax, and Mermaid for math and diagrams</span>
+  
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+
+
+  </header>
+
+
+    
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <article role="main" class="blog-post">
+          
+
+
+          
+
+
+          
+          <p>Beautiful Hugo includes built-in support for <strong>KaTeX</strong>, <strong>MathJax</strong>, and <strong>Mermaid</strong> (diagrams and flowcharts). Mermaid needs no configuration. For math, enable the Goldmark passthrough extension (see below).</p>
+<h2 id="math-rendering">Math Rendering</h2>
+<p>Choose the math rendering engine via <code>mathEngine</code> in your config. See <a href="../configuration/#math-engine">Configuration — Math Engine</a> for the full option reference and <code>selfHosted</code> behavior.</p>
+<h3 id="passthrough">Passthrough</h3>
+<p>Markdown removes backslashes and other characters from LaTeX before the browser sees it. The Goldmark passthrough extension keeps the math unchanged. Hugo does not merge the <code>[markup]</code> section of a theme configuration, so put this in your <strong>site</strong> configuration:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">extensions</span><span class="p">.</span><span class="nx">passthrough</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">enable</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">extensions</span><span class="p">.</span><span class="nx">passthrough</span><span class="p">.</span><span class="nx">delimiters</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">block</span> <span class="p">=</span> <span class="p">[[</span><span class="s1">&#39;\[&#39;</span><span class="p">,</span> <span class="s1">&#39;\]&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;$$&#39;</span><span class="p">,</span> <span class="s1">&#39;$$&#39;</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">inline</span> <span class="p">=</span> <span class="p">[[</span><span class="s1">&#39;\(&#39;</span><span class="p">,</span> <span class="s1">&#39;\)&#39;</span><span class="p">]]</span>
+</span></span></code></pre></div><p>Single <code>$</code> is not an inline delimiter, because prose often contains a stray <code>$</code>. Add <code>['$', '$']</code> to <code>inline</code> if you want it.</p>
+<p>With passthrough enabled, the theme loads the KaTeX or MathJax files only on the pages that contain math. Set <code>math: true</code> in the front matter of a page to load them anyway, for example if a shortcode or a partial adds the math. Without passthrough, the theme loads them on every page, and you must escape the delimiters (<code>\\(</code> in place of <code>\(</code>).</p>
+<h3 id="server-side-rendering">Server-side rendering</h3>
+<p>Set <code>mathRender = &quot;server&quot;</code> to render KaTeX at build time, as this site does. Pages then load only the KaTeX CSS, and the math is visible before any script runs. See <a href="../configuration/#server-side-rendering">Configuration — Server-side rendering</a> for the limits.</p>
+<h3 id="inline-math">Inline math</h3>
+<p>The golden ratio is <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>φ</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>+</mo><msqrt><mn>5</mn></msqrt></mrow><mn>2</mn></mfrac><mo>≈</mo><mn>1.618</mn></mrow><annotation encoding="application/x-tex">\varphi = \frac{1+\sqrt{5}}{2} \approx 1.618</annotation></semantics></math></span>. Euler&rsquo;s identity states that <span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mrow><mi>i</mi><mi>π</mi></mrow></msup><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">e^{i\pi} + 1 = 0</annotation></semantics></math></span>.</p>
+<h3 id="display-math">Display math</h3>
+<span class="katex-display"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>φ</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>+</mo><msqrt><mn>5</mn></msqrt></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+\varphi = \frac{1+\sqrt{5}}{2}
+</annotation></semantics></math></span></span><span class="katex-display"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mover accent="true"><mi>f</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo><mo>=</mo><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mtext> </mtext><msup><mi>e</mi><mrow><mo>−</mo><mn>2</mn><mi>π</mi><mi>i</mi><mi>x</mi><mi>ξ</mi></mrow></msup><mtext> </mtext><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">
+\hat{f}(\xi) = \int_{-\infty}^{\infty} f(x)\, e^{-2\pi i x \xi}\, dx
+</annotation></semantics></math></span></span><span class="katex-display"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="bold">A</mi><mo>=</mo><mrow><mo fence="true">(</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mn>11</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mn>12</mn></msub></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mn>21</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><msub><mi>a</mi><mn>22</mn></msub></mstyle></mtd></mtr></mtable><mo fence="true">)</mo></mrow><mo separator="true">,</mo><mspace width="1em"/><mi>det</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi mathvariant="bold">A</mi><mo stretchy="false">)</mo><mo>=</mo><msub><mi>a</mi><mn>11</mn></msub><msub><mi>a</mi><mn>22</mn></msub><mo>−</mo><msub><mi>a</mi><mn>12</mn></msub><msub><mi>a</mi><mn>21</mn></msub></mrow><annotation encoding="application/x-tex">
+\mathbf{A} = \begin{pmatrix} a_{11} &amp; a_{12} \\ a_{21} &amp; a_{22} \end{pmatrix}, \quad \det(\mathbf{A}) = a_{11}a_{22} - a_{12}a_{21}
+</annotation></semantics></math></span></span><span class="katex-display"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><munderover><mo>∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>x</mi><mi>i</mi></msub><mo>=</mo><mi>exp</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>ln</mi><mo>⁡</mo><msub><mi>x</mi><mi>i</mi></msub><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+\prod_{i=1}^n x_i = \exp\left(\sum_{i=1}^n \ln x_i\right)
+</annotation></semantics></math></span></span><h3 id="long-equation-test-mobile-scroll-behavior">Long equation test (mobile scroll behavior)</h3>
+<p>This very long equation tests horizontal scrolling on mobile devices:</p>
+<span class="katex-display"><span class="katex"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mfrac><mrow><msup><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></msup><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo stretchy="false">!</mo></mrow></mfrac><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><msup><mo stretchy="false">)</mo><mi>n</mi></msup><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo><mo>+</mo><msup><mi>f</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><mo stretchy="false">)</mo><mo>+</mo><mfrac><mrow><msup><mi>f</mi><mrow><mo mathvariant="normal">′</mo><mo mathvariant="normal">′</mo></mrow></msup><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mrow><mn>2</mn><mo stretchy="false">!</mo></mrow></mfrac><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><mfrac><mrow><msup><mi>f</mi><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></msup><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mrow><mn>3</mn><mo stretchy="false">!</mo></mrow></mfrac><mo stretchy="false">(</mo><mi>x</mi><mo>−</mo><mi>a</mi><msup><mo stretchy="false">)</mo><mn>3</mn></msup><mo>+</mo><mo>⋯</mo><mo>=</mo><msubsup><mo>∫</mo><mi>a</mi><mi>x</mi></msubsup><msubsup><mo>∫</mo><mi>a</mi><msub><mi>t</mi><mn>1</mn></msub></msubsup><msubsup><mo>∫</mo><mi>a</mi><msub><mi>t</mi><mn>2</mn></msub></msubsup><mo>⋯</mo><msubsup><mo>∫</mo><mi>a</mi><msub><mi>t</mi><mi>n</mi></msub></msubsup><msup><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></msup><mo stretchy="false">(</mo><msub><mi>t</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo><mtext> </mtext><mi>d</mi><msub><mi>t</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mtext> </mtext><mi>d</mi><msub><mi>t</mi><mi>n</mi></msub><mo>⋯</mo><mtext> </mtext><mi>d</mi><msub><mi>t</mi><mn>2</mn></msub><mtext> </mtext><mi>d</mi><msub><mi>t</mi><mn>1</mn></msub><mo>+</mo><mtext>remainder terms</mtext></mrow><annotation encoding="application/x-tex">
+f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n = f(a) + f&#x27;(a)(x-a) + \frac{f&#x27;&#x27;(a)}{2!}(x-a)^2 + \frac{f^{(3)}(a)}{3!}(x-a)^3 + \cdots = \int_a^x \int_a^{t_1} \int_a^{t_2} \cdots \int_a^{t_n} f^{(n+1)}(t_{n+1}) \, dt_{n+1} \, dt_n \cdots \, dt_2 \, dt_1 + \text{remainder terms}
+</annotation></semantics></math></span></span><h3 id="source">Source</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">The golden ratio is \(\varphi = \frac{1+\sqrt{5}}{2}\).
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$$
+</span></span><span class="line"><span class="cl">\varphi = \frac{1+\sqrt{5}}{2}
+</span></span><span class="line"><span class="cl">$$
+</span></span></code></pre></div><p>KaTeX is loaded from CDN, or served from the site when <code>selfHosted = true</code>. MathJax is loaded from CDN even when <code>selfHosted = true</code>.</p>
+<h2 id="mermaid">Mermaid</h2>
+<p>Mermaid renders diagrams from a simple text syntax. Write the diagram in a fenced code block with the <code>mermaid</code> language. A codeblock render hook turns it into a diagram. This is the recommended form. The <code>mermaid</code> shortcode is still supported and gives the same result.</p>
+<h3 id="flowchart">Flowchart</h3>
+<div class="mermaid-container" style="text-align:center"><div class="theme-light"></div>
+  <div class="theme-dark"></div></div>
+<pre class="mermaid-src" style="display:none">
+graph TD
+    A[User visits site] --> B{Has session?}
+    B -->|Yes| C[Load preferences]
+    B -->|No| D[Show defaults]
+    C --> E[Render page]
+    D --> E
+    E --> F{Theme preference?}
+    F -->|Light| G[Light theme]
+    F -->|Dark| H[Dark theme]
+    F -->|Auto| I[System preference]
+    G --> J[Display content]
+    H --> J
+    I --> J
+</pre>
+<h3 id="sequence-diagram">Sequence Diagram</h3>
+<div class="mermaid-container" style="text-align:center"><div class="theme-light"></div>
+  <div class="theme-dark"></div></div>
+<pre class="mermaid-src" style="display:none">
+sequenceDiagram
+    participant U as User
+    participant B as Browser
+    participant S as Server
+    participant DB as Database
+    U->>B: Navigate to page
+    B->>S: GET /api/data
+    S->>DB: SELECT * FROM posts
+    DB-->>S: Result set
+    S-->>B: JSON response
+    B->>B: Render content
+    B-->>U: Display page
+</pre>
+<h3 id="gantt-chart">Gantt Chart</h3>
+<p>This one uses the shortcode:</p>
+<div class="mermaid-container" style="text-align:center"><div class="theme-light"></div>
+  <div class="theme-dark"></div></div>
+<pre class="mermaid-src" style="display:none">
+
+gantt
+    title Project Timeline
+    dateFormat  YYYY-MM-DD
+    section Setup
+        Configure Hugo      :done, setup1, 2026-01-01, 3d
+        Install theme       :done, setup2, after setup1, 2d
+    section Content
+        Write pages         :active, content1, after setup2, 7d
+        Add images          :content2, after content1, 3d
+    section Deploy
+        Build and test      :deploy1, after content2, 2d
+        Go live             :milestone, deploy2, after deploy1, 0d
+
+</pre>
+
+<h3 id="source--fenced-code-block">Source — Fenced Code Block</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="s">```mermaid
+</span></span></span><span class="line"><span class="cl">graph TD
+</span></span><span class="line"><span class="cl">    A[User visits site] --&gt; B{Has session?}
+</span></span><span class="line"><span class="cl">    B --&gt;|Yes| C[Load preferences]
+</span></span><span class="line"><span class="cl">    B --&gt;|No| D[Show defaults]
+</span></span><span class="line"><span class="cl">    C --&gt; E[Render page]
+</span></span><span class="line"><span class="cl">    D --&gt; E
+</span></span><span class="line"><span class="cl"><span class="s">```</span>
+</span></span></code></pre></div><h3 id="source--shortcode">Source — Shortcode</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">{{&lt; mermaid &gt;}}
+</span></span><span class="line"><span class="cl">sequenceDiagram
+</span></span><span class="line"><span class="cl">    participant U as User
+</span></span><span class="line"><span class="cl">    participant B as Browser
+</span></span><span class="line"><span class="cl">    U-&gt;&gt;B: Navigate to page
+</span></span><span class="line"><span class="cl">    B--&gt;&gt;U: Display page
+</span></span><span class="line"><span class="cl">{{&lt; /mermaid &gt;}}
+</span></span></code></pre></div><h3 id="alignment">Alignment</h3>
+<p>Set the horizontal alignment with a block attribute on the fence, or with the <code>align</code> parameter of the shortcode:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">``<span class="sb">`mermaid {align=&#34;center&#34;}
+</span></span></span><span class="line"><span class="cl"><span class="sb">graph LR
+</span></span></span><span class="line"><span class="cl"><span class="sb">    A --&gt; B
+</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>``
+</span></span></code></pre></div><ul>
+<li><code>center</code> — centered (recommended for most diagrams)</li>
+<li><code>left</code> — left-aligned</li>
+<li><code>right</code> — right-aligned</li>
+</ul>
+<p>Block attributes need <code>markup.goldmark.parser.attribute.block = true</code> in the site configuration.</p>
+<h3 id="dark-mode">Dark Mode</h3>
+<p>Mermaid diagrams are dual-rendered for light and dark themes. The theme uses <code>.theme-light</code> and <code>.theme-dark</code> CSS classes internally, so the correct version displays automatically based on the user&rsquo;s color scheme preference. No extra configuration is needed.</p>
+
+          
+          
+
+
+
+        
+        
+
+        
+
+        
+        
+      </article>
+
+      
+
+
+      
+    </div>
+  </div>
+</div>
+
+    
+    <div class="offcanvas offcanvas-start toc-panel" id="toc-panel" tabindex="-1" aria-labelledby="toc-title" data-toc-mode="headings">
+  <div class="offcanvas-header">
+    <span class="offcanvas-title toc-title" id="toc-title">목차</span>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="목차 닫기"></button>
+  </div>
+  <nav class="offcanvas-body toc-body"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#math-rendering">Math Rendering</a>
+      <ul>
+        <li><a href="#passthrough">Passthrough</a></li>
+        <li><a href="#server-side-rendering">Server-side rendering</a></li>
+        <li><a href="#inline-math">Inline math</a></li>
+        <li><a href="#display-math">Display math</a></li>
+        <li><a href="#long-equation-test-mobile-scroll-behavior">Long equation test (mobile scroll behavior)</a></li>
+        <li><a href="#source">Source</a></li>
+      </ul>
+    </li>
+    <li><a href="#mermaid">Mermaid</a>
+      <ul>
+        <li><a href="#flowchart">Flowchart</a></li>
+        <li><a href="#sequence-diagram">Sequence Diagram</a></li>
+        <li><a href="#gantt-chart">Gantt Chart</a></li>
+        <li><a href="#source--fenced-code-block">Source — Fenced Code Block</a></li>
+        <li><a href="#source--shortcode">Source — Shortcode</a></li>
+        <li><a href="#alignment">Alignment</a></li>
+        <li><a href="#dark-mode">Dark Mode</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></nav>
+</div>
+    
+      
+  <div class="page-meta">
+  
+  
+  
+</div>
+
+
+
+<footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li class="list-inline-item" ><a rel="noopener noreferrer" href="mailto:cdd0922@gmail.com" title="Email me" aria-label="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+              <li class="list-inline-item" ><a rel="noopener noreferrer" href="https://github.com/Roxxog/MyPortfolio_test" title="GitHub" aria-label="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              Roxxog
+            
+            &nbsp;&bull;&nbsp;
+          
+          &copy;
+          
+            2026
+          
+
+          
+            &nbsp;&bull;&nbsp;
+          
+          
+            <a href="/">Roxxog 3D Portfolio</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.169.0</a> 을 사용함 &nbsp;&bull;&nbsp; <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> 를 개조한 <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> 테마
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      
+
+
+      
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM&#43;D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/umd/photoswipe.umd.min.js" integrity="sha384-k8EKyYcONphQ7zH4cQ0888JapXwrLTXQl/Ue1/jYgjVYahln1NWpnt2S4IC56LNh" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/umd/photoswipe-lightbox.umd.min.js" integrity="sha384-IiBVbUz6&#43;U&#43;Tbm/ijO2P0XRwcVzNfrMzloNLkrqHkbi6w5H0v6ie4fI9BIO4SwdK" crossorigin="anonymous"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" integrity="sha384-PCSoOZTpbkikBEtd/&#43;uV3WNdc676i9KUf01KOA8CnJotvlx8rRrETbDuwdjqTYvt" crossorigin="anonymous"></script>
+
+
+<script src="/js/beautifulhugo-cabff7a5.d5224b56f8f6ca48dd1b1e5f2f91c9c0cd3cd5b8362f62246ec1a7f2bb520daf.js" integrity="sha256-1SJLVvj2ykjdGx5fL5HJwM081bg2L2IkbsGn8rtSDa8=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>

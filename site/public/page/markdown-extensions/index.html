@@ -1,0 +1,964 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ko" itemscope itemtype="https://schema.org/WebPage">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><script>
+      (function() {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else if (saved === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+
+
+  
+  <title>Markdown Extensions - Roxxog 3D Portfolio</title>
+
+  <meta name="description" content="Utility classes and theme-dependent content">
+  <meta name="author" content="Roxxog"/>
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "http://localhost:1313/#website",
+      "@type": "WebSite",
+      "name": "Roxxog 3D Portfolio",
+      "publisher": {
+        "@id": "http://localhost:1313/#organization"
+      },
+      "url": "http://localhost:1313/"
+    },
+    {
+      "@id": "http://localhost:1313/#organization",
+      "@type": "Organization",
+      "name": "Roxxog",
+      "url": "http://localhost:1313/"
+    },
+    {
+      "@id": "http://localhost:1313/page/markdown-extensions/#breadcrumb",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "item": "http://localhost:1313/",
+          "name": "홈",
+          "position": 1
+        },
+        {
+          "@type": "ListItem",
+          "item": "http://localhost:1313/page/",
+          "name": "Pages",
+          "position": 2
+        },
+        {
+          "@type": "ListItem",
+          "item": "http://localhost:1313/page/markdown-extensions/",
+          "name": "Markdown Extensions",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:1313/page/markdown-extensions/#webpage",
+      "@type": "WebPage",
+      "breadcrumb": {
+        "@id": "http://localhost:1313/page/markdown-extensions/#breadcrumb"
+      },
+      "isPartOf": {
+        "@id": "http://localhost:1313/#website"
+      },
+      "name": "Markdown Extensions",
+      "url": "http://localhost:1313/page/markdown-extensions/"
+    },
+    {
+      "@id": "http://localhost:1313/#author-roxxog",
+      "@type": "Person",
+      "name": "Roxxog",
+      "url": "http://localhost:1313/"
+    },
+    {
+      "@id": "http://localhost:1313/page/markdown-extensions/#article",
+      "@type": "Article",
+      "author": [
+        {
+          "@id": "http://localhost:1313/#author-roxxog"
+        }
+      ],
+      "dateCreated": "0001-01-01T00:00:00+00:00",
+      "dateModified": "2026-10-30T12:21:14+09:00",
+      "datePublished": "0001-01-01T00:00:00+00:00",
+      "description": "Beautiful Hugo provides several CSS classes that extend standard Markdown with theme-dependent visibility and layout utilities. There are two ways to use them:\nRaw HTML Block Attributes Use standard HTML tags with the CSS classes directly in your Markdown. This requires enabling markup.goldmark.renderer.unsafe = true in your site config:\n[markup.goldmark.renderer] unsafe = true Without this setting, Hugo’s Goldmark renderer strips raw HTML from Markdown files.\nApply CSS classes to Markdown blocks using the {.class} attribute syntax. This requires enabling markup.goldmark.parser.attribute.block = true in your site config:\n[markup.goldmark.parser.attribute] block = true The {.class} attribute must be on its own line immediately after the block. This only works for block-level elements.\n",
+      "headline": "Markdown Extensions",
+      "image": "http://localhost:1313/img/avatar-icon.png",
+      "inLanguage": "ko",
+      "keywords": [],
+      "mainEntityOfPage": {
+        "@id": "http://localhost:1313/page/markdown-extensions/#webpage"
+      },
+      "publisher": {
+        "@id": "http://localhost:1313/#organization"
+      },
+      "wordCount": 818
+    }
+  ]
+}
+</script>
+<meta property="og:url" content="http://localhost:1313/page/markdown-extensions/">
+	<meta property="og:site_name" content="Roxxog 3D Portfolio">
+	<meta property="og:title" content="Markdown Extensions">
+	<meta property="og:description" content="Beautiful Hugo provides several CSS classes that extend standard Markdown with theme-dependent visibility and layout utilities. There are two ways to use them:
+Raw HTML Block Attributes Use standard HTML tags with the CSS classes directly in your Markdown. This requires enabling markup.goldmark.renderer.unsafe = true in your site config:
+[markup.goldmark.renderer] unsafe = true Without this setting, Hugo’s Goldmark renderer strips raw HTML from Markdown files.
+Apply CSS classes to Markdown blocks using the {.class} attribute syntax. This requires enabling markup.goldmark.parser.attribute.block = true in your site config:
+[markup.goldmark.parser.attribute] block = true The {.class} attribute must be on its own line immediately after the block. This only works for block-level elements.">
+	<meta property="og:locale" content="ko">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="page">
+		<meta property="article:modified_time" content="2026-10-30T12:21:14+09:00">
+<link rel="canonical" href="http://localhost:1313/page/markdown-extensions/" />
+  <meta name="twitter:title" content="Markdown Extensions" />
+  <meta name="twitter:description" content="Utility classes and theme-dependent content">
+  <meta name="twitter:image" content="http://localhost:1313/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link href='/img/favicon.ico' rel='icon' type='image/x-icon'/>
+<meta name="generator" content="Hugo 0.169.0">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="Roxxog 3D Portfolio">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.2.0/css/all.css" integrity="sha384-EXatlQyrOJgDaM9/a74ArMzy7/2bTMSrZj8ID1IPeVmc3GncfCugefCFWSLj8JL/" crossorigin="anonymous">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8&#43;LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+<link rel="stylesheet" href="/css/beautifulhugo-f9fdff79.37bd1123df63c5239a538f54f4acba4db8ce4fc432b8f40025f1fd0d5bfba63f.css" integrity="sha256-N70RI99jxSOaU49U9Ky6TbjOT8QyuPQAJfH9DVv7pj8=" crossorigin="anonymous" />
+  
+<link rel="stylesheet" media="print" href="/css/print.9ea1f3dd144aefb5611357af9799c2d7ffcc61e2aeec77d2770b857a9b85f3e7.css" integrity="sha256-nqHz3RRK77VhE1evl5nC1//MYeKu7HfSdwuFepuF8&#43;c=" crossorigin="anonymous" />
+  
+<script defer src="/js/tabs-sync.812f2ca3b52c6242f35624329d5ebc8042f888766f55e9a1de480584c916d7bd.js" integrity="sha256-gS8so7UsYkLzViQynV68gEL4iHZvVemh3kgFhMkW170=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" />
+<link rel="stylesheet" id="hljs-dark" media="(prefers-color-scheme: dark)" href="/css/syntax-dark.bcab7cbda70172cbe05403f32b3e40267f820f627c6b8ea82f1cad666b2c97b4.css" integrity="sha256-vKt8vacBcsvgVAPzKz5AJn&#43;CD2J8a46oLxytZmssl7Q=" crossorigin="anonymous" />
+  <script>
+    
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var hljsDark = document.getElementById('hljs-dark');
+      if (hljsDark && (saved === 'dark' || saved === 'light')) {
+        hljsDark.media = (saved === 'dark') ? 'all' : 'not all';
+      }
+    })();
+  </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous">
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light navbar-custom fixed-top">
+  <div class="container-fluid">
+    
+    <a class="navbar-brand" href="/">Roxxog 3D Portfolio</a>
+    <div class="d-flex align-items-center">
+      
+      
+      
+      <button class="theme-toggle" id="toc-toggle" aria-controls="toc-panel" aria-expanded="false" aria-label="목차" data-bs-toggle="tooltip" data-bs-placement="bottom" title="목차">
+        <span class="fas fa-list"></span>
+      </button>
+      
+      
+      
+      <button class="theme-toggle" id="theme-toggle" aria-label="테마" data-bs-toggle="tooltip" data-bs-placement="bottom" data-tooltip-auto="자동 (시스템 따름)" data-tooltip-light="라이트 모드" data-tooltip-dark="다크 모드" title="자동 (시스템 따름)">
+        <span class="fas fa-circle-half-stroke" id="theme-icon-auto"></span>
+        <span class="fas fa-sun" id="theme-icon-light" style="display: none;"></span>
+        <span class="fas fa-moon" id="theme-icon-dark" style="display: none;"></span>
+      </button>
+      
+      
+      <button class="theme-toggle" id="search-toggle" aria-label="검색" data-bs-toggle="tooltip" data-bs-placement="bottom" title="검색">
+        <span class="fas fa-magnifying-glass"></span>
+      </button>
+      
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="네비게이션 토글">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="navbar-nav ms-auto">
+        
+          
+          
+            <li class="nav-item" >
+              <a class="nav-link" title="작품 보기" href="/#projects">작품 보기</a>
+            </li>
+          
+        
+          
+          
+            <li class="nav-item" >
+              <a class="nav-link" title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+
+          
+
+        
+      </ul>
+      
+
+
+    </div>
+
+    
+    
+      
+        <div class="avatar-container">
+          <div class="avatar-img-border">
+            <a title="Roxxog 3D Portfolio" href="/">
+              <img class="avatar-img" src="/img/avatar-icon.png" alt="Roxxog 3D Portfolio" />
+             
+            </a>
+          </div>
+        </div>
+      
+    
+
+  </div>
+</nav>
+
+
+
+<div id="navbar-search-overlay" class="navbar-search-overlay" aria-hidden="true" role="search">
+  <div class="navbar-search-inner container-fluid">
+    <span class="fas fa-magnifying-glass navbar-search-icon" aria-hidden="true"></span>
+    <input type="search" id="navbar-search-input" class="navbar-search-input"
+           placeholder="게시물과 페이지 검색…"
+           aria-label="검색"
+           autocomplete="off">
+    <button id="navbar-search-close" class="theme-toggle" aria-label="검색 닫기">
+      <span class="fas fa-xmark"></span>
+    </button>
+  </div>
+  <div id="navbar-search-results" class="navbar-search-results container-fluid" aria-live="polite"></div>
+</div>
+<script>
+  window.searchProviderConfig = {
+    provider: "fuse",
+    searchIndexURL: "/index.json",
+    searchPageURL: "/search"
+  };
+  window.searchConfig = {
+    noResultsText: "결과 없음: ",
+    untitledText: "제목 없음"
+  };
+</script>
+
+
+
+
+
+
+    
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <div class="page-heading">
+              
+              <h1>Markdown Extensions</h1>
+              
+              
+                <hr class="small">
+              
+              
+
+  
+    <span class="page-subheading">Utility classes and theme-dependent content</span>
+  
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+
+
+  </header>
+
+
+    
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <article role="main" class="blog-post">
+          
+
+
+          
+
+
+          
+          <p>Beautiful Hugo provides several CSS classes that extend standard Markdown with theme-dependent visibility and layout utilities. There are two ways to use them:</p>
+<div class="tabs-shortcode" id="tabs-1" data-tabs-group="syntax">
+  <ul class="nav nav-tabs" id="tabs-1-tablist" role="tablist"><li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="syntax-pane-1-tab"
+          type="button"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#syntax-pane-1"
+          data-tab-group="syntax"
+          data-tab-key="raw-html-1"
+          aria-controls="syntax-pane-1"
+          aria-selected="true">Raw HTML</button>
+      </li><li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="syntax-pane-2-tab"
+          type="button"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#syntax-pane-2"
+          data-tab-group="syntax"
+          data-tab-key="block-attributes-2"
+          aria-controls="syntax-pane-2"
+          aria-selected="false">Block Attributes</button>
+      </li></ul>
+
+  <div class="tab-content" id="tabs-1-content">
+    
+<div
+      class="tab-pane fade show active"
+      id="syntax-pane-1"
+      role="tabpanel"
+      aria-labelledby="syntax-pane-1-tab"
+      tabindex="0"><p>Use standard HTML tags with the CSS classes directly in your Markdown. This requires enabling <code>markup.goldmark.renderer.unsafe = true</code> in your site config:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">renderer</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">unsafe</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></div><p>Without this setting, Hugo&rsquo;s Goldmark renderer strips raw HTML from Markdown files.</p>
+</div>
+<div
+      class="tab-pane fade"
+      id="syntax-pane-2"
+      role="tabpanel"
+      aria-labelledby="syntax-pane-2-tab"
+      tabindex="0"><p>Apply CSS classes to Markdown blocks using the <code>{.class}</code> attribute syntax. This requires enabling <code>markup.goldmark.parser.attribute.block = true</code> in your site config:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">parser</span><span class="p">.</span><span class="nx">attribute</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">block</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></div><p>The <code>{.class}</code> attribute must be on its own line immediately after the block. This only works for block-level elements.</p>
+</div>
+
+  </div>
+</div>
+<p>Both options can be enabled together. The examples below show each approach — switch tabs to see the alternative syntax.</p>
+<h2 id="inline-markup-extras">Inline Markup Extras</h2>
+<p>Goldmark can add five inline elements to Markdown. They are a Hugo feature, not a theme feature, so you enable them in your own site configuration. Hugo does not merge <code>[markup]</code> from a theme.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># GFM strikethrough also matches a single tilde, so it must go off for ~sub~</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">extensions</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">strikethrough</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">extensions</span><span class="p">.</span><span class="nx">extras</span><span class="p">.</span><span class="nx">delete</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">enable</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">extensions</span><span class="p">.</span><span class="nx">extras</span><span class="p">.</span><span class="nx">insert</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">enable</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">extensions</span><span class="p">.</span><span class="nx">extras</span><span class="p">.</span><span class="nx">mark</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">enable</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">extensions</span><span class="p">.</span><span class="nx">extras</span><span class="p">.</span><span class="nx">subscript</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">enable</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">extensions</span><span class="p">.</span><span class="nx">extras</span><span class="p">.</span><span class="nx">superscript</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">enable</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></div><table>
+	<thead>
+			<tr>
+					<th>Markdown</th>
+					<th>HTML</th>
+					<th>Result</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>==highlight==</code></td>
+					<td><code>&lt;mark&gt;</code></td>
+					<td><mark>highlight</mark></td>
+			</tr>
+			<tr>
+					<td><code>~~removed~~</code></td>
+					<td><code>&lt;del&gt;</code></td>
+					<td><del>removed</del></td>
+			</tr>
+			<tr>
+					<td><code>++added++</code></td>
+					<td><code>&lt;ins&gt;</code></td>
+					<td><ins>added</ins></td>
+			</tr>
+			<tr>
+					<td><code>H~2~O</code></td>
+					<td><code>&lt;sub&gt;</code></td>
+					<td>H<sub>2</sub>O</td>
+			</tr>
+			<tr>
+					<td><code>x^2^</code></td>
+					<td><code>&lt;sup&gt;</code></td>
+					<td>x<sup>2</sup></td>
+			</tr>
+	</tbody>
+</table>
+<p>The theme styles all five elements for light and dark mode. <code>&lt;mark&gt;</code> keeps a readable contrast in dark mode, <code>&lt;ins&gt;</code> is underlined, and <code>&lt;del&gt;</code> is struck through.</p>
+<h3 id="conflicts">Conflicts</h3>
+<ul>
+<li><strong><code>delete</code> and GFM strikethrough.</strong> The GitHub-flavored Markdown strikethrough extension is on by default and also matches a single tilde, so <code>H~2~O</code> becomes <code>H&lt;del&gt;2&lt;/del&gt;O</code>. Set <code>strikethrough = false</code> and enable <code>delete</code> to get <code>~~removed~~</code> and <code>~sub~</code> at the same time.</li>
+<li><strong><code>superscript</code> and math.</strong> LaTeX uses <code>^</code> for exponents. Without protection, two exponents on one line become a <code>&lt;sup&gt;</code> element and the formula breaks. Enable the <a href="../math-and-diagrams/#passthrough">Goldmark passthrough</a> extension first, as this example site does. It hands math to KaTeX or MathJax unchanged, so <code>superscript</code> is safe to turn on.</li>
+</ul>
+<h2 id="callout-boxes">Callout Boxes</h2>
+<p>Callout boxes are now available as a <code>callout</code> shortcode supporting multiple paragraphs and an optional title. See <a href="../shortcodes/#callout">Shortcodes</a> for full documentation and live examples.</p>
+<p>For backward compatibility, the legacy CSS classes (<code>.box-note</code>, <code>.box-warning</code>, <code>.box-error</code>, <code>.box-success</code>) still work with raw HTML or block attributes, but the shortcode is recommended.</p>
+<h2 id="content-section">Content Section</h2>
+<p>The <code>.content-section</code> class wraps content in a rounded gray box:</p>
+<div class="content-section">
+This content is wrapped in a <code>.content-section</code> div. It's useful for highlighting a block of content or separating it from the surrounding text.
+</div>
+<div class="tabs-shortcode" id="tabs-2" data-tabs-group="syntax">
+  <ul class="nav nav-tabs" id="tabs-2-tablist" role="tablist"><li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="syntax-pane-1-tab"
+          type="button"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#syntax-pane-1"
+          data-tab-group="syntax"
+          data-tab-key="raw-html-1"
+          aria-controls="syntax-pane-1"
+          aria-selected="true">Raw HTML</button>
+      </li><li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="syntax-pane-2-tab"
+          type="button"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#syntax-pane-2"
+          data-tab-group="syntax"
+          data-tab-key="block-attributes-2"
+          aria-controls="syntax-pane-2"
+          aria-selected="false">Block Attributes</button>
+      </li></ul>
+
+  <div class="tab-content" id="tabs-2-content">
+    
+<div
+      class="tab-pane fade show active"
+      id="syntax-pane-1"
+      role="tabpanel"
+      aria-labelledby="syntax-pane-1-tab"
+      tabindex="0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;content-section&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">Wrapped content goes here.
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div></div>
+<div
+      class="tab-pane fade"
+      id="syntax-pane-2"
+      role="tabpanel"
+      aria-labelledby="syntax-pane-2-tab"
+      tabindex="0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">Wrapped content goes here.
+</span></span><span class="line"><span class="cl">{.content-section}
+</span></span></code></pre></div></div>
+
+  </div>
+</div>
+<h2 id="theme-dependent-content">Theme-Dependent Content</h2>
+<p>Use <code>.theme-light</code> and <code>.theme-dark</code> to show content only in a specific color scheme. Try toggling the theme with the button in the navbar — the blocks below will swap.</p>
+<div class="theme-light">
+This text is visible only in <strong>light mode</strong>.
+</div>
+<div class="theme-dark">
+This text is visible only in <strong>dark mode</strong>.
+</div>
+<div class="tabs-shortcode" id="tabs-3" data-tabs-group="syntax">
+  <ul class="nav nav-tabs" id="tabs-3-tablist" role="tablist"><li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="syntax-pane-1-tab"
+          type="button"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#syntax-pane-1"
+          data-tab-group="syntax"
+          data-tab-key="raw-html-1"
+          aria-controls="syntax-pane-1"
+          aria-selected="true">Raw HTML</button>
+      </li><li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="syntax-pane-2-tab"
+          type="button"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#syntax-pane-2"
+          data-tab-group="syntax"
+          data-tab-key="block-attributes-2"
+          aria-controls="syntax-pane-2"
+          aria-selected="false">Block Attributes</button>
+      </li></ul>
+
+  <div class="tab-content" id="tabs-3-content">
+    
+<div
+      class="tab-pane fade show active"
+      id="syntax-pane-1"
+      role="tabpanel"
+      aria-labelledby="syntax-pane-1-tab"
+      tabindex="0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;theme-light&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  Visible only in light mode.
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;theme-dark&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  Visible only in dark mode.
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div></div>
+<div
+      class="tab-pane fade"
+      id="syntax-pane-2"
+      role="tabpanel"
+      aria-labelledby="syntax-pane-2-tab"
+      tabindex="0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">Visible only in light mode.
+</span></span><span class="line"><span class="cl">{.theme-light}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Visible only in dark mode.
+</span></span><span class="line"><span class="cl">{.theme-dark}
+</span></span></code></pre></div></div>
+
+  </div>
+</div>
+<p>This is particularly useful for images or diagrams that need different versions for light and dark backgrounds. Mermaid diagrams use this mechanism internally for dual-rendering.</p>
+<h2 id="centered-images">Centered Images</h2>
+<p>Use the <code>.center</code> class to center a block element (like an image) with <code>display: block; margin: 0 auto</code>:</p>
+<img src="/img/global-ike.png" alt="A globe" class="center" style="max-width: 400px;" />
+<p><em class="caption">A centered image with a caption</em></p>
+<div class="tabs-shortcode" id="tabs-4" data-tabs-group="syntax">
+  <ul class="nav nav-tabs" id="tabs-4-tablist" role="tablist"><li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="syntax-pane-1-tab"
+          type="button"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#syntax-pane-1"
+          data-tab-group="syntax"
+          data-tab-key="raw-html-1"
+          aria-controls="syntax-pane-1"
+          aria-selected="true">Raw HTML</button>
+      </li><li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="syntax-pane-2-tab"
+          type="button"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#syntax-pane-2"
+          data-tab-group="syntax"
+          data-tab-key="block-attributes-2"
+          aria-controls="syntax-pane-2"
+          aria-selected="false">Block Attributes</button>
+      </li></ul>
+
+  <div class="tab-content" id="tabs-4-content">
+    
+<div
+      class="tab-pane fade show active"
+      id="syntax-pane-1"
+      role="tabpanel"
+      aria-labelledby="syntax-pane-1-tab"
+      tabindex="0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/img/global-ike.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;A globe&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;center&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;max-width: 400px;&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">em</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;caption&#34;</span><span class="p">&gt;</span>A centered image with a caption<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>
+</span></span></code></pre></div></div>
+<div
+      class="tab-pane fade"
+      id="syntax-pane-2"
+      role="tabpanel"
+      aria-labelledby="syntax-pane-2-tab"
+      tabindex="0"><p>Block attributes only work for block-level elements, so inline elements like <code>&lt;img&gt;</code> without a block wrapper still require raw HTML. You can combine both approaches:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![<span class="nt">A globe</span>](<span class="na">/img/global-ike.png</span>)
+</span></span><span class="line"><span class="cl">{.center}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="ge">*A centered image with a caption*</span>
+</span></span><span class="line"><span class="cl">{.caption}
+</span></span></code></pre></div><p>Note: applying <code>.center</code> to a Markdown image via block attributes centers the <code>&lt;figure&gt;</code> wrapper Hugo generates, not the <code>&lt;img&gt;</code> directly.</p>
+</div>
+
+  </div>
+</div>
+<h2 id="white-background-for-dark-mode">White Background for Dark Mode</h2>
+<p>Add the <code>.white</code> class to a <code>&lt;figure&gt;</code> or <code>&lt;p&gt;</code> element to give it a white background. This is useful for images with transparent backgrounds that would otherwise look odd in dark mode.</p>
+<div class="tabs-shortcode" id="tabs-5" data-tabs-group="syntax">
+  <ul class="nav nav-tabs" id="tabs-5-tablist" role="tablist"><li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="syntax-pane-1-tab"
+          type="button"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#syntax-pane-1"
+          data-tab-group="syntax"
+          data-tab-key="raw-html-1"
+          aria-controls="syntax-pane-1"
+          aria-selected="true">Raw HTML</button>
+      </li><li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="syntax-pane-2-tab"
+          type="button"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#syntax-pane-2"
+          data-tab-group="syntax"
+          data-tab-key="block-attributes-2"
+          aria-controls="syntax-pane-2"
+          aria-selected="false">Block Attributes</button>
+      </li></ul>
+
+  <div class="tab-content" id="tabs-5-content">
+    
+<div
+      class="tab-pane fade show active"
+      id="syntax-pane-1"
+      role="tabpanel"
+      aria-labelledby="syntax-pane-1-tab"
+      tabindex="0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">figure</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;white&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/img/global-ike.png&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Globe with transparency&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
+</span></span></code></pre></div></div>
+<div
+      class="tab-pane fade"
+      id="syntax-pane-2"
+      role="tabpanel"
+      aria-labelledby="syntax-pane-2-tab"
+      tabindex="0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![<span class="nt">Globe with transparency</span>](<span class="na">/img/global-ike.png</span>)
+</span></span><span class="line"><span class="cl">{.white}
+</span></span></code></pre></div><p>When block attributes are enabled, Hugo wraps Markdown images in a <code>&lt;figure&gt;</code>. The <code>.white</code> class is applied to that <code>&lt;figure&gt;</code> wrapper.</p></div>
+
+  </div>
+</div>
+<h2 id="hidden-elements">Hidden Elements</h2>
+<p>The <code>.hideme</code> class applies <code>display: none</code>:</p>
+<div class="tabs-shortcode" id="tabs-6" data-tabs-group="syntax">
+  <ul class="nav nav-tabs" id="tabs-6-tablist" role="tablist"><li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="syntax-pane-1-tab"
+          type="button"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#syntax-pane-1"
+          data-tab-group="syntax"
+          data-tab-key="raw-html-1"
+          aria-controls="syntax-pane-1"
+          aria-selected="true">Raw HTML</button>
+      </li><li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="syntax-pane-2-tab"
+          type="button"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#syntax-pane-2"
+          data-tab-group="syntax"
+          data-tab-key="block-attributes-2"
+          aria-controls="syntax-pane-2"
+          aria-selected="false">Block Attributes</button>
+      </li></ul>
+
+  <div class="tab-content" id="tabs-6-content">
+    
+<div
+      class="tab-pane fade show active"
+      id="syntax-pane-1"
+      role="tabpanel"
+      aria-labelledby="syntax-pane-1-tab"
+      tabindex="0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;hideme&#34;</span><span class="p">&gt;</span>This content is hidden.<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div></div>
+<div
+      class="tab-pane fade"
+      id="syntax-pane-2"
+      role="tabpanel"
+      aria-labelledby="syntax-pane-2-tab"
+      tabindex="0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">This content is hidden.
+</span></span><span class="line"><span class="cl">{.hideme}
+</span></span></code></pre></div></div>
+
+  </div>
+</div>
+<h2 id="full-width-image">Full-Width Image</h2>
+<p>The <code>.img-title</code> class makes an image span the full width:</p>
+<div class="tabs-shortcode" id="tabs-7" data-tabs-group="syntax">
+  <ul class="nav nav-tabs" id="tabs-7-tablist" role="tablist"><li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="syntax-pane-1-tab"
+          type="button"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#syntax-pane-1"
+          data-tab-group="syntax"
+          data-tab-key="raw-html-1"
+          aria-controls="syntax-pane-1"
+          aria-selected="true">Raw HTML</button>
+      </li><li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="syntax-pane-2-tab"
+          type="button"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#syntax-pane-2"
+          data-tab-group="syntax"
+          data-tab-key="block-attributes-2"
+          aria-controls="syntax-pane-2"
+          aria-selected="false">Block Attributes</button>
+      </li></ul>
+
+  <div class="tab-content" id="tabs-7-content">
+    
+<div
+      class="tab-pane fade show active"
+      id="syntax-pane-1"
+      role="tabpanel"
+      aria-labelledby="syntax-pane-1-tab"
+      tabindex="0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/img/global-ike.png&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;img-title&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Full width image&#34;</span> <span class="p">/&gt;</span>
+</span></span></code></pre></div></div>
+<div
+      class="tab-pane fade"
+      id="syntax-pane-2"
+      role="tabpanel"
+      aria-labelledby="syntax-pane-2-tab"
+      tabindex="0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![<span class="nt">Full width image</span>](<span class="na">/img/global-ike.png</span>)
+</span></span><span class="line"><span class="cl">{.img-title}
+</span></span></code></pre></div></div>
+
+  </div>
+</div>
+<h2 id="asciidoc-block-titles">Asciidoc Block Titles</h2>
+<p>Asciidoctor writes a block title as <code>&lt;div class=&quot;title&quot;&gt;</code>, for example the title of an admonition or a listing block:</p>
+<pre tabindex="0"><code class="language-adoc" data-lang="adoc">[NOTE]
+.Implementation details
+--
+Content.
+--
+</code></pre><p>The theme styles these titles as bold italic, so they read as a heading for the block instead of as body text.</p>
+
+          
+          
+
+
+
+        
+        
+
+        
+
+        
+        
+      </article>
+
+      
+
+
+      
+    </div>
+  </div>
+</div>
+
+    
+    <div class="offcanvas offcanvas-start toc-panel" id="toc-panel" tabindex="-1" aria-labelledby="toc-title" data-toc-mode="headings">
+  <div class="offcanvas-header">
+    <span class="offcanvas-title toc-title" id="toc-title">목차</span>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="목차 닫기"></button>
+  </div>
+  <nav class="offcanvas-body toc-body"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#inline-markup-extras">Inline Markup Extras</a>
+      <ul>
+        <li><a href="#conflicts">Conflicts</a></li>
+      </ul>
+    </li>
+    <li><a href="#callout-boxes">Callout Boxes</a></li>
+    <li><a href="#content-section">Content Section</a></li>
+    <li><a href="#theme-dependent-content">Theme-Dependent Content</a></li>
+    <li><a href="#centered-images">Centered Images</a></li>
+    <li><a href="#white-background-for-dark-mode">White Background for Dark Mode</a></li>
+    <li><a href="#hidden-elements">Hidden Elements</a></li>
+    <li><a href="#full-width-image">Full-Width Image</a></li>
+    <li><a href="#asciidoc-block-titles">Asciidoc Block Titles</a></li>
+  </ul>
+</nav></nav>
+</div>
+    
+      
+  <div class="page-meta">
+  
+  
+  
+</div>
+
+
+
+<footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li class="list-inline-item" ><a rel="noopener noreferrer" href="mailto:cdd0922@gmail.com" title="Email me" aria-label="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+              <li class="list-inline-item" ><a rel="noopener noreferrer" href="https://github.com/Roxxog/MyPortfolio_test" title="GitHub" aria-label="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              Roxxog
+            
+            &nbsp;&bull;&nbsp;
+          
+          &copy;
+          
+            2026
+          
+
+          
+            &nbsp;&bull;&nbsp;
+          
+          
+            <a href="/">Roxxog 3D Portfolio</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.169.0</a> 을 사용함 &nbsp;&bull;&nbsp; <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> 를 개조한 <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> 테마
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      
+
+
+      
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM&#43;D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/umd/photoswipe.umd.min.js" integrity="sha384-k8EKyYcONphQ7zH4cQ0888JapXwrLTXQl/Ue1/jYgjVYahln1NWpnt2S4IC56LNh" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/umd/photoswipe-lightbox.umd.min.js" integrity="sha384-IiBVbUz6&#43;U&#43;Tbm/ijO2P0XRwcVzNfrMzloNLkrqHkbi6w5H0v6ie4fI9BIO4SwdK" crossorigin="anonymous"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" integrity="sha384-PCSoOZTpbkikBEtd/&#43;uV3WNdc676i9KUf01KOA8CnJotvlx8rRrETbDuwdjqTYvt" crossorigin="anonymous"></script>
+
+
+<script src="/js/beautifulhugo-cabff7a5.d5224b56f8f6ca48dd1b1e5f2f91c9c0cd3cd5b8362f62246ec1a7f2bb520daf.js" integrity="sha256-1SJLVvj2ykjdGx5fL5HJwM081bg2L2IkbsGn8rtSDa8=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>

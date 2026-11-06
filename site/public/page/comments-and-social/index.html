@@ -1,0 +1,939 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ko" itemscope itemtype="https://schema.org/WebPage">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><script>
+      (function() {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else if (saved === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+
+
+  
+  <title>Comments &amp; Social - Roxxog 3D Portfolio</title>
+
+  <meta name="description" content="Comment systems, social sharing, GitHub buttons, and footer icons">
+  <meta name="author" content="Roxxog"/>
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "http://localhost:1313/#website",
+      "@type": "WebSite",
+      "name": "Roxxog 3D Portfolio",
+      "publisher": {
+        "@id": "http://localhost:1313/#organization"
+      },
+      "url": "http://localhost:1313/"
+    },
+    {
+      "@id": "http://localhost:1313/#organization",
+      "@type": "Organization",
+      "name": "Roxxog",
+      "url": "http://localhost:1313/"
+    },
+    {
+      "@id": "http://localhost:1313/page/comments-and-social/#breadcrumb",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "item": "http://localhost:1313/",
+          "name": "홈",
+          "position": 1
+        },
+        {
+          "@type": "ListItem",
+          "item": "http://localhost:1313/page/",
+          "name": "Pages",
+          "position": 2
+        },
+        {
+          "@type": "ListItem",
+          "item": "http://localhost:1313/page/comments-and-social/",
+          "name": "Comments \u0026 Social",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:1313/page/comments-and-social/#webpage",
+      "@type": "WebPage",
+      "breadcrumb": {
+        "@id": "http://localhost:1313/page/comments-and-social/#breadcrumb"
+      },
+      "isPartOf": {
+        "@id": "http://localhost:1313/#website"
+      },
+      "name": "Comments \u0026 Social",
+      "url": "http://localhost:1313/page/comments-and-social/"
+    },
+    {
+      "@id": "http://localhost:1313/#author-roxxog",
+      "@type": "Person",
+      "name": "Roxxog",
+      "url": "http://localhost:1313/"
+    },
+    {
+      "@id": "http://localhost:1313/page/comments-and-social/#article",
+      "@type": "Article",
+      "author": [
+        {
+          "@id": "http://localhost:1313/#author-roxxog"
+        }
+      ],
+      "dateCreated": "0001-01-01T00:00:00+00:00",
+      "dateModified": "2026-10-30T12:21:14+09:00",
+      "datePublished": "0001-01-01T00:00:00+00:00",
+      "description": "Beautiful Hugo supports five comment systems, social sharing buttons, GitHub repository buttons, and 42 social icon links in the footer, plus custom icons of your own.\nComment Systems All comment systems are enabled per-page with comments: true in front matter. Only one comment system can be active at a time.\nDisqus The classic comment system, integrated via Hugo’s built-in Disqus support:\n[Services] [Services.Disqus] Shortname = \"your-disqus-shortname\" [Params] delayDisqus = true delayDisqus = true defers loading until the user clicks a “Show comments” button, improving page load performance.\n",
+      "headline": "Comments \u0026 Social",
+      "image": "http://localhost:1313/img/avatar-icon.png",
+      "inLanguage": "ko",
+      "keywords": [],
+      "mainEntityOfPage": {
+        "@id": "http://localhost:1313/page/comments-and-social/#webpage"
+      },
+      "publisher": {
+        "@id": "http://localhost:1313/#organization"
+      },
+      "wordCount": 899
+    }
+  ]
+}
+</script>
+<meta property="og:url" content="http://localhost:1313/page/comments-and-social/">
+	<meta property="og:site_name" content="Roxxog 3D Portfolio">
+	<meta property="og:title" content="Comments &amp; Social">
+	<meta property="og:description" content="Beautiful Hugo supports five comment systems, social sharing buttons, GitHub repository buttons, and 42 social icon links in the footer, plus custom icons of your own.
+Comment Systems All comment systems are enabled per-page with comments: true in front matter. Only one comment system can be active at a time.
+Disqus The classic comment system, integrated via Hugo’s built-in Disqus support:
+[Services] [Services.Disqus] Shortname = &#34;your-disqus-shortname&#34; [Params] delayDisqus = true delayDisqus = true defers loading until the user clicks a “Show comments” button, improving page load performance.">
+	<meta property="og:locale" content="ko">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="page">
+		<meta property="article:modified_time" content="2026-10-30T12:21:14+09:00">
+<link rel="canonical" href="http://localhost:1313/page/comments-and-social/" />
+  <meta name="twitter:title" content="Comments &amp; Social" />
+  <meta name="twitter:description" content="Comment systems, social sharing, GitHub buttons, and footer icons">
+  <meta name="twitter:image" content="http://localhost:1313/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link href='/img/favicon.ico' rel='icon' type='image/x-icon'/>
+<meta name="generator" content="Hugo 0.169.0">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="Roxxog 3D Portfolio">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.2.0/css/all.css" integrity="sha384-EXatlQyrOJgDaM9/a74ArMzy7/2bTMSrZj8ID1IPeVmc3GncfCugefCFWSLj8JL/" crossorigin="anonymous">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8&#43;LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+<link rel="stylesheet" href="/css/beautifulhugo-f9fdff79.37bd1123df63c5239a538f54f4acba4db8ce4fc432b8f40025f1fd0d5bfba63f.css" integrity="sha256-N70RI99jxSOaU49U9Ky6TbjOT8QyuPQAJfH9DVv7pj8=" crossorigin="anonymous" />
+  
+<link rel="stylesheet" media="print" href="/css/print.9ea1f3dd144aefb5611357af9799c2d7ffcc61e2aeec77d2770b857a9b85f3e7.css" integrity="sha256-nqHz3RRK77VhE1evl5nC1//MYeKu7HfSdwuFepuF8&#43;c=" crossorigin="anonymous" />
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" />
+<link rel="stylesheet" id="hljs-dark" media="(prefers-color-scheme: dark)" href="/css/syntax-dark.bcab7cbda70172cbe05403f32b3e40267f820f627c6b8ea82f1cad666b2c97b4.css" integrity="sha256-vKt8vacBcsvgVAPzKz5AJn&#43;CD2J8a46oLxytZmssl7Q=" crossorigin="anonymous" />
+  <script>
+    
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var hljsDark = document.getElementById('hljs-dark');
+      if (hljsDark && (saved === 'dark' || saved === 'light')) {
+        hljsDark.media = (saved === 'dark') ? 'all' : 'not all';
+      }
+    })();
+  </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous">
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light navbar-custom fixed-top">
+  <div class="container-fluid">
+    
+    <a class="navbar-brand" href="/">Roxxog 3D Portfolio</a>
+    <div class="d-flex align-items-center">
+      
+      
+      
+      <button class="theme-toggle" id="toc-toggle" aria-controls="toc-panel" aria-expanded="false" aria-label="목차" data-bs-toggle="tooltip" data-bs-placement="bottom" title="목차">
+        <span class="fas fa-list"></span>
+      </button>
+      
+      
+      
+      <button class="theme-toggle" id="theme-toggle" aria-label="테마" data-bs-toggle="tooltip" data-bs-placement="bottom" data-tooltip-auto="자동 (시스템 따름)" data-tooltip-light="라이트 모드" data-tooltip-dark="다크 모드" title="자동 (시스템 따름)">
+        <span class="fas fa-circle-half-stroke" id="theme-icon-auto"></span>
+        <span class="fas fa-sun" id="theme-icon-light" style="display: none;"></span>
+        <span class="fas fa-moon" id="theme-icon-dark" style="display: none;"></span>
+      </button>
+      
+      
+      <button class="theme-toggle" id="search-toggle" aria-label="검색" data-bs-toggle="tooltip" data-bs-placement="bottom" title="검색">
+        <span class="fas fa-magnifying-glass"></span>
+      </button>
+      
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="네비게이션 토글">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="navbar-nav ms-auto">
+        
+          
+          
+            <li class="nav-item" >
+              <a class="nav-link" title="작품 보기" href="/#projects">작품 보기</a>
+            </li>
+          
+        
+          
+          
+            <li class="nav-item" >
+              <a class="nav-link" title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+
+          
+
+        
+      </ul>
+      
+
+
+    </div>
+
+    
+    
+      
+        <div class="avatar-container">
+          <div class="avatar-img-border">
+            <a title="Roxxog 3D Portfolio" href="/">
+              <img class="avatar-img" src="/img/avatar-icon.png" alt="Roxxog 3D Portfolio" />
+             
+            </a>
+          </div>
+        </div>
+      
+    
+
+  </div>
+</nav>
+
+
+
+<div id="navbar-search-overlay" class="navbar-search-overlay" aria-hidden="true" role="search">
+  <div class="navbar-search-inner container-fluid">
+    <span class="fas fa-magnifying-glass navbar-search-icon" aria-hidden="true"></span>
+    <input type="search" id="navbar-search-input" class="navbar-search-input"
+           placeholder="게시물과 페이지 검색…"
+           aria-label="검색"
+           autocomplete="off">
+    <button id="navbar-search-close" class="theme-toggle" aria-label="검색 닫기">
+      <span class="fas fa-xmark"></span>
+    </button>
+  </div>
+  <div id="navbar-search-results" class="navbar-search-results container-fluid" aria-live="polite"></div>
+</div>
+<script>
+  window.searchProviderConfig = {
+    provider: "fuse",
+    searchIndexURL: "/index.json",
+    searchPageURL: "/search"
+  };
+  window.searchConfig = {
+    noResultsText: "결과 없음: ",
+    untitledText: "제목 없음"
+  };
+</script>
+
+
+
+
+
+
+    
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <div class="page-heading">
+              
+              <h1>Comments &amp; Social</h1>
+              
+              
+                <hr class="small">
+              
+              
+
+  
+    <span class="page-subheading">Comment systems, social sharing, GitHub buttons, and footer icons</span>
+  
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+
+
+  </header>
+
+
+    
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <article role="main" class="blog-post">
+          
+
+
+          
+
+
+          
+          <p>Beautiful Hugo supports five comment systems, social sharing buttons, GitHub repository buttons, and 42 social icon links in the footer, plus custom icons of your own.</p>
+<h2 id="comment-systems">Comment Systems</h2>
+<p>All comment systems are enabled per-page with <code>comments: true</code> in front matter. Only one comment system can be active at a time.</p>
+<h3 id="disqus">Disqus</h3>
+<p>The classic comment system, integrated via Hugo&rsquo;s built-in Disqus support:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Services</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">Services</span><span class="p">.</span><span class="nx">Disqus</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Shortname</span> <span class="p">=</span> <span class="s2">&#34;your-disqus-shortname&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">delayDisqus</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></div><p><code>delayDisqus = true</code> defers loading until the user clicks a &ldquo;Show comments&rdquo; button, improving page load performance.</p>
+<h3 id="giscus">Giscus</h3>
+<p>Giscus uses GitHub Discussions as a comment backend. It&rsquo;s privacy-friendly and requires no external service:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">giscus</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">repo</span> <span class="p">=</span> <span class="s2">&#34;owner/repo&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">repoId</span> <span class="p">=</span> <span class="s2">&#34;R_kgDO...&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">category</span> <span class="p">=</span> <span class="s2">&#34;Announcements&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">categoryId</span> <span class="p">=</span> <span class="s2">&#34;DIC_kwDO...&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">mapping</span> <span class="p">=</span> <span class="s2">&#34;pathname&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">strict</span> <span class="p">=</span> <span class="s2">&#34;0&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">reactionsEnabled</span> <span class="p">=</span> <span class="s2">&#34;1&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">emitMetadata</span> <span class="p">=</span> <span class="s2">&#34;0&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">inputPosition</span> <span class="p">=</span> <span class="s2">&#34;top&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;preferred_color_scheme&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">lang</span> <span class="p">=</span> <span class="s2">&#34;en&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">lazyLoading</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></div><p>Get your configuration values from <a href="https://giscus.app">giscus.app</a>.</p>
+<h3 id="utterances">Utterances</h3>
+<p>Utterances uses GitHub Issues as a comment backend — a lighter alternative to Giscus:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">utterances</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">repo</span> <span class="p">=</span> <span class="s2">&#34;owner/repo&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">issueTerm</span> <span class="p">=</span> <span class="s2">&#34;pathname&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;preferred-color-scheme&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">label</span> <span class="p">=</span> <span class="s2">&#34;comment&#34;</span>
+</span></span></code></pre></div><p>Get your configuration from <a href="https://utteranc.es">utteranc.es</a>.</p>
+<h3 id="cusdis">Cusdis</h3>
+<p>Cusdis is a lightweight, privacy-friendly comment system:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">cusdisID</span> <span class="p">=</span> <span class="s2">&#34;your-app-id&#34;</span>
+</span></span></code></pre></div><p>Get your App ID from <a href="https://cusdis.com">cusdis.com</a>.</p>
+<h3 id="staticman">Staticman</h3>
+<p>Staticman adds comments as static data files via Git pull requests, with optional reCAPTCHA spam protection:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">staticman</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">api</span> <span class="p">=</span> <span class="s2">&#34;https://your-staticman-instance.herokuapp.com/v3/entry/github/owner/repo/main/comments&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">staticman</span><span class="p">.</span><span class="nx">recaptcha</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">sitekey</span> <span class="p">=</span> <span class="s2">&#34;your-site-key&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">secret</span> <span class="p">=</span> <span class="s2">&#34;your-secret&#34;</span>
+</span></span></code></pre></div><h2 id="social-share-buttons">Social Share Buttons</h2>
+<p>Enable social sharing buttons on posts with <code>socialShare = true</code>. The buttons appear at the bottom of each post:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">socialShare</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></div><p>The following platforms are supported:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Platform</th>
+					<th>Icon</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Twitter / X</td>
+					<td>X logo</td>
+			</tr>
+			<tr>
+					<td>Facebook</td>
+					<td>Facebook logo</td>
+			</tr>
+			<tr>
+					<td>Reddit</td>
+					<td>Reddit logo</td>
+			</tr>
+			<tr>
+					<td>LinkedIn</td>
+					<td>LinkedIn logo</td>
+			</tr>
+			<tr>
+					<td>StumbleUpon</td>
+					<td>StumbleUpon logo</td>
+			</tr>
+			<tr>
+					<td>Pinterest</td>
+					<td>Pinterest logo</td>
+			</tr>
+			<tr>
+					<td>Email</td>
+					<td>Envelope icon</td>
+			</tr>
+	</tbody>
+</table>
+<p>Override per page:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">My Post</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">socialShare</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span></code></pre></div><h2 id="github-buttons">GitHub Buttons</h2>
+<p>Show GitHub repository buttons (star, watch, fork, follow) on any page using front matter:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">My Project</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">ghRepo</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;halogenica/beautifulhugo&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">ghBadge</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;star&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;watch&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;fork&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">ghCount</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span></code></pre></div><table>
+	<thead>
+			<tr>
+					<th>Param</th>
+					<th>Type</th>
+					<th>Default</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>ghRepo</code></td>
+					<td>string</td>
+					<td>—</td>
+					<td>GitHub repo in <code>owner/repo</code> format (per-page front matter only)</td>
+			</tr>
+			<tr>
+					<td><code>ghBadge</code></td>
+					<td>list</td>
+					<td>—</td>
+					<td>Which buttons to show: <code>star</code>, <code>watch</code>, <code>fork</code>, <code>follow</code>. Can be set per-page or site-wide via <code>Params.ghBadge</code></td>
+			</tr>
+			<tr>
+					<td><code>ghCount</code></td>
+					<td>bool</td>
+					<td><code>true</code></td>
+					<td>Show count numbers on buttons. Can be set per-page or site-wide via <code>Params.ghCount</code></td>
+			</tr>
+	</tbody>
+</table>
+<p>The buttons are loaded from <a href="https://ghbtns.com">ghbtns.com</a> via lightweight iframes.</p>
+<p>You can also set <code>ghBadge</code> and <code>ghCount</code> site-wide so they apply to every page that has a <code>ghRepo</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">ghBadge</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;star&#34;</span><span class="p">,</span> <span class="s2">&#34;fork&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">ghCount</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></div><h2 id="footer-social-icons">Footer Social Icons</h2>
+<p>Add social links under <code>[Params.author]</code> and they appear as icons in the footer. Beautiful Hugo supports 42 platforms:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Key</th>
+					<th>Platform</th>
+					<th>URL Pattern</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>email</code></td>
+					<td>Email</td>
+					<td><code>mailto:%s</code></td>
+			</tr>
+			<tr>
+					<td><code>facebook</code></td>
+					<td>Facebook</td>
+					<td><code>https://www.facebook.com/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>github</code></td>
+					<td>GitHub</td>
+					<td><code>https://github.com/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>gitlab</code></td>
+					<td>GitLab</td>
+					<td><code>https://gitlab.com/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>git</code></td>
+					<td>Git (custom URL)</td>
+					<td><code>%s</code> (use full URL)</td>
+			</tr>
+			<tr>
+					<td><code>bitbucket</code></td>
+					<td>Bitbucket</td>
+					<td><code>https://bitbucket.org/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>twitter</code></td>
+					<td>Twitter / X</td>
+					<td><code>https://twitter.com/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>slack</code></td>
+					<td>Slack</td>
+					<td><code>https://%s.slack.com/</code></td>
+			</tr>
+			<tr>
+					<td><code>reddit</code></td>
+					<td>Reddit</td>
+					<td><code>https://reddit.com/u/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>linkedin</code></td>
+					<td>LinkedIn</td>
+					<td><code>https://linkedin.com/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>xing</code></td>
+					<td>Xing</td>
+					<td><code>https://www.xing.com/profile/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>stackoverflow</code></td>
+					<td>Stack Overflow</td>
+					<td><code>https://stackoverflow.com/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>snapchat</code></td>
+					<td>Snapchat</td>
+					<td><code>https://www.snapchat.com/add/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>instagram</code></td>
+					<td>Instagram</td>
+					<td><code>https://www.instagram.com/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>youtube</code></td>
+					<td>YouTube</td>
+					<td><code>https://www.youtube.com/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>soundcloud</code></td>
+					<td>SoundCloud</td>
+					<td><code>https://soundcloud.com/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>spotify</code></td>
+					<td>Spotify</td>
+					<td><code>https://open.spotify.com/user/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>bandcamp</code></td>
+					<td>Bandcamp</td>
+					<td><code>https://%s.bandcamp.com/</code></td>
+			</tr>
+			<tr>
+					<td><code>itchio</code></td>
+					<td>itch.io</td>
+					<td><code>https://itch.io/profile/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>keybase</code></td>
+					<td>Keybase</td>
+					<td><code>https://keybase.io/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>vk</code></td>
+					<td>VK</td>
+					<td><code>https://vk.com/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>paypal</code></td>
+					<td>PayPal</td>
+					<td><code>https://paypal.me/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>telegram</code></td>
+					<td>Telegram</td>
+					<td><code>https://telegram.me/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>500px</code></td>
+					<td>500px</td>
+					<td><code>https://500px.com/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>codepen</code></td>
+					<td>CodePen</td>
+					<td><code>https://codepen.io/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>kaggle</code></td>
+					<td>Kaggle</td>
+					<td><code>https://www.kaggle.com/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>mastodon</code></td>
+					<td>Mastodon</td>
+					<td><code>https://%s</code> (use full URL; <code>rel=&quot;me&quot;</code> for verification)</td>
+			</tr>
+			<tr>
+					<td><code>weibo</code></td>
+					<td>Weibo</td>
+					<td><code>https://weibo.com/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>medium</code></td>
+					<td>Medium</td>
+					<td><code>https://medium.com/@%s</code></td>
+			</tr>
+			<tr>
+					<td><code>discord</code></td>
+					<td>Discord</td>
+					<td><code>https://discord.gg/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>strava</code></td>
+					<td>Strava</td>
+					<td><code>https://www.strava.com/athletes/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>steam</code></td>
+					<td>Steam</td>
+					<td><code>https://steamcommunity.com/id/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>quora</code></td>
+					<td>Quora</td>
+					<td><code>https://www.quora.com/profile/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>amazonwishlist</code></td>
+					<td>Amazon Wishlist</td>
+					<td><code>https://amzn.com/w/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>slideshare</code></td>
+					<td>SlideShare</td>
+					<td><code>https://www.slideshare.net/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>angellist</code></td>
+					<td>AngelList</td>
+					<td><code>https://www.angel.co/p/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>about</code></td>
+					<td>Custom link</td>
+					<td><code>%s</code> (use full URL)</td>
+			</tr>
+			<tr>
+					<td><code>lastfm</code></td>
+					<td>Last.fm</td>
+					<td><code>https://www.last.fm/user/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>bluesky</code></td>
+					<td>Bluesky</td>
+					<td><code>https://bsky.app/profile/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>orcid</code></td>
+					<td>ORCID</td>
+					<td><code>https://orcid.org/%s</code></td>
+			</tr>
+			<tr>
+					<td><code>googlescholar</code></td>
+					<td>Google Scholar</td>
+					<td><code>https://scholar.google.com/citations?user=%s</code></td>
+			</tr>
+			<tr>
+					<td><code>goodreads</code></td>
+					<td>Goodreads</td>
+					<td><code>https://goodreads.com/%s</code></td>
+			</tr>
+	</tbody>
+</table>
+<p>If a value starts with <code>http://</code> or <code>https://</code>, it is used directly as the URL. Otherwise, it is interpolated into the default URL pattern.</p>
+<p>For <strong>LinkedIn</strong>, the value should include the path prefix (e.g. <code>in/username</code> for a personal profile or <code>company/username</code> for a company page). If you provide a bare username with no <code>/</code>, the theme automatically prepends <code>in/</code> for backward compatibility.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">author</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Some Person&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">github</span> <span class="p">=</span> <span class="s2">&#34;username&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">linkedin</span> <span class="p">=</span> <span class="s2">&#34;in/username&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">mastodon</span> <span class="p">=</span> <span class="s2">&#34;https://mastodon.social/@username&#34;</span>
+</span></span></code></pre></div><h3 id="custom-icons">Custom Icons</h3>
+<p>Platforms that are not in the table go under <code>[[Params.author.custom]]</code>. Each
+entry carries its own link, label and icon class, and appears after the
+built-in icons:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">author</span><span class="p">.</span><span class="nx">custom</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">href</span> <span class="p">=</span> <span class="s2">&#34;https://social.example/@username&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;GoToSocial&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">icon</span> <span class="p">=</span> <span class="s2">&#34;ds-gotosocial&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">rel</span> <span class="p">=</span> <span class="s2">&#34;me&#34;</span>          <span class="c"># optional; &#34;me&#34; enables Fediverse link verification</span>
+</span></span></code></pre></div><p><code>icon</code> is a CSS class. Any Font Awesome free class works with no further
+setup. To use a different icon font, load its stylesheet from your own
+<code>layouts/_partials/head_custom.html</code>.</p>
+<h4 id="example-fediverse-icons">Example: Fediverse icons</h4>
+<p><a href="https://icons.wedistribute.org/">Decentralized Social Icons</a> covers about 90
+Fediverse platforms and protocols that Font Awesome does not, such as
+GoToSocial, Friendica, Pixelfed, PeerTube and Lemmy. The theme does not ship
+the font, because most sites do not need it, but a site can add it in three
+steps.</p>
+<ol>
+<li>
+<p>Copy <code>DSoci.css</code>, <code>DSoci.woff2</code> and <code>DSoci.woff</code> from the
+<a href="https://codeberg.org/WeDistribute/preview-decentralized-social-icons">icon set</a>
+into your site at <code>static/dsoci/</code>. Keep the <code>LICENSES</code> directory and the
+<code>.license</code> files with them: the set is <a href="https://reuse.software/">REUSE</a>
+compliant, and each logo has its own copyright holder.</p>
+</li>
+<li>
+<p>Load the stylesheet from <code>layouts/_partials/head_custom.html</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;</span><span class="cp">{{</span><span class="w"> </span><span class="s">&#34;dsoci/DSoci.css&#34;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">relURL</span><span class="w"> </span><span class="cp">}}</span><span class="s">&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>Add one entry per account. The class is <code>ds-</code> plus the project name:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">author</span><span class="p">.</span><span class="nx">custom</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">href</span> <span class="p">=</span> <span class="s2">&#34;https://social.example/@username&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;GoToSocial&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">icon</span> <span class="p">=</span> <span class="s2">&#34;ds-gotosocial&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">rel</span> <span class="p">=</span> <span class="s2">&#34;me&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">author</span><span class="p">.</span><span class="nx">custom</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">href</span> <span class="p">=</span> <span class="s2">&#34;https://pixelfed.example/username&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;Pixelfed&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">icon</span> <span class="p">=</span> <span class="s2">&#34;ds-pixelfed&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">rel</span> <span class="p">=</span> <span class="s2">&#34;me&#34;</span>
+</span></span></code></pre></div></li>
+</ol>
+<p>The icon font sets its own <code>font-size</code>. If a glyph looks too large or too
+small next to the built-in icons, correct it in your own CSS:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">footer-links</span> <span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s2">&#34;ds-&#34;</span><span class="o">]</span> <span class="p">{</span> <span class="k">font-size</span><span class="p">:</span> <span class="mf">0.9</span><span class="kt">em</span><span class="p">;</span> <span class="p">}</span>
+</span></span></code></pre></div>
+          
+          
+
+
+
+        
+        
+
+        
+
+        
+        
+      </article>
+
+      
+
+
+      
+    </div>
+  </div>
+</div>
+
+    
+    <div class="offcanvas offcanvas-start toc-panel" id="toc-panel" tabindex="-1" aria-labelledby="toc-title" data-toc-mode="headings">
+  <div class="offcanvas-header">
+    <span class="offcanvas-title toc-title" id="toc-title">목차</span>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="목차 닫기"></button>
+  </div>
+  <nav class="offcanvas-body toc-body"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#comment-systems">Comment Systems</a>
+      <ul>
+        <li><a href="#disqus">Disqus</a></li>
+        <li><a href="#giscus">Giscus</a></li>
+        <li><a href="#utterances">Utterances</a></li>
+        <li><a href="#cusdis">Cusdis</a></li>
+        <li><a href="#staticman">Staticman</a></li>
+      </ul>
+    </li>
+    <li><a href="#social-share-buttons">Social Share Buttons</a></li>
+    <li><a href="#github-buttons">GitHub Buttons</a></li>
+    <li><a href="#footer-social-icons">Footer Social Icons</a>
+      <ul>
+        <li><a href="#custom-icons">Custom Icons</a>
+          <ul>
+            <li><a href="#example-fediverse-icons">Example: Fediverse icons</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></nav>
+</div>
+    
+      
+  <div class="page-meta">
+  
+  
+  
+</div>
+
+
+
+<footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li class="list-inline-item" ><a rel="noopener noreferrer" href="mailto:cdd0922@gmail.com" title="Email me" aria-label="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+              <li class="list-inline-item" ><a rel="noopener noreferrer" href="https://github.com/Roxxog/MyPortfolio_test" title="GitHub" aria-label="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              Roxxog
+            
+            &nbsp;&bull;&nbsp;
+          
+          &copy;
+          
+            2026
+          
+
+          
+            &nbsp;&bull;&nbsp;
+          
+          
+            <a href="/">Roxxog 3D Portfolio</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.169.0</a> 을 사용함 &nbsp;&bull;&nbsp; <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> 를 개조한 <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> 테마
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      
+
+
+      
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM&#43;D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/umd/photoswipe.umd.min.js" integrity="sha384-k8EKyYcONphQ7zH4cQ0888JapXwrLTXQl/Ue1/jYgjVYahln1NWpnt2S4IC56LNh" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/umd/photoswipe-lightbox.umd.min.js" integrity="sha384-IiBVbUz6&#43;U&#43;Tbm/ijO2P0XRwcVzNfrMzloNLkrqHkbi6w5H0v6ie4fI9BIO4SwdK" crossorigin="anonymous"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" integrity="sha384-PCSoOZTpbkikBEtd/&#43;uV3WNdc676i9KUf01KOA8CnJotvlx8rRrETbDuwdjqTYvt" crossorigin="anonymous"></script>
+
+
+<script src="/js/beautifulhugo-cabff7a5.d5224b56f8f6ca48dd1b1e5f2f91c9c0cd3cd5b8362f62246ec1a7f2bb520daf.js" integrity="sha256-1SJLVvj2ykjdGx5fL5HJwM081bg2L2IkbsGn8rtSDa8=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>

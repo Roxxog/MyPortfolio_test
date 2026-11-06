@@ -1,0 +1,1834 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ko" itemscope itemtype="https://schema.org/WebPage">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><script>
+      (function() {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else if (saved === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+
+
+  
+  <title>Configuration - Roxxog 3D Portfolio</title>
+
+  <meta name="description" content="Every setting Beautiful Hugo supports">
+  <meta name="author" content="Roxxog"/>
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "http://localhost:1313/#website",
+      "@type": "WebSite",
+      "name": "Roxxog 3D Portfolio",
+      "publisher": {
+        "@id": "http://localhost:1313/#organization"
+      },
+      "url": "http://localhost:1313/"
+    },
+    {
+      "@id": "http://localhost:1313/#organization",
+      "@type": "Organization",
+      "name": "Roxxog",
+      "url": "http://localhost:1313/"
+    },
+    {
+      "@id": "http://localhost:1313/page/configuration/#breadcrumb",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "item": "http://localhost:1313/",
+          "name": "홈",
+          "position": 1
+        },
+        {
+          "@type": "ListItem",
+          "item": "http://localhost:1313/page/",
+          "name": "Pages",
+          "position": 2
+        },
+        {
+          "@type": "ListItem",
+          "item": "http://localhost:1313/page/configuration/",
+          "name": "Configuration",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "@id": "http://localhost:1313/page/configuration/#webpage",
+      "@type": "WebPage",
+      "breadcrumb": {
+        "@id": "http://localhost:1313/page/configuration/#breadcrumb"
+      },
+      "isPartOf": {
+        "@id": "http://localhost:1313/#website"
+      },
+      "name": "Configuration",
+      "url": "http://localhost:1313/page/configuration/"
+    },
+    {
+      "@id": "http://localhost:1313/#author-roxxog",
+      "@type": "Person",
+      "name": "Roxxog",
+      "url": "http://localhost:1313/"
+    },
+    {
+      "@id": "http://localhost:1313/page/configuration/#article",
+      "@type": "Article",
+      "author": [
+        {
+          "@id": "http://localhost:1313/#author-roxxog"
+        }
+      ],
+      "dateCreated": "0001-01-01T00:00:00+00:00",
+      "dateModified": "2026-10-30T12:21:14+09:00",
+      "datePublished": "0001-01-01T00:00:00+00:00",
+      "description": "This page is a complete reference for every configuration option in Beautiful Hugo. All settings go in your site’s hugo.toml (or config.toml/config.yaml).\nRequirements The theme ships its own hugo.toml with a version constraint:\n[module] [module.hugoVersion] min = \"0.146.2\" extended = false Use Hugo 0.146.2 or later. The standard edition is sufficient; the theme has no SCSS and does not encode WebP images. If your Hugo version is too old, Hugo writes a warning and the theme stops the build with an error message.\n",
+      "headline": "Configuration",
+      "image": "http://localhost:1313/img/avatar-icon.png",
+      "inLanguage": "ko",
+      "keywords": [],
+      "mainEntityOfPage": {
+        "@id": "http://localhost:1313/page/configuration/#webpage"
+      },
+      "publisher": {
+        "@id": "http://localhost:1313/#organization"
+      },
+      "timeRequired": "PT22M",
+      "wordCount": 4653
+    }
+  ]
+}
+</script>
+<meta property="og:url" content="http://localhost:1313/page/configuration/">
+	<meta property="og:site_name" content="Roxxog 3D Portfolio">
+	<meta property="og:title" content="Configuration">
+	<meta property="og:description" content="This page is a complete reference for every configuration option in Beautiful Hugo. All settings go in your site’s hugo.toml (or config.toml/config.yaml).
+Requirements The theme ships its own hugo.toml with a version constraint:
+[module] [module.hugoVersion] min = &#34;0.146.2&#34; extended = false Use Hugo 0.146.2 or later. The standard edition is sufficient; the theme has no SCSS and does not encode WebP images. If your Hugo version is too old, Hugo writes a warning and the theme stops the build with an error message.">
+	<meta property="og:locale" content="ko">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="page">
+		<meta property="article:modified_time" content="2026-10-30T12:21:14+09:00">
+<link rel="canonical" href="http://localhost:1313/page/configuration/" />
+  <meta name="twitter:title" content="Configuration" />
+  <meta name="twitter:description" content="Every setting Beautiful Hugo supports">
+  <meta name="twitter:image" content="http://localhost:1313/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link href='/img/favicon.ico' rel='icon' type='image/x-icon'/>
+<meta name="generator" content="Hugo 0.169.0">
+<link rel="alternate" href="/index.xml" type="application/rss+xml" title="Roxxog 3D Portfolio">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.2.0/css/all.css" integrity="sha384-EXatlQyrOJgDaM9/a74ArMzy7/2bTMSrZj8ID1IPeVmc3GncfCugefCFWSLj8JL/" crossorigin="anonymous">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8&#43;LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+<link rel="stylesheet" href="/css/beautifulhugo-f9fdff79.37bd1123df63c5239a538f54f4acba4db8ce4fc432b8f40025f1fd0d5bfba63f.css" integrity="sha256-N70RI99jxSOaU49U9Ky6TbjOT8QyuPQAJfH9DVv7pj8=" crossorigin="anonymous" />
+  
+<link rel="stylesheet" media="print" href="/css/print.9ea1f3dd144aefb5611357af9799c2d7ffcc61e2aeec77d2770b857a9b85f3e7.css" integrity="sha256-nqHz3RRK77VhE1evl5nC1//MYeKu7HfSdwuFepuF8&#43;c=" crossorigin="anonymous" />
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" />
+<link rel="stylesheet" id="hljs-dark" media="(prefers-color-scheme: dark)" href="/css/syntax-dark.bcab7cbda70172cbe05403f32b3e40267f820f627c6b8ea82f1cad666b2c97b4.css" integrity="sha256-vKt8vacBcsvgVAPzKz5AJn&#43;CD2J8a46oLxytZmssl7Q=" crossorigin="anonymous" />
+  <script>
+    
+    (function() {
+      var saved = localStorage.getItem('theme');
+      var hljsDark = document.getElementById('hljs-dark');
+      if (hljsDark && (saved === 'dark' || saved === 'light')) {
+        hljsDark.media = (saved === 'dark') ? 'all' : 'not all';
+      }
+    })();
+  </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous">
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light navbar-custom fixed-top">
+  <div class="container-fluid">
+    
+    <a class="navbar-brand" href="/">Roxxog 3D Portfolio</a>
+    <div class="d-flex align-items-center">
+      
+      
+      
+      <button class="theme-toggle" id="toc-toggle" aria-controls="toc-panel" aria-expanded="false" aria-label="목차" data-bs-toggle="tooltip" data-bs-placement="bottom" title="목차">
+        <span class="fas fa-list"></span>
+      </button>
+      
+      
+      
+      <button class="theme-toggle" id="theme-toggle" aria-label="테마" data-bs-toggle="tooltip" data-bs-placement="bottom" data-tooltip-auto="자동 (시스템 따름)" data-tooltip-light="라이트 모드" data-tooltip-dark="다크 모드" title="자동 (시스템 따름)">
+        <span class="fas fa-circle-half-stroke" id="theme-icon-auto"></span>
+        <span class="fas fa-sun" id="theme-icon-light" style="display: none;"></span>
+        <span class="fas fa-moon" id="theme-icon-dark" style="display: none;"></span>
+      </button>
+      
+      
+      <button class="theme-toggle" id="search-toggle" aria-label="검색" data-bs-toggle="tooltip" data-bs-placement="bottom" title="검색">
+        <span class="fas fa-magnifying-glass"></span>
+      </button>
+      
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="네비게이션 토글">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="navbar-nav ms-auto">
+        
+          
+          
+            <li class="nav-item" >
+              <a class="nav-link" title="작품 보기" href="/#projects">작품 보기</a>
+            </li>
+          
+        
+          
+          
+            <li class="nav-item" >
+              <a class="nav-link" title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+
+          
+
+        
+      </ul>
+      
+
+
+    </div>
+
+    
+    
+      
+        <div class="avatar-container">
+          <div class="avatar-img-border">
+            <a title="Roxxog 3D Portfolio" href="/">
+              <img class="avatar-img" src="/img/avatar-icon.png" alt="Roxxog 3D Portfolio" />
+             
+            </a>
+          </div>
+        </div>
+      
+    
+
+  </div>
+</nav>
+
+
+
+<div id="navbar-search-overlay" class="navbar-search-overlay" aria-hidden="true" role="search">
+  <div class="navbar-search-inner container-fluid">
+    <span class="fas fa-magnifying-glass navbar-search-icon" aria-hidden="true"></span>
+    <input type="search" id="navbar-search-input" class="navbar-search-input"
+           placeholder="게시물과 페이지 검색…"
+           aria-label="검색"
+           autocomplete="off">
+    <button id="navbar-search-close" class="theme-toggle" aria-label="검색 닫기">
+      <span class="fas fa-xmark"></span>
+    </button>
+  </div>
+  <div id="navbar-search-results" class="navbar-search-results container-fluid" aria-live="polite"></div>
+</div>
+<script>
+  window.searchProviderConfig = {
+    provider: "fuse",
+    searchIndexURL: "/index.json",
+    searchPageURL: "/search"
+  };
+  window.searchConfig = {
+    noResultsText: "결과 없음: ",
+    untitledText: "제목 없음"
+  };
+</script>
+
+
+
+
+
+
+    
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <div class="page-heading">
+              
+              <h1>Configuration</h1>
+              
+              
+                <hr class="small">
+              
+              
+
+  
+    <span class="page-subheading">Every setting Beautiful Hugo supports</span>
+  
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+
+
+  </header>
+
+
+    
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <article role="main" class="blog-post">
+          
+
+
+          
+
+
+          
+          <p>This page is a complete reference for every configuration option in Beautiful Hugo. All settings go in your site&rsquo;s <code>hugo.toml</code> (or <code>config.toml</code>/<code>config.yaml</code>).</p>
+<h2 id="requirements">Requirements</h2>
+<p>The theme ships its own <code>hugo.toml</code> with a version constraint:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">module</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">module</span><span class="p">.</span><span class="nx">hugoVersion</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">min</span> <span class="p">=</span> <span class="s2">&#34;0.146.2&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">extended</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span></code></pre></div><p>Use Hugo 0.146.2 or later. The <strong>standard</strong> edition is sufficient; the theme has no SCSS and does not encode WebP images. If your Hugo version is too old, Hugo writes a warning and the theme stops the build with an error message.</p>
+<p>The same file supplies the theme defaults <code>colorScheme = &quot;auto&quot;</code> and <code>mathEngine = &quot;katex&quot;</code>. Your site configuration overrides them.</p>
+<p>Hugo does not merge all sections of a theme configuration into your site configuration. Markup settings (<code>[markup.highlight]</code>, <code>[markup.goldmark]</code>) and <code>[frontmatter]</code> must be in your own site configuration — see <a href="#syntax-highlighting">Syntax Highlighting</a>, <a href="../markdown-extensions/">Markdown Extensions</a>, and <a href="#last-modified-dates">Last Modified Dates</a>.</p>
+<p>Hugo lowercases all configuration keys, so <code>[Params.author]</code> and <code>[params.author]</code> are the same key. This page uses both spellings for historical reasons; new snippets use the lowercase form.</p>
+<h2 id="core-settings">Core Settings</h2>
+<table>
+	<thead>
+			<tr>
+					<th>Param</th>
+					<th>Type</th>
+					<th>Default</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>homeTitle</code></td>
+					<td>string</td>
+					<td>site title</td>
+					<td>Brand name shown in the navbar, home page header, and footer link. Falls back to the site title when unset</td>
+			</tr>
+			<tr>
+					<td><code>subtitle</code></td>
+					<td>string</td>
+					<td><code>&quot;&quot;</code></td>
+					<td>Site subtitle shown under the home page title</td>
+			</tr>
+			<tr>
+					<td><code>mainSections</code></td>
+					<td>list</td>
+					<td><code>[&quot;post&quot;, &quot;posts&quot;]</code></td>
+					<td>Content sections treated as &ldquo;posts&rdquo; on the home page and archive page</td>
+			</tr>
+			<tr>
+					<td><code>logo</code></td>
+					<td>string</td>
+					<td>—</td>
+					<td>Path to a square avatar/logo image. When the file is found via Hugo&rsquo;s asset pipeline (<code>resources.Get</code>), it is automatically resized (300×300, quality 100) and keeps its source format. If the file is not found as a resource, the raw path is used as-is.</td>
+			</tr>
+			<tr>
+					<td><code>favicon</code></td>
+					<td>string</td>
+					<td>—</td>
+					<td>Path to favicon</td>
+			</tr>
+			<tr>
+					<td><code>share_img</code></td>
+					<td>string</td>
+					<td><code>logo</code></td>
+					<td>Default social sharing image for pages that set no <code>share_img</code> or <code>image</code> of their own. A wide image suits Twitter cards better than the square <code>logo</code></td>
+			</tr>
+			<tr>
+					<td><code>dateFormat</code></td>
+					<td>string</td>
+					<td>i18n default</td>
+					<td>Date format string. Accepts Hugo locale tokens (e.g. <code>&quot;:date_long&quot;</code>, <code>&quot;:date_medium&quot;</code>, <code>&quot;:date_short&quot;</code>) for automatic localization, or a Go time layout string based on the reference time <code>Mon Jan 2 15:04:05 MST 2006</code> (e.g. <code>&quot;January 2, 2006&quot;</code> or <code>&quot;2006-01-02&quot;</code>). <strong>Do not use an example date</strong> like <code>&quot;2023-10-15&quot;</code> — the year must be <code>2006</code>, month <code>01</code>, and day <code>02</code>. Locale tokens are recommended for multilingual sites. The theme validates <code>dateFormat</code> at build time and will emit a build error if it detects an invalid format (e.g. a date that doesn&rsquo;t use Go&rsquo;s reference time).</td>
+			</tr>
+			<tr>
+					<td><code>since</code></td>
+					<td>int</td>
+					<td>—</td>
+					<td>Start year for copyright range (e.g. <code>2015 - 2026</code>)</td>
+			</tr>
+	</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">subtitle</span> <span class="p">=</span> <span class="s2">&#34;Build a beautiful and simple website in minutes&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">mainSections</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;post&#34;</span><span class="p">,</span> <span class="s2">&#34;posts&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">logo</span> <span class="p">=</span> <span class="s2">&#34;/img/avatar-icon.png&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">favicon</span> <span class="p">=</span> <span class="s2">&#34;/img/favicon.ico&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">dateFormat</span> <span class="p">=</span> <span class="s2">&#34;:date_long&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">since</span> <span class="p">=</span> <span class="mi">2015</span>
+</span></span></code></pre></div><h2 id="last-modified-dates">Last Modified Dates</h2>
+<p>The post meta and the page meta show a &ldquo;last modified&rdquo; date when it differs from the publication date, and the JSON-LD structured data uses it for <code>dateModified</code>. Both read <code>.Lastmod</code>.</p>
+<p>With <code>enableGitInfo = true</code>, Hugo can take that date from the last commit that touched the file. The <code>[frontmatter]</code> block sets the order of the sources:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">enableGitInfo</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">frontmatter</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">lastmod</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;:git&#34;</span><span class="p">,</span> <span class="s2">&#34;lastmod&#34;</span><span class="p">,</span> <span class="s2">&#34;date&#34;</span><span class="p">]</span>
+</span></span></code></pre></div><p>Hugo uses the first source that has a value: the git commit date, then a <code>lastmod</code> field in the front matter, then the page date. This is also Hugo&rsquo;s default order, but the explicit list records the intent and removes the extra <code>modified</code>, <code>publishdate</code>, and <code>pubdate</code> fallbacks.</p>
+<p>Hugo does not merge <code>[frontmatter]</code> from a theme configuration, so the block must go in your own site configuration.</p>
+<p>Two build conditions apply:</p>
+<ul>
+<li>Git dates need the file history. A shallow checkout — the default depth of 1 in <code>actions/checkout</code> — gives every page the date of that one commit. Set <code>fetch-depth: 0</code>.</li>
+<li>Uncommitted changes make no commit, so the date of a modified file does not move until you commit it.</li>
+</ul>
+<p><code>enableGitInfo</code> also supplies <code>.GitInfo.Hash</code> for the <code>commit</code> link and for the <code>showSource</code> link.</p>
+<h2 id="math-engine">Math Engine</h2>
+<table>
+	<thead>
+			<tr>
+					<th>Param</th>
+					<th>Type</th>
+					<th>Default</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>mathEngine</code></td>
+					<td>string</td>
+					<td><code>&quot;katex&quot;</code></td>
+					<td><code>&quot;katex&quot;</code>, <code>&quot;mathjax&quot;</code>, or <code>&quot;none&quot;</code></td>
+			</tr>
+			<tr>
+					<td><code>mathRender</code></td>
+					<td>string</td>
+					<td><code>&quot;client&quot;</code></td>
+					<td><code>&quot;server&quot;</code> renders KaTeX at build time (see below)</td>
+			</tr>
+	</tbody>
+</table>
+<ul>
+<li><strong><code>&quot;katex&quot;</code></strong> — Loads <a href="https://katex.org/">KaTeX</a> (CSS + JS) for math rendering. This is the current behavior and the default for backward compatibility.</li>
+<li><strong><code>&quot;mathjax&quot;</code></strong> — Loads <a href="https://www.mathjax.org/">MathJax 3</a> from CDN instead of KaTeX. MathJax is always loaded from CDN regardless of <code>selfHosted</code> since it is much larger than KaTeX.</li>
+<li><strong><code>&quot;none&quot;</code></strong> — Disables math rendering entirely; no math assets are loaded.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">mathEngine</span> <span class="p">=</span> <span class="s2">&#34;mathjax&#34;</span>
+</span></span></code></pre></div><h3 id="server-side-rendering">Server-side rendering</h3>
+<p>With <code>mathRender = &quot;server&quot;</code> and the KaTeX engine, Hugo renders the math at build time with <code>transform.ToMath</code>. The page then needs only the KaTeX CSS. The KaTeX scripts, about 300 KB, are not loaded, and the math shows without a flash of raw LaTeX. This needs the passthrough extension below. The option has no effect with MathJax.</p>
+<p>Bad LaTeX is rendered in red by KaTeX, as in the browser, and does not stop the build. Math that a shortcode or a partial adds as raw HTML is not rendered at build time. Set <code>math: true</code> in the front matter of that page to load the KaTeX scripts for it.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">mathRender</span> <span class="p">=</span> <span class="s2">&#34;server&#34;</span>
+</span></span></code></pre></div><h3 id="passthrough">Passthrough</h3>
+<p>Markdown removes backslashes and other characters from LaTeX. To keep the math unchanged, enable the Goldmark passthrough extension. Hugo does not merge the <code>[markup]</code> section of a theme configuration, so this belongs in your <strong>site</strong> configuration, not in the theme:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">extensions</span><span class="p">.</span><span class="nx">passthrough</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">enable</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">extensions</span><span class="p">.</span><span class="nx">passthrough</span><span class="p">.</span><span class="nx">delimiters</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">block</span> <span class="p">=</span> <span class="p">[[</span><span class="s1">&#39;\[&#39;</span><span class="p">,</span> <span class="s1">&#39;\]&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;$$&#39;</span><span class="p">,</span> <span class="s1">&#39;$$&#39;</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">inline</span> <span class="p">=</span> <span class="p">[[</span><span class="s1">&#39;\(&#39;</span><span class="p">,</span> <span class="s1">&#39;\)&#39;</span><span class="p">]]</span>
+</span></span></code></pre></div><p>These are the KaTeX auto-render delimiters. Single <code>$</code> is not an inline delimiter, because prose often contains a stray <code>$</code>; add <code>['$', '$']</code> to <code>inline</code> if you want it.</p>
+<p>With passthrough enabled, the theme loads the math files only on pages that contain math. Without it, the theme loads them on every page, as before. See <a href="../math-and-diagrams/">Math &amp; Diagrams</a>.</p>
+<h2 id="author">Author</h2>
+<p><code>[Params.author]</code> is <strong>required</strong>. The old top-level <code>[author]</code> key is deprecated and will produce a build error.</p>
+<table>
+	<thead>
+			<tr>
+					<th>Param</th>
+					<th>Type</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>name</code></td>
+					<td>string</td>
+					<td>Author display name (used in meta, copyright, post meta)</td>
+			</tr>
+			<tr>
+					<td><code>website</code></td>
+					<td>string</td>
+					<td>Author website URL (linked from copyright)</td>
+			</tr>
+			<tr>
+					<td><code>email</code></td>
+					<td>string</td>
+					<td>Email (mailto: link in footer)</td>
+			</tr>
+	</tbody>
+</table>
+<p>You can also add any social platform key here — see <a href="../comments-and-social/">Comments &amp; Social</a> for the full list of 42 platforms.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">author</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Some Person&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">website</span> <span class="p">=</span> <span class="s2">&#34;yourwebsite.com&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">email</span> <span class="p">=</span> <span class="s2">&#34;youremail@domain.com&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">github</span> <span class="p">=</span> <span class="s2">&#34;username&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">twitter</span> <span class="p">=</span> <span class="s2">&#34;username&#34;</span>
+</span></span></code></pre></div><p>If a social value starts with <code>http://</code> or <code>https://</code>, it is used as-is. Otherwise it is interpolated into the platform&rsquo;s default URL pattern.</p>
+<h2 id="color-scheme">Color Scheme</h2>
+<table>
+	<thead>
+			<tr>
+					<th>Param</th>
+					<th>Type</th>
+					<th>Default</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>colorScheme</code></td>
+					<td>string</td>
+					<td><code>&quot;auto&quot;</code></td>
+					<td><code>&quot;auto&quot;</code>, <code>&quot;dark&quot;</code>, or <code>&quot;light&quot;</code></td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="how-it-works">How it works</h3>
+<p>The theme uses the <code>data-theme</code> attribute on <code>&lt;html&gt;</code> to control dark mode:</p>
+<ul>
+<li><strong><code>&quot;auto&quot;</code></strong> — Follows the system preference (<code>prefers-color-scheme</code>). A toggle button appears in the navbar so users can override it. The toggle cycles through <strong>auto → light → dark → auto</strong>.</li>
+<li><strong><code>&quot;dark&quot;</code></strong> — Always dark. No toggle button is shown.</li>
+<li><strong><code>&quot;light&quot;</code></strong> — Always light. No toggle button is shown; dark CSS is not loaded at all.</li>
+</ul>
+<p>When <code>colorScheme = &quot;auto&quot;</code>, the theme reacts to OS-level dark mode changes in real time via a <code>matchMedia</code> listener. If a user changes their system appearance while the site is open, the page updates immediately (unless they have explicitly chosen light or dark via the toggle).</p>
+<p>The user&rsquo;s toggle preference persists across pages via <code>localStorage</code> (key: <code>theme</code>). An inline script in <code>&lt;head&gt;</code> restores it before the first paint to prevent a flash of the wrong theme.</p>
+<p>For customizing dark mode colors, theme-dependent content, and other appearance overrides, see <a href="../theming/">Theming</a>.</p>
+<h3 id="selfhosted-assets">selfHosted assets</h3>
+<p>When <code>selfHosted = true</code>, no third-party asset is loaded from a CDN. Files that are plain JavaScript or CSS are fetched <strong>once at build time</strong> with Hugo&rsquo;s <code>resources.GetRemote</code>, checked against the same SRI hash the CDN tag uses, fingerprinted, and published under <code>vendor/</code>. Files that ship their own web fonts are served from the theme&rsquo;s <code>static/</code> directory.</p>
+<table>
+	<thead>
+			<tr>
+					<th>Asset</th>
+					<th>CDN Source</th>
+					<th>Self-hosted from</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Bootstrap 5.3.8 CSS and JS</td>
+					<td><code>cdn.jsdelivr.net</code></td>
+					<td>fetched at build time</td>
+			</tr>
+			<tr>
+					<td>KaTeX JS</td>
+					<td><code>cdn.jsdelivr.net</code></td>
+					<td>fetched at build time</td>
+			</tr>
+			<tr>
+					<td>Highlight.js JS and themes</td>
+					<td><code>cdn.jsdelivr.net</code></td>
+					<td>fetched at build time</td>
+			</tr>
+			<tr>
+					<td>PhotoSwipe 5.4.4</td>
+					<td><code>cdn.jsdelivr.net</code></td>
+					<td>fetched at build time</td>
+			</tr>
+			<tr>
+					<td>Fuse.js</td>
+					<td><code>cdn.jsdelivr.net</code></td>
+					<td>fetched at build time</td>
+			</tr>
+			<tr>
+					<td>KaTeX CSS and fonts</td>
+					<td><code>cdn.jsdelivr.net</code></td>
+					<td><code>static/css/katex.min.css</code> + <code>css/fonts/</code></td>
+			</tr>
+			<tr>
+					<td>Font Awesome 7</td>
+					<td><code>use.fontawesome.com</code></td>
+					<td><code>static/fontawesome/</code></td>
+			</tr>
+			<tr>
+					<td>Google Fonts (Lora, Open Sans)</td>
+					<td><code>fonts.googleapis.com</code></td>
+					<td><code>static/css/fonts.css</code> + <code>static/fonts/</code></td>
+			</tr>
+	</tbody>
+</table>
+<p>The URLs and hashes live in <code>data/beautifulhugo/vendor.toml</code>. A site can override an entry by adding the same key to its own <code>data/beautifulhugo/vendor.toml</code>. A file that does not match its hash stops the build.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">colorScheme</span> <span class="p">=</span> <span class="s2">&#34;auto&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">selfHosted</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span></code></pre></div><p>The first build needs network access. Hugo keeps the downloaded files in its <code>getresource</code> file cache (<code>:cacheDir/:project</code>, never expired by default), so later builds work offline. On CI, set <code>HUGO_CACHEDIR</code> and cache that directory between runs. Hugo&rsquo;s <code>[HTTPCache]</code> section controls whether the cached files are revalidated against the <code>Cache-Control</code> headers of the CDN; the pinned URLs above are immutable, so the default (no revalidation) is right. See <a href="https://gohugo.io/configuration/http-cache/">Configure HTTP cache</a> and <a href="https://gohugo.io/configuration/caches/">Configure file caches</a>.</p>
+<h2 id="content-display">Content Display</h2>
+<table>
+	<thead>
+			<tr>
+					<th>Param</th>
+					<th>Type</th>
+					<th>Default</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>readingTime</code></td>
+					<td>bool</td>
+					<td><code>false</code></td>
+					<td>Show reading time in post meta</td>
+			</tr>
+			<tr>
+					<td><code>wordCount</code></td>
+					<td>bool</td>
+					<td><code>false</code></td>
+					<td>Show word count in post meta</td>
+			</tr>
+			<tr>
+					<td><code>hideAuthor</code></td>
+					<td>bool</td>
+					<td><code>false</code></td>
+					<td>Hide author from post meta</td>
+			</tr>
+			<tr>
+					<td><code>socialShare</code></td>
+					<td>bool</td>
+					<td><code>false</code></td>
+					<td>Enable social sharing buttons on posts</td>
+			</tr>
+			<tr>
+					<td><code>showRelatedPosts</code></td>
+					<td>bool</td>
+					<td><code>false</code></td>
+					<td>Show related posts, ranked by relevance via Hugo&rsquo;s <a href="#related-posts">related-content engine</a></td>
+			</tr>
+			<tr>
+					<td><code>related_content_limit</code></td>
+					<td>int</td>
+					<td><code>5</code></td>
+					<td>Max number of related posts to display</td>
+			</tr>
+			<tr>
+					<td><code>rss</code></td>
+					<td>bool</td>
+					<td><code>false</code></td>
+					<td>Show RSS icon in footer</td>
+			</tr>
+			<tr>
+					<td><code>disableFigureOverride</code></td>
+					<td>bool</td>
+					<td><code>false</code></td>
+					<td>When <code>true</code>, use Hugo&rsquo;s native <code>&lt;figure&gt;</code> shortcode; <code>beautifulfigure</code> remains available</td>
+			</tr>
+			<tr>
+					<td><code>navShort</code></td>
+					<td>bool</td>
+					<td><code>false</code></td>
+					<td>Make navbar permanently short (collapsed style)</td>
+			</tr>
+			<tr>
+					<td><code>mobileMenuPosition</code></td>
+					<td>string</td>
+					<td><code>&quot;right&quot;</code></td>
+					<td>Side of the navbar that holds the hamburger menu button on narrow screens: <code>&quot;left&quot;</code> or <code>&quot;right&quot;</code></td>
+			</tr>
+			<tr>
+					<td><code>showPageDates</code></td>
+					<td>bool</td>
+					<td><code>false</code></td>
+					<td>Show dates on &ldquo;page&rdquo; type pages</td>
+			</tr>
+			<tr>
+					<td><code>hidePostDates</code></td>
+					<td>bool</td>
+					<td><code>false</code></td>
+					<td>If true, hides dates on &ldquo;post&rdquo; type pages</td>
+			</tr>
+			<tr>
+					<td><code>toc</code></td>
+					<td>bool</td>
+					<td><code>true</code></td>
+					<td>Show a floating table-of-contents button on pages with headings</td>
+			</tr>
+			<tr>
+					<td><code>showSource</code></td>
+					<td>bool</td>
+					<td><code>false</code></td>
+					<td>Show a &ldquo;View source&rdquo; button linking to the page&rsquo;s source file in the repository</td>
+			</tr>
+			<tr>
+					<td><code>showPostNav</code></td>
+					<td>bool</td>
+					<td><code>true</code></td>
+					<td>Show previous/next post navigation (side arrows on wide screens, bottom pager on narrow screens)</td>
+			</tr>
+			<tr>
+					<td><code>pagerSize</code></td>
+					<td>int</td>
+					<td>—</td>
+					<td>Posts per page on a list page. Set it in the front matter of the home page, a section, or a term to override the global <code>pagination.pagerSize</code> for that node</td>
+			</tr>
+			<tr>
+					<td><code>sourceRepo</code></td>
+					<td>string</td>
+					<td>—</td>
+					<td>Base URL for the repository source browser (e.g. <code>https://github.com/user/repo/blob/main/</code>). The page&rsquo;s <code>.File.Path</code> is appended automatically. When <code>enableGitInfo = true</code> is set, the branch in the URL is replaced with the current commit hash, so the link always points to the exact version of the file</td>
+			</tr>
+	</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">readingTime</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">wordCount</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">socialShare</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">showRelatedPosts</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">disableFigureOverride</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">showSource</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">showPostNav</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">sourceRepo</span> <span class="p">=</span> <span class="s2">&#34;https://github.com/user/repo/blob/main/&#34;</span>
+</span></span></code></pre></div><h3 id="related-posts">Related Posts</h3>
+<p>When <code>showRelatedPosts = true</code>, each post displays a &ldquo;See also&rdquo; list of related content. This uses Hugo&rsquo;s built-in <a href="https://gohugo.io/content-management/related/">related-content engine</a> (<code>.Site.RegularPages.Related</code>), which is index-backed and ranks suggestions by <strong>relevance</strong> rather than site order. The number of items shown is capped by <code>related_content_limit</code> (default <code>5</code>).</p>
+<blockquote>
+<p><strong>Heads up:</strong> Without a <code>[related]</code> configuration block, Hugo&rsquo;s defaults rank by the front-matter <code>keywords</code> and <code>date</code> indices — <strong>not</strong> by <code>tags</code>. If your posts rely on <code>tags</code> (as the theme historically did), add the <code>[related]</code> block below so tag overlap drives the ranking.</p>
+</blockquote>
+<p>The recommended setup preserves and improves on the old tag-based behavior by indexing <code>tags</code> (highest weight), then <code>keywords</code>, then <code>date</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># Ranking configuration for showRelatedPosts (Hugo&#39;s related-content engine)</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">related</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">includeNewer</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">threshold</span> <span class="p">=</span> <span class="mi">80</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">toLower</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">related</span><span class="p">.</span><span class="nx">indices</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;tags&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">100</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">related</span><span class="p">.</span><span class="nx">indices</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;keywords&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">80</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[[</span><span class="nx">related</span><span class="p">.</span><span class="nx">indices</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;date&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">10</span>
+</span></span></code></pre></div><ul>
+<li><code>threshold</code> (0–100) controls how strong a match must be before a post is suggested; posts with no qualifying matches show no &ldquo;See also&rdquo; section.</li>
+<li><code>includeNewer = true</code> allows newer posts to be suggested (Hugo excludes them by default).</li>
+<li>Each <code>[[related.indices]]</code> <code>weight</code> controls how much that field contributes to the relevance score.</li>
+</ul>
+<h3 id="table-of-contents-panel">Table of Contents Panel</h3>
+<p>When <code>toc = true</code> (the default), a list-style button appears in the navbar on pages that have headings or list pages that have posts. Clicking it opens a slide-out panel on the left side of the viewport.</p>
+<p>The panel is rendered from <code>baseof.html</code>, so a site that overrides <code>page.html</code>, <code>list.html</code>, or <code>home.html</code> still gets it.</p>
+<p><strong>On single pages</strong> (posts, regular pages), the panel shows the page&rsquo;s heading hierarchy extracted from the Table of Contents. An <code>IntersectionObserver</code> tracks which heading is currently in view and highlights the corresponding link in the panel.</p>
+<p><strong>On list and home pages</strong>, the panel shows the titles of all posts in the list, not only those on the current pager page. Scrolling through the post previews automatically highlights the currently visible post in the panel.</p>
+<p>The panel is a Bootstrap offcanvas. It can be closed by clicking the close button, clicking the backdrop overlay, or pressing <code>Escape</code>. Focus stays inside the panel while it is open and returns to the navbar button when it closes.</p>
+<h4 id="heading-levels">Heading levels</h4>
+<p>The panel renders Hugo&rsquo;s <code>.TableOfContents</code>, so <code>[markup.tableOfContents]</code> controls which headings appear. Hugo does not merge <code>[markup]</code> from a theme, so set it in your own site configuration:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">tableOfContents</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">startLevel</span> <span class="p">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">endLevel</span> <span class="p">=</span> <span class="mi">4</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">ordered</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span></code></pre></div><table>
+	<thead>
+			<tr>
+					<th>Key</th>
+					<th>Type</th>
+					<th>Default</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>startLevel</code></td>
+					<td>int</td>
+					<td><code>2</code></td>
+					<td>First heading level collected. Keep it at <code>2</code>: the page title is the <code>h1</code>, so <code>1</code> adds the title to the panel</td>
+			</tr>
+			<tr>
+					<td><code>endLevel</code></td>
+					<td>int</td>
+					<td><code>3</code></td>
+					<td>Last heading level collected. <code>4</code> includes <code>h4</code></td>
+			</tr>
+			<tr>
+					<td><code>ordered</code></td>
+					<td>bool</td>
+					<td><code>false</code></td>
+					<td><code>true</code> renders <code>&lt;ol&gt;</code> with numbers instead of <code>&lt;ul&gt;</code></td>
+			</tr>
+	</tbody>
+</table>
+<p>The button only appears when the rendered table of contents has at least one item, so a page with no heading in this range shows no panel.</p>
+<h2 id="big-image-header">Big Image Header</h2>
+<p>Add one or more full-width header images to the home page. Multiple images cycle automatically with a fade transition.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">bigimg</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">src</span> <span class="p">=</span> <span class="s2">&#34;/img/triangle.jpg&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">desc</span> <span class="p">=</span> <span class="s2">&#34;Triangle&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">bigimg</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">src</span> <span class="p">=</span> <span class="s2">&#34;/img/sphere.jpg&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">desc</span> <span class="p">=</span> <span class="s2">&#34;Sphere&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">position</span> <span class="p">=</span> <span class="s2">&#34;center top&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">bigimg</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">src</span> <span class="p">=</span> <span class="s2">&#34;/img/hexagon.jpg&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">desc</span> <span class="p">=</span> <span class="s2">&#34;Hexagon&#34;</span>
+</span></span></code></pre></div><table>
+	<thead>
+			<tr>
+					<th>Key</th>
+					<th>Type</th>
+					<th>Default</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>src</code></td>
+					<td>string</td>
+					<td>—</td>
+					<td>Image path (absolute or relative)</td>
+			</tr>
+			<tr>
+					<td><code>desc</code></td>
+					<td>string</td>
+					<td>—</td>
+					<td>Image description (supports Markdown links)</td>
+			</tr>
+			<tr>
+					<td><code>position</code></td>
+					<td>string</td>
+					<td>—</td>
+					<td>CSS <code>background-position</code> value (e.g. <code>&quot;center top&quot;</code>)</td>
+			</tr>
+			<tr>
+					<td><code>headerImgStyle</code></td>
+					<td>string</td>
+					<td><code>&quot;big&quot;</code></td>
+					<td>Header image height: <code>&quot;big&quot;</code> (default, 100–150px padding) or <code>&quot;narrow&quot;</code> (25px padding, crops image top and bottom)</td>
+			</tr>
+	</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">headerImgStyle</span> <span class="p">=</span> <span class="s2">&#34;narrow&#34;</span>
+</span></span></code></pre></div><p>The cycling timing is also configurable:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Key</th>
+					<th>Type</th>
+					<th>Default</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>bigimgFadeDuration</code></td>
+					<td>float</td>
+					<td><code>1</code></td>
+					<td>Fade duration in seconds between header images (<code>0</code> for an instant switch)</td>
+			</tr>
+			<tr>
+					<td><code>bigimgInterval</code></td>
+					<td>float</td>
+					<td><code>6</code></td>
+					<td>Delay in seconds between image fades (how long each image is shown)</td>
+			</tr>
+	</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">bigimgFadeDuration</span> <span class="p">=</span> <span class="mf">1.5</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">bigimgInterval</span> <span class="p">=</span> <span class="mi">8</span>
+</span></span></code></pre></div><p>See <a href="../pages-and-layouts/#big-image-headers">Pages &amp; Layouts</a> for per-page big image headers and visual examples.</p>
+<h2 id="image-processing">Image Processing</h2>
+<p>Images that Hugo can reach as resources (files in a page bundle or under the site&rsquo;s <code>assets/</code> directory) are processed at build time: post preview thumbnails are cropped to a square, header images are capped in width, and figures, galleries, and plain Markdown images get resized <code>srcset</code> variants. Images under <code>static/</code> are never touched.</p>
+<table>
+	<thead>
+			<tr>
+					<th>Key</th>
+					<th>Type</th>
+					<th>Default</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>imageProcessing</code></td>
+					<td>bool</td>
+					<td><code>true</code></td>
+					<td>Set to <code>false</code> to serve every image unchanged</td>
+			</tr>
+			<tr>
+					<td><code>imageWidths</code></td>
+					<td>list</td>
+					<td><code>[480, 800, 1200, 1600]</code></td>
+					<td>Widths generated for figure <code>srcset</code> variants (widths larger than the source are skipped)</td>
+			</tr>
+			<tr>
+					<td><code>bigimgWidth</code></td>
+					<td>int</td>
+					<td><code>1920</code></td>
+					<td>Maximum width for page-resource header images</td>
+			</tr>
+	</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">imageWidths</span> <span class="p">=</span> <span class="p">[</span><span class="mi">640</span><span class="p">,</span> <span class="mi">1280</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">bigimgWidth</span> <span class="p">=</span> <span class="mi">2560</span>
+</span></span></code></pre></div><p>See <a href="../figures-and-galleries/#page-bundles-and-image-processing">Figures &amp; Galleries</a> for shortcode details.</p>
+<h3 id="where-processed-images-are-stored">Where processed images are stored</h3>
+<p>Hugo writes every resized or cropped image to the file cache in <code>resources/_gen/images/</code>, next to your <code>hugo.toml</code>. The cache is keyed by the source image and the operation, so an unchanged image is processed once and then copied on later builds. Image processing is the slowest part of a Beautiful Hugo build, so a warm cache makes a large difference.</p>
+<p><code>[caches]</code> controls the location and the lifetime of each cache:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">caches</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">images</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">dir</span> <span class="p">=</span> <span class="s2">&#34;:resourceDir/_gen&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">caches</span><span class="p">.</span><span class="nx">assets</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">dir</span> <span class="p">=</span> <span class="s2">&#34;:resourceDir/_gen&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">maxAge</span> <span class="p">=</span> <span class="mi">-1</span>
+</span></span></code></pre></div><p>These are the Hugo defaults. <code>maxAge = -1</code> keeps entries forever; <code>hugo --gc</code> removes the entries that the last build did not use. You can either commit <code>resources/</code> to the repository or keep it out of version control and restore it in CI.</p>
+<p>The example site does not commit <code>resources/</code>. Both workflows in <code>.github/workflows/</code> restore it instead:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl">- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Cache processed images</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/cache@v4</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">exampleSite/resources/_gen</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l">hugo-resources-${{ env.HUGO_VERSION }}-${{ hashFiles(&#39;exampleSite/content/**&#39;, &#39;exampleSite/hugo.toml&#39;, &#39;assets/**&#39;) }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restore-keys</span><span class="p">:</span><span class="w"> </span><span class="l">hugo-resources-${{ env.HUGO_VERSION }}-</span><span class="w">
+</span></span></span></code></pre></div><p>The Hugo version is part of the key because a Hugo upgrade can change the output of an image operation. The <code>restore-keys</code> prefix reuses the newest older cache when the key does not match, so only the changed images are processed again.</p>
+<h3 id="minification">Minification</h3>
+<p><code>hugo --minify</code> minifies the generated HTML, XML, and JSON. The <code>[minify]</code> block tunes it:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">minify</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">minifyOutput</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">minify</span><span class="p">.</span><span class="nx">tdewolff</span><span class="p">.</span><span class="nx">html</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">keepWhitespace</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span></code></pre></div><p><code>minifyOutput = true</code> has the same effect as the command-line flag. The theme&rsquo;s own CSS and JS bundles are separate: <code>css.html</code> and <code>js.html</code> minify them only when the build is a production build (<code>hugo.IsProduction</code>), whatever <code>[minify]</code> says.</p>
+<h2 id="syntax-highlighting">Syntax Highlighting</h2>
+<table>
+	<thead>
+			<tr>
+					<th>Param</th>
+					<th>Type</th>
+					<th>Default</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>useHLJS</code></td>
+					<td>bool</td>
+					<td><code>false</code></td>
+					<td>Use client-side Highlight.js instead of Hugo&rsquo;s built-in Chroma</td>
+			</tr>
+	</tbody>
+</table>
+<div class="tabs-shortcode" id="tabs-1" data-tabs-group="tabs-auto-1">
+  <ul class="nav nav-tabs" id="tabs-1-tablist" role="tablist"><li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="tabs-auto-1-pane-1-tab"
+          type="button"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#tabs-auto-1-pane-1"
+          aria-controls="tabs-auto-1-pane-1"
+          aria-selected="true">Chroma</button>
+      </li><li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="tabs-auto-1-pane-2-tab"
+          type="button"
+          role="tab"
+          data-bs-toggle="tab"
+          data-bs-target="#tabs-auto-1-pane-2"
+          aria-controls="tabs-auto-1-pane-2"
+          aria-selected="false">Highlight.js</button>
+      </li></ul>
+
+  <div class="tab-content" id="tabs-1-content">
+     <div
+      class="tab-pane fade show active"
+      id="tabs-auto-1-pane-1"
+      role="tabpanel"
+      aria-labelledby="tabs-auto-1-pane-1-tab"
+      tabindex="0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">highlight</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">noClasses</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">parser</span><span class="p">.</span><span class="nx">attribute</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">block</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></div><ul>
+<li><code>noClasses = false</code> is required for Chroma to use an external CSS file (<code>assets/css/syntax.css</code>)</li>
+</ul>
+</div> <div
+      class="tab-pane fade"
+      id="tabs-auto-1-pane-2"
+      role="tabpanel"
+      aria-labelledby="tabs-auto-1-pane-2-tab"
+      tabindex="0"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">useHLJS</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">highlight</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">codeFences</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span></code></pre></div><p>When <code>useHLJS = true</code>, Highlight.js is loaded from CDN (or fetched at build time and served from the site if <code>selfHosted = true</code>) with a default light theme and a dark theme that activates automatically. You do not need Chroma code fences — Highlight.js applies styles via JavaScript.</p></div> 
+  </div>
+</div>
+<p>See <a href="../code-blocks/">Code Blocks</a> for details and examples.</p>
+<h3 id="including-external-files">Including External Files</h3>
+<p>The <code>include-code</code> shortcode reads a source file from disk and renders it with syntax highlighting. See <a href="../code-blocks/#including-external-files">Code Blocks</a> for the full parameter reference and live examples.</p>
+<h2 id="comment-systems">Comment Systems</h2>
+<p>Beautiful Hugo supports five comment systems (Disqus, Giscus, Utterances, Cusdis, Staticman). Each is enabled per-page with <code>comments: true</code> in front matter. See <a href="../comments-and-social/">Comments &amp; Social</a> for configuration details.</p>
+<h2 id="analytics--search">Analytics &amp; Search</h2>
+<p>Google Analytics, Piwik/Matomo, and search (GCSE or built-in Fuse) are covered in <a href="../seo-and-i18n/#analytics-and-search">SEO &amp; i18n</a>. The search index size is controlled with <code>Params.searchSections</code> and <code>Params.searchContentWords</code>; see <a href="../seo-and-i18n/#search-index">Search Index</a>.</p>
+<h2 id="seo-robot-meta-tags">SEO Robot Meta Tags</h2>
+<p>Site-wide <code>&lt;meta name=&quot;robots&quot;&gt;</code> tags can be set from <code>hugo.toml</code>. These settings only apply to pages in <code>mainSections</code>; other pages can set tags via front matter.</p>
+<p>See <a href="../seo-and-i18n/">SEO &amp; i18n</a> for the full reference including per-page overrides, AI summary limits, and all supported tags.</p>
+<h2 id="custom-html-hooks">Custom HTML Hooks</h2>
+<p>Beautiful Hugo provides partial &ldquo;hooks&rdquo; that let you inject custom HTML at specific points in the layout without forking the theme. To use a hook, create the corresponding file in your site&rsquo;s <code>layouts/_partials/</code> directory — the theme&rsquo;s own copy is an empty stub.</p>
+<table>
+	<thead>
+			<tr>
+					<th>Partial</th>
+					<th>Injects Near</th>
+					<th>Example Use</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>head_custom.html</code></td>
+					<td>End of <code>&lt;head&gt;</code>, before <code>&lt;/head&gt;</code></td>
+					<td>Extra CSS, preconnect hints, meta tags</td>
+			</tr>
+			<tr>
+					<td><code>nav_custom.html</code></td>
+					<td>Inside the navbar, after menu items</td>
+					<td>CTA button, search box, custom nav link</td>
+			</tr>
+			<tr>
+					<td><code>header_custom.html</code></td>
+					<td>Inside the page header, after title/subtitle</td>
+					<td>Hero CTA button, banner</td>
+			</tr>
+			<tr>
+					<td><code>before_content.html</code></td>
+					<td>Before <code>.Content</code> on single pages</td>
+					<td>Affiliate disclosure, reading-time banner</td>
+			</tr>
+			<tr>
+					<td><code>after_content.html</code></td>
+					<td>After <code>.Content</code>, before tags/share/related</td>
+					<td>Newsletter signup, author bio, ad unit</td>
+			</tr>
+			<tr>
+					<td><code>footer_custom.html</code></td>
+					<td>After <code>&lt;/footer&gt;</code>, before scripts</td>
+					<td>Custom analytics, chat widget</td>
+			</tr>
+			<tr>
+					<td><code>scripts_custom.html</code></td>
+					<td>After all theme JS, before <code>&lt;/body&gt;</code></td>
+					<td>Custom JS that depends on Bootstrap</td>
+			</tr>
+	</tbody>
+</table>
+<p>See <a href="../theming/#custom-stylesheets">Theming</a> for details on using these hooks for CSS and script customization.</p>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<table>
+	<thead>
+			<tr>
+					<th>Param</th>
+					<th>Type</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>disclaimerText</code></td>
+					<td>string</td>
+					<td>Disclaimer text shown in footer with a yellow-bordered box</td>
+			</tr>
+			<tr>
+					<td><code>commit</code></td>
+					<td>string</td>
+					<td>Base URL for Git commit links (appended with <code>.GitInfo.Hash</code>)</td>
+			</tr>
+			<tr>
+					<td><code>disableCanonical</code></td>
+					<td>bool</td>
+					<td>Suppress the <code>&lt;link rel=&quot;canonical&quot;&gt;</code> tag site-wide (see <a href="../seo-and-i18n/#canonical-urls">SEO &amp; i18n — Canonical URLs</a>)</td>
+			</tr>
+	</tbody>
+</table>
+<p>Git features (<code>commit</code>) require <code>enableGitInfo = true</code> at the top level of your config (not under <code>[Params]</code>) so Hugo populates <code>.GitInfo</code>. Example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">commit</span> <span class="p">=</span> <span class="s2">&#34;https://github.com/user/repo/commit/&#34;</span>
+</span></span></code></pre></div><h2 id="per-page-front-matter">Per-Page Front Matter</h2>
+<p>These options can be set in the front matter of any page or post:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Param</th>
+					<th>Type</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>subtitle</code></td>
+					<td>string</td>
+					<td>Page/post subtitle</td>
+			</tr>
+			<tr>
+					<td><code>bigimg</code></td>
+					<td>list</td>
+					<td>Per-page big header images (same format as site-level)</td>
+			</tr>
+			<tr>
+					<td><code>headerImgStyle</code></td>
+					<td>string</td>
+					<td>Header image height: <code>&quot;big&quot;</code> or <code>&quot;narrow&quot;</code></td>
+			</tr>
+			<tr>
+					<td><code>fullWidth</code></td>
+					<td>bool</td>
+					<td>Full-width content layout (no sidebar offset)</td>
+			</tr>
+			<tr>
+					<td><code>socialShare</code></td>
+					<td>bool</td>
+					<td>Override site-level social sharing for this page</td>
+			</tr>
+			<tr>
+					<td><code>showAvatar</code></td>
+					<td>bool</td>
+					<td>Show/hide navbar avatar (default: <code>true</code>)</td>
+			</tr>
+			<tr>
+					<td><code>comments</code></td>
+					<td>bool</td>
+					<td>Enable comments on this page</td>
+			</tr>
+			<tr>
+					<td><code>hidden</code></td>
+					<td>bool</td>
+					<td>Hide from list pages</td>
+			</tr>
+			<tr>
+					<td><code>image</code></td>
+					<td>string</td>
+					<td>Post preview image (circular, shown in list pages)</td>
+			</tr>
+			<tr>
+					<td><code>video</code></td>
+					<td>string</td>
+					<td>Post preview video (loop, autoplay, muted)</td>
+			</tr>
+			<tr>
+					<td><code>summary</code></td>
+					<td>string</td>
+					<td>Custom summary text</td>
+			</tr>
+			<tr>
+					<td><code>description</code></td>
+					<td>string</td>
+					<td>Page description for meta tags and structured data (see <a href="../seo-and-i18n/#description-cascade">SEO &amp; i18n — Description Cascade</a>)</td>
+			</tr>
+			<tr>
+					<td><code>type</code></td>
+					<td>string</td>
+					<td>Content type that determines template behavior: <code>&quot;page&quot;</code>, <code>&quot;post&quot;</code>, <code>&quot;recipe&quot;</code>, or <code>&quot;publication&quot;</code> (see <a href="../pages-and-layouts/">Pages &amp; Layouts</a>)</td>
+			</tr>
+			<tr>
+					<td><code>author</code></td>
+					<td>string/list</td>
+					<td>Per-page author(s) (string or list of strings; supports Markdown links, e.g. <code>&quot;[Jane Doe](https://example.com)&quot;</code>)</td>
+			</tr>
+			<tr>
+					<td><code>tags</code></td>
+					<td>list</td>
+					<td>Tags for categorization</td>
+			</tr>
+			<tr>
+					<td><code>categories</code></td>
+					<td>list</td>
+					<td>Categories for grouping posts</td>
+			</tr>
+			<tr>
+					<td><code>share_img</code></td>
+					<td>string</td>
+					<td>Social sharing image (falls back to <code>image</code>, then the site <code>share_img</code>, then <code>logo</code>)</td>
+			</tr>
+			<tr>
+					<td><code>ExpiryDate</code></td>
+					<td>date</td>
+					<td>Adds <code>&lt;meta name=&quot;robots&quot; content=&quot;unavailable_after: ...&quot;&gt;</code></td>
+			</tr>
+			<tr>
+					<td><code>seo</code></td>
+					<td>map</td>
+					<td>Per-page robot meta tag overrides (see <a href="../seo-and-i18n/">SEO &amp; i18n</a>)</td>
+			</tr>
+			<tr>
+					<td><code>canonicalURL</code></td>
+					<td>string</td>
+					<td>Override the canonical link for this page (absolute or relative; see <a href="../seo-and-i18n/#canonical-urls">SEO &amp; i18n — Canonical URLs</a>)</td>
+			</tr>
+			<tr>
+					<td><code>disableCanonical</code></td>
+					<td>bool</td>
+					<td>Suppress the canonical link tag for this page</td>
+			</tr>
+			<tr>
+					<td><code>ghRepo</code></td>
+					<td>string</td>
+					<td>GitHub repo for buttons (<code>&quot;user/repo&quot;</code>)</td>
+			</tr>
+			<tr>
+					<td><code>ghBadge</code></td>
+					<td>list</td>
+					<td>Which badges to show: <code>[&quot;star&quot;,&quot;watch&quot;,&quot;fork&quot;,&quot;follow&quot;]</code></td>
+			</tr>
+			<tr>
+					<td><code>ghCount</code></td>
+					<td>bool</td>
+					<td>Show count on GitHub buttons (default: <code>true</code>)</td>
+			</tr>
+			<tr>
+					<td><code>showPageDates</code></td>
+					<td>bool</td>
+					<td>Show dates on page-type pages</td>
+			</tr>
+			<tr>
+					<td><code>hidePostDates</code></td>
+					<td>bool</td>
+					<td><code>false</code></td>
+			</tr>
+			<tr>
+					<td><code>navShort</code></td>
+					<td>bool</td>
+					<td>Make navbar short on this page</td>
+			</tr>
+			<tr>
+					<td><code>toc</code></td>
+					<td>bool</td>
+					<td>Show/hide table of contents for this page (overrides site-level <code>toc</code>)</td>
+			</tr>
+			<tr>
+					<td><code>showSource</code></td>
+					<td>bool</td>
+					<td>Override site-level <code>showSource</code> for this page</td>
+			</tr>
+			<tr>
+					<td><code>showPostNav</code></td>
+					<td>bool</td>
+					<td>Override site-level <code>showPostNav</code> for this page</td>
+			</tr>
+			<tr>
+					<td><code>mathEngine</code></td>
+					<td>string</td>
+					<td>Override site-level <code>mathEngine</code> for this page (<code>&quot;katex&quot;</code>, <code>&quot;mathjax&quot;</code>, or <code>&quot;none&quot;</code>)</td>
+			</tr>
+			<tr>
+					<td><code>math</code></td>
+					<td>bool</td>
+					<td>Load the math files on this page even if no math is found (needs passthrough)</td>
+			</tr>
+			<tr>
+					<td><code>mathRender</code></td>
+					<td>string</td>
+					<td>Override site-level <code>mathRender</code> for this page (<code>&quot;client&quot;</code> or <code>&quot;server&quot;</code>)</td>
+			</tr>
+			<tr>
+					<td><code>colorScheme</code></td>
+					<td>string</td>
+					<td>Override site-level <code>colorScheme</code> for this page (<code>&quot;auto&quot;</code>, <code>&quot;dark&quot;</code>, or <code>&quot;light&quot;</code>)</td>
+			</tr>
+			<tr>
+					<td><code>useHLJS</code></td>
+					<td>bool</td>
+					<td>Override site-level <code>useHLJS</code> for this page</td>
+			</tr>
+			<tr>
+					<td><code>readingTime</code></td>
+					<td>bool</td>
+					<td>Override site-level <code>readingTime</code> for this page</td>
+			</tr>
+			<tr>
+					<td><code>wordCount</code></td>
+					<td>bool</td>
+					<td>Override site-level <code>wordCount</code> for this page</td>
+			</tr>
+			<tr>
+					<td><code>hideAuthor</code></td>
+					<td>bool</td>
+					<td>Override site-level <code>hideAuthor</code> for this page</td>
+			</tr>
+			<tr>
+					<td><code>showRelatedPosts</code></td>
+					<td>bool</td>
+					<td>Override site-level <code>showRelatedPosts</code> for this page</td>
+			</tr>
+			<tr>
+					<td><code>related_content_limit</code></td>
+					<td>int</td>
+					<td>Override site-level <code>related_content_limit</code> for this page</td>
+			</tr>
+	</tbody>
+</table>
+<h2 id="recipe-pages">Recipe Pages</h2>
+<p>Beautiful Hugo supports recipe content with automatic <a href="https://schema.org/Recipe">schema.org/Recipe</a> structured data (JSON-LD) and a rendered recipe card below the page body. This provides SEO benefits — search engines can display rich recipe results with cook times, ingredients, and more.</p>
+<h3 id="setup">Setup</h3>
+<p>Create content files with <code>type: recipe</code> and a <code>recipe</code> front matter map:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Classic Chocolate Chip Cookies&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">recipe</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2026-05-12</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;baking&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;dessert&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">recipe</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">prepTime</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;PT15M&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">cookTime</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;PT12M&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">totalTime</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;PT27M&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">yield</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;24 cookies&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Dessert&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">cuisine</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;American&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">calories</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;180 kcal&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ingredients</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;2¼ cups all-purpose flour&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;1 tsp baking soda&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="s2">&#34;1 cup unsalted butter, softened&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">instructions</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Preheat oven&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Preheat oven to 375°F.&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Mix&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Combine flour, baking soda, and salt.&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span></code></pre></div><h3 id="recipe-front-matter-reference">Recipe front matter reference</h3>
+<table>
+	<thead>
+			<tr>
+					<th>Key</th>
+					<th>Type</th>
+					<th>Required</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>recipe.ingredients</code></td>
+					<td>list</td>
+					<td><strong>yes</strong></td>
+					<td>List of ingredient strings (supports Markdown)</td>
+			</tr>
+			<tr>
+					<td><code>recipe.instructions</code></td>
+					<td>list</td>
+					<td><strong>yes</strong></td>
+					<td>List of step strings <strong>or</strong> maps with <code>name</code> and <code>text</code> keys</td>
+			</tr>
+			<tr>
+					<td><code>recipe.prepTime</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>ISO 8601 duration (e.g. <code>&quot;PT15M&quot;</code> = 15 minutes)</td>
+			</tr>
+			<tr>
+					<td><code>recipe.cookTime</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>ISO 8601 duration</td>
+			</tr>
+			<tr>
+					<td><code>recipe.totalTime</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>ISO 8601 duration</td>
+			</tr>
+			<tr>
+					<td><code>recipe.yield</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>Recipe yield (e.g. <code>&quot;4 servings&quot;</code>, <code>&quot;24 cookies&quot;</code>)</td>
+			</tr>
+			<tr>
+					<td><code>recipe.category</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>Recipe category (e.g. <code>&quot;Dessert&quot;</code>, <code>&quot;Main Course&quot;</code>)</td>
+			</tr>
+			<tr>
+					<td><code>recipe.cuisine</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>Cuisine type (e.g. <code>&quot;Italian&quot;</code>, <code>&quot;Japanese&quot;</code>)</td>
+			</tr>
+			<tr>
+					<td><code>recipe.calories</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>Calories per serving (e.g. <code>&quot;250 kcal&quot;</code>)</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="how-it-works-1">How it works</h3>
+<ul>
+<li><strong>Structured data</strong>: Pages with <code>type: recipe</code> and a <code>recipe</code> param emit a combined <code>Article</code> + <code>Recipe</code> JSON-LD block (as recommended by Google for recipe blog posts). Other pages continue to emit the standard <code>Article</code> schema.</li>
+<li><strong>Visual rendering</strong>: A recipe card is automatically rendered below the page body content, displaying metadata (prep time, cook time, yield, etc.), an ingredients list, and numbered instructions.</li>
+<li><strong>Archetype</strong>: Use <code>hugo new recipe/my-recipe.md</code> to get a pre-filled recipe front matter scaffold.</li>
+<li><strong>Page behavior</strong>: Recipe pages behave like blog posts (showing post meta, post navigation, and comments) since they are not <code>type: page</code>.</li>
+</ul>
+<h3 id="iso-8601-duration-format">ISO 8601 duration format</h3>
+<p>Time values use the ISO 8601 duration format:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Example</th>
+					<th>Meaning</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>PT15M</code></td>
+					<td>15 minutes</td>
+			</tr>
+			<tr>
+					<td><code>PT1H30M</code></td>
+					<td>1 hour 30 minutes</td>
+			</tr>
+			<tr>
+					<td><code>PT2H</code></td>
+					<td>2 hours</td>
+			</tr>
+	</tbody>
+</table>
+<p><code>P</code> marks the start, <code>T</code> separates date from time components, and <code>H</code>/<code>M</code>/<code>S</code> are hours, minutes, seconds.</p>
+<h2 id="publication-pages">Publication Pages</h2>
+<p>Beautiful Hugo supports academic publications, one page per paper. A <code>type: publication</code> page shows the authors and venue under the title, and link buttons and a BibTeX entry above the page body, and its <code>head</code> gets <a href="https://scholar.google.com/intl/en/scholar/inclusion.html#indexing">Highwire Press <code>citation_*</code> meta tags</a> so Google Scholar can index the paper, plus <a href="https://schema.org/ScholarlyArticle">schema.org/ScholarlyArticle</a> JSON-LD. The section list groups the papers by year. See the <a href="../../publication/">demo section</a>.</p>
+<h3 id="setup-1">Setup</h3>
+<p>Create content files with <code>type: publication</code> and a <code>publication</code> front matter map. The page body is the abstract or a short description:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;On the Optimal Steeping Time of Static Site Generators&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">publication</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2026-03-14</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;hugo&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;tea&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">publication</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">authors</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;Ada Teapot&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;Some Person&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">article</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">venue</span><span class="p">:</span><span class="w"> </span><span class="l">Journal of Implausible Web Engineering</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">volume</span><span class="p">:</span><span class="w"> </span><span class="m">42</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">number</span><span class="p">:</span><span class="w"> </span><span class="m">7</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">pages</span><span class="p">:</span><span class="w"> </span><span class="m">1-11</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">doi</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;10.0000/jiwe.2026.0001&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">arxiv</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;0000.00001&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">pdf</span><span class="p">:</span><span class="w"> </span><span class="l">paper.pdf</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">code</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/teapot</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="l">We steep a static site generator in hot water and measure build times.</span><span class="w">
+</span></span></span></code></pre></div><p>Quote <code>doi</code> and <code>arxiv</code> values, or YAML parses them as numbers. <code>date</code> is the publication date; the section list groups by its year. Add a <code>_index.md</code> to the section and link it from the navbar.</p>
+<p>For a preprint on a server other than arXiv, such as bioRxiv or medRxiv, use <code>preprint</code> with the server name and the full URL. Add more link buttons with <code>links</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">publication</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">preprint</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">server</span><span class="p">:</span><span class="w"> </span><span class="l">bioRxiv</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">https://www.biorxiv.org/content/10.1101/2024.01.01.123456v1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;10.1101/2024.01.01.123456&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">links</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="nt">label</span><span class="p">:</span><span class="w"> </span><span class="l">Dataset</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">https://example.com/data</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">icon</span><span class="p">:</span><span class="w"> </span><span class="l">fas fa-database</span><span class="w">
+</span></span></span></code></pre></div><h3 id="publication-front-matter-reference">Publication front matter reference</h3>
+<table>
+	<thead>
+			<tr>
+					<th>Key</th>
+					<th>Type</th>
+					<th>Required</th>
+					<th>Description</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>publication.authors</code></td>
+					<td>list</td>
+					<td>no</td>
+					<td>Author names in citation order. Falls back to the page <code>author</code> or the site author. A name equal to <code>Params.author.name</code> is shown in bold</td>
+			</tr>
+			<tr>
+					<td><code>publication.kind</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>BibTeX entry type: <code>article</code> (default), <code>inproceedings</code>, <code>book</code>, <code>incollection</code>, <code>phdthesis</code>, <code>mastersthesis</code>, <code>techreport</code>, <code>misc</code>, and so on. Selects the venue field in the BibTeX and meta tags</td>
+			</tr>
+			<tr>
+					<td><code>publication.venue</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>Journal, conference proceedings, institution, or school (supports Markdown)</td>
+			</tr>
+			<tr>
+					<td><code>publication.volume</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>Volume</td>
+			</tr>
+			<tr>
+					<td><code>publication.number</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>Issue number</td>
+			</tr>
+			<tr>
+					<td><code>publication.pages</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>Page range (<code>&quot;1-11&quot;</code>) or article number</td>
+			</tr>
+			<tr>
+					<td><code>publication.publisher</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>Publisher</td>
+			</tr>
+			<tr>
+					<td><code>publication.doi</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>DOI, without the <code>https://doi.org/</code> prefix</td>
+			</tr>
+			<tr>
+					<td><code>publication.arxiv</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>arXiv identifier (<code>&quot;0000.00001&quot;</code>)</td>
+			</tr>
+			<tr>
+					<td><code>publication.preprint.server</code></td>
+					<td>string</td>
+					<td>with <code>preprint</code></td>
+					<td>Preprint server name (<code>bioRxiv</code>). Used as the button label and the BibTeX <code>archivePrefix</code></td>
+			</tr>
+			<tr>
+					<td><code>publication.preprint.url</code></td>
+					<td>string</td>
+					<td>with <code>preprint</code></td>
+					<td>Full URL of the preprint</td>
+			</tr>
+			<tr>
+					<td><code>publication.preprint.id</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>Preprint identifier. Becomes the BibTeX <code>eprint</code> when <code>arxiv</code> is not set</td>
+			</tr>
+			<tr>
+					<td><code>publication.pdf</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>PDF: a page-bundle resource, a path under <code>static/</code>, or a URL. Becomes <code>citation_pdf_url</code></td>
+			</tr>
+			<tr>
+					<td><code>publication.url</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>Publisher or project page</td>
+			</tr>
+			<tr>
+					<td><code>publication.code</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>Source code URL</td>
+			</tr>
+			<tr>
+					<td><code>publication.slides</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>Slides (resource, static path, or URL)</td>
+			</tr>
+			<tr>
+					<td><code>publication.poster</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>Poster (resource, static path, or URL)</td>
+			</tr>
+			<tr>
+					<td><code>publication.video</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>Video URL</td>
+			</tr>
+			<tr>
+					<td><code>publication.links</code></td>
+					<td>list</td>
+					<td>no</td>
+					<td>More link buttons, each with <code>label</code>, <code>url</code> (resource, static path, or URL), and an optional Font Awesome <code>icon</code> (default <code>fas fa-link</code>)</td>
+			</tr>
+			<tr>
+					<td><code>publication.key</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>BibTeX citation key. Defaults to the first author&rsquo;s last name plus the year (<code>teapot2026</code>)</td>
+			</tr>
+			<tr>
+					<td><code>publication.bibtex</code></td>
+					<td>string</td>
+					<td>no</td>
+					<td>Hand-written BibTeX entry. Replaces the generated one</td>
+			</tr>
+	</tbody>
+</table>
+<h3 id="how-it-works-2">How it works</h3>
+<ul>
+<li><strong>Meta tags</strong>: Each publication page emits <code>citation_title</code>, <code>citation_author</code>, <code>citation_publication_date</code>, <code>citation_journal_title</code> (or the conference, dissertation, or technical report equivalent), <code>citation_volume</code>, <code>citation_issue</code>, <code>citation_firstpage</code>, <code>citation_lastpage</code>, <code>citation_doi</code>, <code>citation_arxiv_id</code>, <code>citation_pdf_url</code>, and <code>citation_abstract_html_url</code>. Google Scholar needs one page per paper, so a listing page or a Markdown table is not indexed.</li>
+<li><strong>Structured data</strong>: Pages with <code>type: publication</code> emit a <code>ScholarlyArticle</code> JSON-LD block in place of the <code>Article</code> one, with the authors, the periodical, volume, issue, page range, DOI, and PDF. The DOI, arXiv, preprint, and <code>url</code> links go in <code>sameAs</code>.</li>
+<li><strong>Visual rendering</strong>: The page header shows the authors (site author in bold) and the venue line under the title. Link buttons and a collapsible BibTeX entry are rendered above the page body.</li>
+<li><strong>Section list</strong>: A section of publication pages (for example <code>content/publication/</code>) is listed grouped by year, newest first, with the authors, venue, and links. It is not paginated. The <code>publications</code> shortcode renders the same list on any page.</li>
+<li><strong>Archetype</strong>: Use <code>hugo new publication/my-paper.md</code> to get a pre-filled front matter scaffold.</li>
+<li><strong>Page behavior</strong>: Publication pages behave like blog posts (previous/next navigation and comments) since they are not <code>type: page</code>.</li>
+</ul>
+
+          
+          
+
+
+
+        
+        
+
+        
+
+        
+        
+      </article>
+
+      
+
+
+      
+    </div>
+  </div>
+</div>
+
+    
+    <div class="offcanvas offcanvas-start toc-panel" id="toc-panel" tabindex="-1" aria-labelledby="toc-title" data-toc-mode="headings">
+  <div class="offcanvas-header">
+    <span class="offcanvas-title toc-title" id="toc-title">목차</span>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="목차 닫기"></button>
+  </div>
+  <nav class="offcanvas-body toc-body"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#core-settings">Core Settings</a></li>
+    <li><a href="#last-modified-dates">Last Modified Dates</a></li>
+    <li><a href="#math-engine">Math Engine</a>
+      <ul>
+        <li><a href="#server-side-rendering">Server-side rendering</a></li>
+        <li><a href="#passthrough">Passthrough</a></li>
+      </ul>
+    </li>
+    <li><a href="#author">Author</a></li>
+    <li><a href="#color-scheme">Color Scheme</a>
+      <ul>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#selfhosted-assets">selfHosted assets</a></li>
+      </ul>
+    </li>
+    <li><a href="#content-display">Content Display</a>
+      <ul>
+        <li><a href="#related-posts">Related Posts</a></li>
+        <li><a href="#table-of-contents-panel">Table of Contents Panel</a>
+          <ul>
+            <li><a href="#heading-levels">Heading levels</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#big-image-header">Big Image Header</a></li>
+    <li><a href="#image-processing">Image Processing</a>
+      <ul>
+        <li><a href="#where-processed-images-are-stored">Where processed images are stored</a></li>
+        <li><a href="#minification">Minification</a></li>
+      </ul>
+    </li>
+    <li><a href="#syntax-highlighting">Syntax Highlighting</a>
+      <ul>
+        <li><a href="#including-external-files">Including External Files</a></li>
+      </ul>
+    </li>
+    <li><a href="#comment-systems">Comment Systems</a></li>
+    <li><a href="#analytics--search">Analytics &amp; Search</a></li>
+    <li><a href="#seo-robot-meta-tags">SEO Robot Meta Tags</a></li>
+    <li><a href="#custom-html-hooks">Custom HTML Hooks</a></li>
+    <li><a href="#miscellaneous">Miscellaneous</a></li>
+    <li><a href="#per-page-front-matter">Per-Page Front Matter</a></li>
+    <li><a href="#recipe-pages">Recipe Pages</a>
+      <ul>
+        <li><a href="#setup">Setup</a></li>
+        <li><a href="#recipe-front-matter-reference">Recipe front matter reference</a></li>
+        <li><a href="#how-it-works-1">How it works</a></li>
+        <li><a href="#iso-8601-duration-format">ISO 8601 duration format</a></li>
+      </ul>
+    </li>
+    <li><a href="#publication-pages">Publication Pages</a>
+      <ul>
+        <li><a href="#setup-1">Setup</a></li>
+        <li><a href="#publication-front-matter-reference">Publication front matter reference</a></li>
+        <li><a href="#how-it-works-2">How it works</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></nav>
+</div>
+    
+      
+  <div class="page-meta">
+  
+  
+  
+</div>
+
+
+
+<footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li class="list-inline-item" ><a rel="noopener noreferrer" href="mailto:cdd0922@gmail.com" title="Email me" aria-label="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+              <li class="list-inline-item" ><a rel="noopener noreferrer" href="https://github.com/Roxxog/MyPortfolio_test" title="GitHub" aria-label="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              Roxxog
+            
+            &nbsp;&bull;&nbsp;
+          
+          &copy;
+          
+            2026
+          
+
+          
+            &nbsp;&bull;&nbsp;
+          
+          
+            <a href="/">Roxxog 3D Portfolio</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.169.0</a> 을 사용함 &nbsp;&bull;&nbsp; <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> 를 개조한 <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> 테마
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      
+
+
+      
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM&#43;D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/umd/photoswipe.umd.min.js" integrity="sha384-k8EKyYcONphQ7zH4cQ0888JapXwrLTXQl/Ue1/jYgjVYahln1NWpnt2S4IC56LNh" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/umd/photoswipe-lightbox.umd.min.js" integrity="sha384-IiBVbUz6&#43;U&#43;Tbm/ijO2P0XRwcVzNfrMzloNLkrqHkbi6w5H0v6ie4fI9BIO4SwdK" crossorigin="anonymous"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" integrity="sha384-PCSoOZTpbkikBEtd/&#43;uV3WNdc676i9KUf01KOA8CnJotvlx8rRrETbDuwdjqTYvt" crossorigin="anonymous"></script>
+
+
+<script src="/js/beautifulhugo-cabff7a5.d5224b56f8f6ca48dd1b1e5f2f91c9c0cd3cd5b8362f62246ec1a7f2bb520daf.js" integrity="sha256-1SJLVvj2ykjdGx5fL5HJwM081bg2L2IkbsGn8rtSDa8=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>

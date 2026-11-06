@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Blender on Roxxog 3D Portfolio</title>
+		<link>http://localhost:1313/tags/blender/</link>
+		<description>Recent content in Blender on Roxxog 3D Portfolio</description>
+		<generator>Hugo</generator>
+		<language>ko</language>
+		
+			<managingEditor>cdd0922@gmail.com (Roxxog)</managingEditor>
+		
+		
+			<webMaster>cdd0922@gmail.com (Roxxog)</webMaster>
+		
+		
+		
+			<lastBuildDate>Fri, 06 Nov 2026 11:18:01 +0900</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/blender/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Fin</title>
+				<link>http://localhost:1313/projects/fin/</link>
+				<pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate><author>cdd0922@gmail.com (Roxxog)</author>
+				<guid>http://localhost:1313/projects/fin/</guid>
+				<description>또 다른 스타일로 배우기 시도</description>
+			</item>
+			<item>
+				<title>Leeyuri</title>
+				<link>http://localhost:1313/projects/leeyuri/</link>
+				<pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate><author>cdd0922@gmail.com (Roxxog)</author>
+				<guid>http://localhost:1313/projects/leeyuri/</guid>
+				<description>가장 만들고 싶던 캐릭터</description>
+			</item>
+			<item>
+				<title>yangyanggung</title>
+				<link>http://localhost:1313/projects/yangyanggung/</link>
+				<pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate><author>cdd0922@gmail.com (Roxxog)</author>
+				<guid>http://localhost:1313/projects/yangyanggung/</guid>
+				<description>정체기</description>
+			</item>
+			<item>
+				<title>Dummy</title>
+				<link>http://localhost:1313/projects/dummy/</link>
+				<pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate><author>cdd0922@gmail.com (Roxxog)</author>
+				<guid>http://localhost:1313/projects/dummy/</guid>
+				<description>얼마나 빠르게 게임 에셋용 소품을 만들 수 있을까?</description>
+			</item>
+			<item>
+				<title>Yoonsea</title>
+				<link>http://localhost:1313/projects/yoonsea/</link>
+				<pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate><author>cdd0922@gmail.com (Roxxog)</author>
+				<guid>http://localhost:1313/projects/yoonsea/</guid>
+				<description>완벽한 모델에 대한 집착</description>
+			</item>
+			<item>
+				<title>yoonseul</title>
+				<link>http://localhost:1313/projects/yoonseul/</link>
+				<pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate><author>cdd0922@gmail.com (Roxxog)</author>
+				<guid>http://localhost:1313/projects/yoonseul/</guid>
+				<description>2025년 1월 1일 처음 블랜더를 접하며 2개월 동안 만든 첫 3D 모델</description>
+			</item>
+	</channel>
+</rss>

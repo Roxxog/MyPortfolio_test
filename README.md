@@ -1,139 +1,45 @@
-# Beautiful Hugo
+# 필요한 도구 버전
 
-An adaptation of the [Beautiful Jekyll](https://deanattali.com/beautiful-jekyll/) theme by [Dean Attali](https://deanattali.com/aboutme#contact), with years of community updates and many new features.
+Hugo v0.146.2 이상 (이 사이트는 Hugo v0.167.0 사용 중)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/screenshot-dark.jpg">
-  <img alt="Beautiful Hugo Theme Screenshot" src="images/screenshot.jpg">
-</picture>
+Go (버전 : go version go1.27.3 windows/amd64)
 
-## Live demo
+Beautiful Hugo themes v5.0.0 (https://github.com/halogenica/beautifulhugo 공식 github 저장소에서 다운로드)
 
-- **Current:** <https://halogenica.net/beautifulhugo>
-- **Legacy:** <https://hugo-theme-beautifulhugo.netlify.app>
+Python 3.15.2 사용 (Python 3.9 이상)
 
-The example site includes detailed feature pages with live examples — see [Features](#features) below.
+git 2.50.1.windows.1 사용됨
 
-## Installation
+# 실행 절차 (git 폴더 생성, 저장소 생성, 빌드 확인 절차)
 
-Install Hugo and create a new site. See [the Hugo documentation](https://gohugo.io/getting-started/quick-start/) for details.
+다운로드한 휴고 테마 압축해제 후 beautifulhugo-master폴더를 git이 관리하게 될 폴더에 넣은 후 prepare_github_pages.py를 추가로 넣어준다.
 
-### Git Submodule
+github에서 저장소를 생성한 후 저장소의 HTTPS 주소를 복사한다.
 
-```sh
-git submodule add https://github.com/halogenica/beautifulhugo.git themes/beautifulhugo
-```
+PowerShell 등의 터미널에서 cd를 통해 휴고 테마 폴더로 이동한다. (ls를 통해 README.md, layouts 등의 파일과 함께 prepare_github_pages.py가 있는 것을 확인)
 
-A submodule points to a commit, not to a tag. To use a release, check out the
-tag in the submodule and commit the result:
+python prepare_github_pages.py 명령어를 실행한 후 저장소의 HTTPS 주소를 붙여넣어은 후 이어서 명령어를 실행한다. (만약 명령어 실행 환경이 bash 등일 경우 작동하지 않을 수도 있음)
 
-```sh
-git -C themes/beautifulhugo checkout v5.0.0
-git add themes/beautifulhugo
-```
+명령어가 정상적으로 실행되었을 경우 저장소로 이동하여 Settings -> Pages -> Build and deployment 설정을 Github Actions로 변경한다.
 
-### Hugo Module
+휴고 테마 폴더를 git init . 그리고 git remote add origin 저장소의 HTTPS 주소 명령어를 이용하여 Github 저장소와 연결시켜준다. (git remote -v 명령어로 github 주소가 나올 경우 잘 실행되었다고 할 수 있다)
 
-```sh
-hugo mod init github.com/USERNAME/SITENAME
-hugo mod get github.com/halogenica/beautifulhugo/v5
-```
+git branch -M main 으로 브랜치를 main으로 설정해준다. (간혹 main이 아닌 master로 브랜치가 설정되어 있을 수 있기 때문에 로컬의 브랜치 이름과 저장소의 브랜치 이름을 통일 시켜 혼란을 없앤다)
 
-The `/v5` suffix is the major version of the theme. Pin an exact release with
-`hugo mod get github.com/halogenica/beautifulhugo/v5@v5.0.0`, or stay up to date
-with `hugo mod get -u`.
+git add . -> git commit -m "원하는 초기 커밋 메세지" -> git push origin main 순으로 명령어를 입력하여 로컬 폴더의 상태를 저장소에 저장한다. (그리고 Actions에서 배포된 주소로 들어가 배포된 사이트를 확인한다)
 
-If using Hugo modules, add this to your `hugo.toml`:
+prepare_github_pages.py 로 생성된 site/content, site/hugo.toml 등의 파일들을 수정하며 사이트를 개선한다.
 
-```toml
-[[module.imports]]
-  path = "github.com/halogenica/beautifulhugo/v5"
-```
+winget install -e --id Hugo.Hugo.Extended 명령어를 실행하여 Hugo를 다운받아서 사이트를 미리보기 할 수 있다. 
 
-### Preview
+hugo server --source site 명령어로 나온 local 주소를 통해 사이트를 미리 볼 수 있다. (만약 Go와 관련된 Error가 발생할 경우 아래에서...)
 
-Copy the example site content and start Hugo:
+winget install -e --id GoLang.Go 명령어는 만약 beautifulhugo-master/site 기준으로 배포된 사이트를 미리 보기할 때 Go 프로그래밍 언어가 설치가 안되어있을 경우 Error가 발생할 때 Go를 다운받은 후 다시 hugo server --source site 명령어를 실행하여 local 주소를 통해 사이트를 미리보기 한다.(local 주소의 사이트는 미리보기 용으로 해당 local 주소는 배포용 주소가 아니다)
 
-```sh
-cp -riv themes/beautifulhugo/exampleSite/* .
-hugo serve
-```
+# 수정과 재배포
 
-## Features
+배포되는 사이트는 beautifulhugo-master/site의 폴더를 수정하여 변경할 수 있다.
 
-| Feature | Details |
-|---------|---------|
-| **Responsive design** | Looks great on desktop and mobile |
-| **Light/dark/auto color scheme** | Navbar toggle with `localStorage` persistence |
-| **Syntax highlighting** | Chroma (server-side, default) or Highlight.js (client-side) |
-| **KaTeX math** | Inline `//(...//)` and display `$$...$$` — no config needed |
-| **Mermaid diagrams** | Flowcharts, sequence diagrams, Gantt charts via shortcode |
-| **PhotoSwipe galleries** | `beautifulfigure` and `gallery` shortcodes with lightbox |
-| **Shortcodes** | `details`, `columns`/`column`, `tabs`/`tab`, `mermaid`, `gallery`, `beautifulfigure`, `video`, `icon` |
-| **Markdown extensions** | Callout boxes (note/warning/error/success), theme-dependent content, utility classes |
-| **Comment systems** | Disqus, Giscus, Utterances, Cusdis, Staticman |
-| **SEO** | Schema.org JSON-LD, Open Graph, Twitter Cards — automatic |
-| **Multilingual** | 19 languages with navbar language switcher |
-| **Social icons** | 42 platforms in the footer via `[Params.author]` |
-| **Self-hosted assets** | `selfHosted = true` for GDPR/EU-DSGVO compliance |
-| **Big image headers** | Full-width hero images with fade cycling |
-| **Social sharing** | Share buttons on posts (Twitter, Facebook, Reddit, LinkedIn, etc.) |
-| **GitHub buttons** | Star/watch/fork badges via front matter |
-| **Google Analytics** | Standard Hugo integration (production only) |
-| **Integrated search** | Fast client-side search with Fuse.js |
-| **RSS** | Built-in, enabled with `rss = true` |
+파일들을 수정한 후 PowerShell에서 cd를 통해 beautifulhugo-master로 이동한 후 git add . -> git commit -m "커밋 메세지" -> git push origin main을 통해 저장소에 commit을 남기면 배포가 자동으로 일어나며 Actions에서 배포의 성공 여부를 확인할 수 있다.
 
-For complete configuration reference, shortcode documentation, and live examples, see the [example site feature pages](https://halogenica.net/beautifulhugo/page/configuration/):
-
-- [Configuration](https://halogenica.net/beautifulhugo/page/configuration/) — every `hugo.toml` parameter
-- [Shortcodes](https://halogenica.net/beautifulhugo/page/shortcodes/) — `details`, `columns`, `tabs`, `gallery`, `video`, `mermaid`
-- [Code Blocks](https://halogenica.net/beautifulhugo/page/code-blocks/) — Chroma vs Highlight.js, line numbers, copy button
-- [Markdown Extensions](https://halogenica.net/beautifulhugo/page/markdown-extensions/) — callout boxes, theme-dependent content
-- [Figures & Galleries](https://halogenica.net/beautifulhugo/page/figures-and-galleries/) — PhotoSwipe integration
-- [Math & Diagrams](https://halogenica.net/beautifulhugo/page/math-and-diagrams/) — KaTeX and Mermaid examples
-- [Layout Options](https://halogenica.net/beautifulhugo/page/pages-and-layouts/#layout-options) — big images, full-width, hidden pages (part of Pages & Layouts)
-- [Comments & Social](https://halogenica.net/beautifulhugo/page/comments-and-social/) — comment systems, social sharing, footer icons
-- [SEO & i18n](https://halogenica.net/beautifulhugo/page/seo-and-i18n/) — structured data, Open Graph, multilingual
-
-## Quick Start Config
-
-```toml
-baseurl = "https://example.com/"
-title = "My Site"
-
-[Params]
-  subtitle = "Build a beautiful and simple website in minutes"
-  mainSections = ["post", "posts"]
-  logo = "/img/avatar-icon.png"
-  favicon = "/img/favicon.ico"
-  dateFormat = "January 2, 2006"
-  colorScheme = "auto"
-  readingTime = true
-  socialShare = true
-  showRelatedPosts = true
-  rss = true
-
-  [Params.search]
-    provider = "fuse"
-
-[Params.author]
-  name = "Your Name"
-  website = "yourwebsite.com"
-  email = "youremail@domain.com"
-  github = "username"
-
-[markup.highlight]
-  noClasses = false
-
-[markup.goldmark.parser.attribute]
-  block = true
-
-[markup.goldmark.renderer]
-  unsafe = true
-```
-
-> **Note:** `[Params.author]` is required. The old top-level `[author]` key is deprecated and will produce a build error.
-
-## License
-
-MIT Licensed, see [LICENSE](https://github.com/halogenica/Hugo-BeautifulHugo/blob/master/LICENSE).
+배포가 성공할 경우 공개 사이트 주소를 통해 사이트를 확인한다.
