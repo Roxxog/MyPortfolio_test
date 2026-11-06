@@ -1,7 +1,13 @@
 <article class="post-preview">
     <a href="{{ .RelPermalink }}">
-        <h2 class="post-title">{{ .Title }}
-            {{ if .Params.pin }}<span class="post-pin" aria-label="고정된 게시물"><i class="fas fa-thumbtack" aria-hidden="true"></i> 고정</span>{{ end }}</h2>
+        <h2 class="post-title">
+            {{ .Title }}
+            {{ if and (eq .Section "projects") (in (slice "complete" "in-progress") .Params.status) }}
+                {{ $statusLabel := cond (eq .Params.status "complete") "완성" "진행 중" }}
+                <span class="project-status project-status--{{ .Params.status }}">{{ $statusLabel }}</span>
+            {{ end }}
+            {{ if .Params.pin }}<span class="post-pin" aria-label="고정된 게시물"><i class="fas fa-thumbtack" aria-hidden="true"></i> 고정</span>{{ end }}
+        </h2>
         {{ if .Params.subtitle }}
         <h3 class="post-subtitle">
             {{ .Params.subtitle }}
@@ -64,4 +70,5 @@
     {{ end }}
 
 </article>
+
 

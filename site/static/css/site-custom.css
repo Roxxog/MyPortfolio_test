@@ -11,3 +11,20 @@
   font-weight: 700;
   vertical-align: middle;
 }
+.project-status {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.7em;
+  font-weight: 700;
+  vertical-align: middle;
+}
+.project-status--complete {
+  background: #dff3e4;
+  color: #206b35;
+}
+.project-status--in-progress {
+  background: #dceeff;
+  color: #18568a;
+}
