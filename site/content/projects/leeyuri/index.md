@@ -3,6 +3,7 @@ title: "Leeyuri"
 subtitle: "네 번째 모델"
 date: 2026-09-23
 summary: "가장 만들고 싶던 캐릭터"
+status: in-progress
 tags: ["Blender", "3D"]
 # 표지 이미지를 이 폴더에 추가한 뒤 파일명에 맞춰 주석을 풀어 주세요.
 thumbnail: Leeyuri2.png

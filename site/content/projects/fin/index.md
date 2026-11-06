@@ -3,6 +3,7 @@ title: "Fin"
 subtitle: "다섯 번째 모델"
 date: 2026-09-26
 summary: "또 다른 스타일로 배우기 시도"
+status: in-progress
 tags: ["Blender", "3D"]
 thumbnail: FinShapekey.png
 ---

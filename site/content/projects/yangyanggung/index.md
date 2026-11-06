@@ -3,6 +3,7 @@ title: "yangyanggung"
 subtitle: "세 번째 모델"
 date: 2026-07-13
 summary: "정체기"
+status: in-progress
 tags: ["Blender", "3D"]
 # thumbnail: cover.png
 ---

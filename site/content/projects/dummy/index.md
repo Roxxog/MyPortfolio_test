@@ -3,6 +3,7 @@ title: "Dummy"
 subtitle: "실력 점검용 모델"
 date: 2026-01-17
 summary: "얼마나 빠르게 게임 에셋용 소품을 만들 수 있을까?"
+status: complete
 tags: ["Blender", "3D"]
 # 표지 이미지를 이 폴더에 추가한 뒤 파일명에 맞춰 주석을 풀어 주세요.
 thumbnail: Dummy 2026-01-17 180126.png
