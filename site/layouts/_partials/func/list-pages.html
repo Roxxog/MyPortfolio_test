@@ -1,0 +1,13 @@
+{{- /* Return pages with the single optional pinned page last in the collection so it appears first. */ -}}
+{{- $pages := .Pages -}}
+{{- if .IsHome -}}
+  {{- $pages = where site.RegularPages "Type" "in" (partial "func/main-sections.html" .) -}}
+{{- end -}}
+{{- $visiblePages := where $pages "Params.hidden" "!=" true -}}
+{{- $pinnedPages := where $visiblePages "Params.pin" true -}}
+{{- $allPinnedPages := where site.RegularPages "Params.pin" true -}}
+{{- if gt (len $allPinnedPages) 1 -}}
+  {{- errorf "Only one page may have pin: true; found %d pages: %s" (len $allPinnedPages) (delimit (apply $allPinnedPages ".RelPermalink" ",") ", ") -}}
+{{- end -}}
+{{- $unpinnedPages := where $visiblePages "Params.pin" "!=" true -}}
+{{- return (append $unpinnedPages $pinnedPages) -}}

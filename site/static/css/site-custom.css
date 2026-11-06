@@ -1,0 +1,13 @@
+.post-pin {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: #f0b429;
+  color: #222;
+  font-size: 0.7em;
+  font-weight: 700;
+  vertical-align: middle;
+}
