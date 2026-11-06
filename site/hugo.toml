@@ -80,15 +80,14 @@ enableGitInfo = true
     provider = "fuse"
 
 [[Params.bigimg]]
-  src = "/img/triangle.jpg"
-  desc = "Triangle"
+  src = "/img/yurihead-nodes-banner.jpg"
+  desc = "YuriHead material nodes"
 [[Params.bigimg]]
-  src = "/img/sphere.jpg"
-  desc = "Sphere"
-  position = "center top"
+  src = "/img/hand-weight-paint-banner.jpg"
+  desc = "Hand weight painting"
 [[Params.bigimg]]
-  src = "/img/hexagon.jpg"
-  desc = "Hexagon"
+  src = "/img/hair-shadow-nodes-banner.jpg"
+  desc = "Hair shadow material nodes"
 
 # For AI search summary limits, see [Params.seo] in the SEO & i18n docs.
 
@@ -264,7 +263,7 @@ enableGitInfo = true
 #     weight = 4
 
 [[menu.main]]
-  name = "About"
+  name = "크레딧&라이선스"
   url = "page/about/"
   weight = 4
 
