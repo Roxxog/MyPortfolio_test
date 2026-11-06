@@ -5,7 +5,7 @@ date: 2025-07-01
 summary: "완벽한 모델에 대한 집착"
 status: complete
 tags: ["Blender", "3D"]
-# thumbnail: cover.png
+thumbnail: yoonsea.png
 ---
 
 

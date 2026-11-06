@@ -5,7 +5,7 @@ date: 2026-07-13
 summary: "정체기"
 status: in-progress
 tags: ["Blender", "3D"]
-# thumbnail: cover.png
+thumbnail: 양양궁 실루엣.png
 ---
 
 

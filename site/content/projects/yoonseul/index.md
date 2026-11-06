@@ -5,8 +5,7 @@ date: 2025-03-22
 summary: "2025년 1월 1일 처음 블랜더를 접하며 2개월 동안 만든 첫 3D 모델"
 status: complete
 tags: ["Blender", "3D"]
-# 표지 이미지를 폴더에 넣은 뒤 아래 주석을 풀고 파일명을 맞춰 주세요.
-# thumbnail: cover.png
+thumbnail: yoonseul.png
 ---
 
 

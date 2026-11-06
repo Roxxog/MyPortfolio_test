@@ -8,12 +8,12 @@ comments: false
 
 또한 이 사이트의 주요 콘텐츠들의 원본 캐릭터의 출처를 각 모델별로 명시하였습니다.
 
-원본 일러스트 소스 출처 보기
-Fin : https://www.youtube.com/watch?v=Hp8FHbZNtW8
-leeyuri : https://www.youtube.com/watch?v=56vc51wWKc4
-yangyanggung : https://www.youtube.com/watch?v=56vc51wWKc4
-yoonsea : https://www.youtube.com/watch?v=xIcxxcdKIyU
-yoonseul : https://www.youtube.com/watch?v=xIcxxcdKIyU
+원본 일러스트 소스 출처 보기<br>
+Fin : https://www.youtube.com/watch?v=Hp8FHbZNtW8<br>
+leeyuri : https://www.youtube.com/watch?v=56vc51wWKc4<br>
+yangyanggung : https://www.youtube.com/watch?v=56vc51wWKc4<br>
+yoonsea : https://www.youtube.com/watch?v=xIcxxcdKIyU<br>
+yoonseul : https://www.youtube.com/watch?v=xIcxxcdKIyU<br>
 
 그 외 사이트 개설에 필요한 수정에는 전반적으로 AI가 사용되었음을 알립니다.
 
