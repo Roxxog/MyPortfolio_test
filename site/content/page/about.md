@@ -1,8 +1,12 @@
 ---
-title: About
+title: 크레딧&라이선스
 subtitle: Theme credits and information
 comments: false
 ---
+
+이 사이트는 Beautiful Hugo Themes를 이용해서 개설되었으며 크레딧과 라이선스는 아래와 같습니다.
+
+또한 이 사이트의 주요 콘텐츠들의 원본 캐릭터의 출처를 각 모델별로 명시하였습니다.
 
 Beautiful Hugo is a Hugo theme adapted from [Beautiful Jekyll](https://deanattali.com/beautiful-jekyll/) by [Dean Attali](https://deanattali.com).
 
