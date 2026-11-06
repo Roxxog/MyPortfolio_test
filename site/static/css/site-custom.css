@@ -13,18 +13,36 @@
 }
 .project-status {
   display: inline-block;
-  margin-left: 0.5rem;
+  margin-left: 0.45rem;
   padding: 0.2rem 0.55rem;
   border-radius: 999px;
-  font-size: 0.7em;
+  vertical-align: 0.18em;
+  font-size: 0.42em;
   font-weight: 700;
-  vertical-align: middle;
+  line-height: 1.5;
+  white-space: nowrap;
 }
+
 .project-status--complete {
-  background: #dff3e4;
-  color: #206b35;
+  color: #176b45;
+  background: #e3f4eb;
+  border: 1px solid #a8ddbf;
 }
+
 .project-status--in-progress {
-  background: #dceeff;
-  color: #18568a;
+  color: #80520a;
+  background: #fff3d6;
+  border: 1px solid #efd28e;
+}
+
+[data-theme="dark"] .project-status--complete {
+  color: #a7e7c2;
+  background: #18392b;
+  border-color: #326d4e;
+}
+
+[data-theme="dark"] .project-status--in-progress {
+  color: #ffdc91;
+  background: #463515;
+  border-color: #806122;
 }
