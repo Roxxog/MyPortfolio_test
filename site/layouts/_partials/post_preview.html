@@ -2,7 +2,7 @@
     <a href="{{ .RelPermalink }}">
         <h2 class="post-title">
             {{ .Title }}
-            {{ if and (eq .Section "projects") (in (slice "complete" "in-progress") .Params.status) }}
+            {{ if and (eq .Section "projects") .Params.status }}
                 {{ $statusLabel := cond (eq .Params.status "complete") "완성" "진행 중" }}
                 <span class="project-status project-status--{{ .Params.status }}">{{ $statusLabel }}</span>
             {{ end }}
@@ -70,5 +70,7 @@
     {{ end }}
 
 </article>
+
+
 
 
