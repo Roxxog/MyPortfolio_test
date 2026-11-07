@@ -37,6 +37,13 @@
 				<description>정체기</description>
 			</item>
 			<item>
+				<title>effect1</title>
+				<link>http://localhost:1313/projects/effect1/</link>
+				<pubDate>Tue, 07 Jul 2026 00:00:00 +0000</pubDate><author>cdd0922@gmail.com (Roxxog)</author>
+				<guid>http://localhost:1313/projects/effect1/</guid>
+				<description>드라이버 + Shader</description>
+			</item>
+			<item>
 				<title>Dummy</title>
 				<link>http://localhost:1313/projects/dummy/</link>
 				<pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate><author>cdd0922@gmail.com (Roxxog)</author>
@@ -76,7 +83,7 @@
 				<link>http://localhost:1313/page/major-techniques/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>cdd0922@gmail.com (Roxxog)</author>
 				<guid>http://localhost:1313/page/major-techniques/</guid>
-				<description>&lt;h2 id=&#34;외곽선-생성-outline&#34;&gt;외곽선 생성 (Outline)&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Freestyle&lt;/li&gt;&#xA;&lt;li&gt;Grease Pencil&lt;/li&gt;&#xA;&lt;li&gt;Invert Hull&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;rgb-분리&#34;&gt;RGB 분리&lt;/h2&gt;&#xA;&lt;p&gt;Light 오브젝트의 Color 값을 통해 그림자를 더욱 세밀하게 제어&lt;/p&gt;&#xA;&lt;h2 id=&#34;계단식-명암&#34;&gt;계단식 명암&lt;/h2&gt;&#xA;&lt;p&gt;colorRamp의 임계값을 통해 2~3 톤의 명암 생성&lt;/p&gt;&#xA;&lt;h1 id=&#34;업데이트-예정&#34;&gt;업데이트 예정&lt;/h1&gt;</description>
+				<description>&lt;h2 id=&#34;외곽선-생성-outline&#34;&gt;외곽선 생성 (Outline)&lt;/h2&gt;&#xA;&lt;p&gt;외곽선은 렌더링 방식과 메시 구성에 따라 결과와 작업 과정이 달라진다. 아래는 각 방법의 일반적인 장단점을 정리하였다.&lt;/p&gt;&#xA;&lt;table&gt;&#xA;&#x9;&lt;thead&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;기법&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;장점&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;단점&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/thead&gt;&#xA;&#x9;&lt;tbody&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Freestyle&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;설정 한 번으로 외곽선을 생성해주며 세부적인 추가 설정이 가능하다.&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;렌더링 후에 결과를 볼 수 있으므로 수정하기 까다롭다.&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Grease Pencil (Line Art)&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;장면에서 선을 생성한 뒤 Grease Pencil 선으로 다룰 수 있어 두께와 모양을 별도로 조정하기 좋습니다.&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;실시간 작업에 사용하기에는 다소 무겁다.&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Inverted Hull&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;구현 방법이 비교적 단순하고 여러 플랫폼에서 호환성이 좋다. 그리고 실시간 작업에서도 빠르다.&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;메시를 2배로 사용하게 되므로 성능적으로 낭비가 있다.&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;rgb-분리&#34;&gt;RGB 분리&lt;/h2&gt;&#xA;&lt;p&gt;Light 오브젝트의 Color 값을 통해 명암, 림라이트, 환경광 같이 빛을 더욱 세밀하게 제어할 수 있다.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>크레딧&amp;라이선스</title>

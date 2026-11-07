@@ -103,9 +103,9 @@
         }
       ],
       "dateCreated": "0001-01-01T00:00:00+00:00",
-      "dateModified": "2026-11-07T15:36:52+09:00",
+      "dateModified": "2026-11-07T18:35:23+09:00",
       "datePublished": "0001-01-01T00:00:00+00:00",
-      "description": "외곽선 생성 (Outline) Freestyle Grease Pencil Invert Hull RGB 분리 Light 오브젝트의 Color 값을 통해 그림자를 더욱 세밀하게 제어\n계단식 명암 colorRamp의 임계값을 통해 2~3 톤의 명암 생성\n업데이트 예정",
+      "description": "외곽선 생성 (Outline) 외곽선은 렌더링 방식과 메시 구성에 따라 결과와 작업 과정이 달라진다. 아래는 각 방법의 일반적인 장단점을 정리하였다.\n기법 장점 단점 Freestyle 설정 한 번으로 외곽선을 생성해주며 세부적인 추가 설정이 가능하다. 렌더링 후에 결과를 볼 수 있으므로 수정하기 까다롭다. Grease Pencil (Line Art) 장면에서 선을 생성한 뒤 Grease Pencil 선으로 다룰 수 있어 두께와 모양을 별도로 조정하기 좋습니다. 실시간 작업에 사용하기에는 다소 무겁다. Inverted Hull 구현 방법이 비교적 단순하고 여러 플랫폼에서 호환성이 좋다. 그리고 실시간 작업에서도 빠르다. 메시를 2배로 사용하게 되므로 성능적으로 낭비가 있다. RGB 분리 Light 오브젝트의 Color 값을 통해 명암, 림라이트, 환경광 같이 빛을 더욱 세밀하게 제어할 수 있다.\n",
       "headline": "주요 기법",
       "image": "http://localhost:1313/img/portfolio-avatar.png",
       "inLanguage": "ko",
@@ -116,7 +116,7 @@
       "publisher": {
         "@id": "http://localhost:1313/#organization"
       },
-      "wordCount": 30
+      "wordCount": 117
     }
   ]
 }
@@ -124,13 +124,12 @@
 <meta property="og:url" content="http://localhost:1313/page/major-techniques/">
 	<meta property="og:site_name" content="Roxxog 3D Portfolio">
 	<meta property="og:title" content="주요 기법">
-	<meta property="og:description" content="외곽선 생성 (Outline) Freestyle Grease Pencil Invert Hull RGB 분리 Light 오브젝트의 Color 값을 통해 그림자를 더욱 세밀하게 제어
-계단식 명암 colorRamp의 임계값을 통해 2~3 톤의 명암 생성
-업데이트 예정">
+	<meta property="og:description" content="외곽선 생성 (Outline) 외곽선은 렌더링 방식과 메시 구성에 따라 결과와 작업 과정이 달라진다. 아래는 각 방법의 일반적인 장단점을 정리하였다.
+기법 장점 단점 Freestyle 설정 한 번으로 외곽선을 생성해주며 세부적인 추가 설정이 가능하다. 렌더링 후에 결과를 볼 수 있으므로 수정하기 까다롭다. Grease Pencil (Line Art) 장면에서 선을 생성한 뒤 Grease Pencil 선으로 다룰 수 있어 두께와 모양을 별도로 조정하기 좋습니다. 실시간 작업에 사용하기에는 다소 무겁다. Inverted Hull 구현 방법이 비교적 단순하고 여러 플랫폼에서 호환성이 좋다. 그리고 실시간 작업에서도 빠르다. 메시를 2배로 사용하게 되므로 성능적으로 낭비가 있다. RGB 분리 Light 오브젝트의 Color 값을 통해 명암, 림라이트, 환경광 같이 빛을 더욱 세밀하게 제어할 수 있다.">
 	<meta property="og:locale" content="ko">
 	<meta property="og:type" content="article">
 		<meta property="article:section" content="page">
-		<meta property="article:modified_time" content="2026-11-07T15:36:52+09:00">
+		<meta property="article:modified_time" content="2026-11-07T18:35:23+09:00">
 <link rel="canonical" href="http://localhost:1313/page/major-techniques/" />
   <meta name="twitter:title" content="주요 기법" />
   <meta name="twitter:description" content="2D 애니메이션 스타일의 3D 캐릭터를 만드는 방법">
@@ -334,15 +333,37 @@
 
           
           <h2 id="외곽선-생성-outline">외곽선 생성 (Outline)</h2>
-<ul>
-<li>Freestyle</li>
-<li>Grease Pencil</li>
-<li>Invert Hull</li>
-</ul>
+<p>외곽선은 렌더링 방식과 메시 구성에 따라 결과와 작업 과정이 달라진다. 아래는 각 방법의 일반적인 장단점을 정리하였다.</p>
+<table>
+	<thead>
+			<tr>
+					<th>기법</th>
+					<th>장점</th>
+					<th>단점</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Freestyle</td>
+					<td>설정 한 번으로 외곽선을 생성해주며 세부적인 추가 설정이 가능하다.</td>
+					<td>렌더링 후에 결과를 볼 수 있으므로 수정하기 까다롭다.</td>
+			</tr>
+			<tr>
+					<td>Grease Pencil (Line Art)</td>
+					<td>장면에서 선을 생성한 뒤 Grease Pencil 선으로 다룰 수 있어 두께와 모양을 별도로 조정하기 좋습니다.</td>
+					<td>실시간 작업에 사용하기에는 다소 무겁다.</td>
+			</tr>
+			<tr>
+					<td>Inverted Hull</td>
+					<td>구현 방법이 비교적 단순하고 여러 플랫폼에서 호환성이 좋다. 그리고 실시간 작업에서도 빠르다.</td>
+					<td>메시를 2배로 사용하게 되므로 성능적으로 낭비가 있다.</td>
+			</tr>
+	</tbody>
+</table>
 <h2 id="rgb-분리">RGB 분리</h2>
-<p>Light 오브젝트의 Color 값을 통해 그림자를 더욱 세밀하게 제어</p>
+<p>Light 오브젝트의 Color 값을 통해 명암, 림라이트, 환경광 같이 빛을 더욱 세밀하게 제어할 수 있다.</p>
 <h2 id="계단식-명암">계단식 명암</h2>
-<p>colorRamp의 임계값을 통해 2~3 톤의 명암 생성</p>
+<p>colorRamp의 임계값을 통해 2~3 톤의 명암 생성하여 카툰 렌더링의 기본이 된다.</p>
 <h1 id="업데이트-예정">업데이트 예정</h1>
 
           

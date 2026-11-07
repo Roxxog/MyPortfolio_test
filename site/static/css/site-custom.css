@@ -74,23 +74,43 @@
   }
 }
 
-/* Keep the mobile menu toggle at the far right without crowding navbar icons. */
+/* Keep mobile navbar controls in one row without overlapping the brand. */
 @media (max-width: 767.98px) {
   .navbar-custom > .container-fluid {
-    position: relative;
+    flex-wrap: wrap;
   }
 
-  .navbar-custom:not(.navbar-toggler-left) .navbar-toggler {
-    position: absolute;
-    right: 0.75rem;
-    top: 50%;
-    transform: translateY(-50%);
+  .navbar-custom .navbar-brand {
+    flex: 1 1 0;
+    min-width: 0;
+    margin-right: 0.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
-  /* Retain the toggler's layout slot so the existing icons stay in place. */
-  .navbar-custom:not(.navbar-toggler-left) > .container-fluid > .d-flex::after {
-    content: "";
-    flex: 0 0 56px;
+  .navbar-custom > .container-fluid > .d-flex {
+    flex: 0 0 auto;
+    gap: 0;
+    margin-left: auto;
+  }
+
+  .navbar-custom .theme-toggle,
+  .navbar-custom .navbar-toggler {
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    padding: 0.25rem;
+  }
+
+  .navbar-custom .theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-custom .navbar-toggler {
+    margin-left: 0.15rem;
   }
 }
 
