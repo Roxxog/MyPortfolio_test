@@ -107,7 +107,7 @@
       "datePublished": "0001-01-01T00:00:00+00:00",
       "description": "Beautiful Hugo supports two syntax highlighting engines: Hugo’s built-in Chroma (default) and client-side Highlight.js. This page demonstrates Chroma, which is fast and built when the page renders.\nRequired Config Beautiful Hugo supports two syntax highlighting engines: Hugo’s built-in Chroma (default) and client-side Highlight.js. See Configuration — Syntax Highlighting for the required hugo.toml settings for each engine.\nFenced Code Blocks Use triple backticks with a language identifier, like this:\n```json { \"example\": \"code\" } ``` { \"example\": \"code\" } # python def fibonacci(n): \"\"\"Return the nth Fibonacci number.\"\"\" if n \u003c= 1: return n a, b = 0, 1 for _ in range(2, n + 1): a, b = b, a + b return b // go package main import \"fmt\" func main() { ch := make(chan string) go func() { ch \u003c- \"hello\" }() fmt.Println(\u003c-ch) } // javascript const greet = (name) =\u003e { console.log(`Hello, ${name}!`); }; greet(\"World\"); # toml [Params] subtitle = \"My Site\" colorScheme = \"auto\" selfHosted = false Line Numbers Use Hugo’s highlight shortcode with linenos to add line numbers:\n",
       "headline": "Code Blocks",
-      "image": "http://localhost:1313/img/avatar-icon.png",
+      "image": "http://localhost:1313/img/portfolio-avatar.png",
       "inLanguage": "ko",
       "keywords": [],
       "mainEntityOfPage": {
@@ -117,7 +117,7 @@
         "@id": "http://localhost:1313/#organization"
       },
       "timeRequired": "PT13M",
-      "wordCount": 2717
+      "wordCount": 2734
     }
   ]
 }
@@ -136,7 +136,7 @@ Fenced Code Blocks Use triple backticks with a language identifier, like this:
 <link rel="canonical" href="http://localhost:1313/page/code-blocks/" />
   <meta name="twitter:title" content="Code Blocks" />
   <meta name="twitter:description" content="Syntax highlighting, line numbers, and the copy button">
-  <meta name="twitter:image" content="http://localhost:1313/img/avatar-icon.png" />
+  <meta name="twitter:image" content="http://localhost:1313/img/portfolio-avatar.png" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <link href='/img/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -164,9 +164,7 @@ Fenced Code Blocks Use triple backticks with a language identifier, like this:
       }
     })();
   </script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous">
-
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"><link rel="stylesheet" href="/css/site-custom.css">
 
   </head>
   <body>
@@ -214,7 +212,7 @@ Fenced Code Blocks Use triple backticks with a language identifier, like this:
           
           
             <li class="nav-item" >
-              <a class="nav-link" title="About" href="/page/about/">About</a>
+              <a class="nav-link" title="크레딧&amp;라이선스" href="/page/about/">크레딧&amp;라이선스</a>
             </li>
           
         
@@ -234,7 +232,7 @@ Fenced Code Blocks Use triple backticks with a language identifier, like this:
         <div class="avatar-container">
           <div class="avatar-img-border">
             <a title="Roxxog 3D Portfolio" href="/">
-              <img class="avatar-img" src="/img/avatar-icon.png" alt="Roxxog 3D Portfolio" />
+              <img class="avatar-img" src="/img/portfolio-avatar.png" alt="Roxxog 3D Portfolio" />
              
             </a>
           </div>
@@ -512,7 +510,7 @@ Fenced Code Blocks Use triple backticks with a language identifier, like this:
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">subtitle</span> <span class="p">=</span> <span class="s2">&#34;2D Anime Style in 3D&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">mainSections</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;post&#34;</span><span class="p">,</span> <span class="s2">&#34;recipe&#34;</span><span class="p">,</span> <span class="s2">&#34;projects&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">logo</span> <span class="p">=</span> <span class="s2">&#34;/img/avatar-icon.png&#34;</span> <span class="c"># Expecting square dimensions</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">logo</span> <span class="p">=</span> <span class="s2">&#34;/img/portfolio-avatar.png&#34;</span> <span class="c"># Square home avatar that links to the home page</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">favicon</span> <span class="p">=</span> <span class="s2">&#34;/img/favicon.ico&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="c"># share_img = &#34;/img/share.jpg&#34; # Default social image, used instead of logo</span>
 </span></span><span class="line"><span class="cl">  <span class="c"># mobileMenuPosition = &#34;left&#34; # Side of the hamburger menu on narrow screens (&#34;right&#34; by default)</span>
@@ -535,21 +533,20 @@ Fenced Code Blocks Use triple backticks with a language identifier, like this:
 </span></span><span class="line"><span class="cl">    <span class="nx">provider</span> <span class="p">=</span> <span class="s2">&#34;fuse&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">bigimg</span><span class="p">]]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">src</span> <span class="p">=</span> <span class="s2">&#34;/img/triangle.jpg&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">desc</span> <span class="p">=</span> <span class="s2">&#34;Triangle&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">src</span> <span class="p">=</span> <span class="s2">&#34;/img/yurihead-nodes-banner.jpg&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">desc</span> <span class="p">=</span> <span class="s2">&#34;YuriHead material nodes&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">bigimg</span><span class="p">]]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">src</span> <span class="p">=</span> <span class="s2">&#34;/img/sphere.jpg&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">desc</span> <span class="p">=</span> <span class="s2">&#34;Sphere&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">position</span> <span class="p">=</span> <span class="s2">&#34;center top&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">src</span> <span class="p">=</span> <span class="s2">&#34;/img/hand-weight-paint-banner.jpg&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">desc</span> <span class="p">=</span> <span class="s2">&#34;Hand weight painting&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">bigimg</span><span class="p">]]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">src</span> <span class="p">=</span> <span class="s2">&#34;/img/hexagon.jpg&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">desc</span> <span class="p">=</span> <span class="s2">&#34;Hexagon&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">src</span> <span class="p">=</span> <span class="s2">&#34;/img/hair-shadow-nodes-banner.jpg&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">desc</span> <span class="p">=</span> <span class="s2">&#34;Hair shadow material nodes&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c"># For AI search summary limits, see [Params.seo] in the SEO &amp; i18n docs.</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">author</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Roxxog&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c">#  website = &#34;cdd0922@gmail.com&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c">#  website = &#34;&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">email</span> <span class="p">=</span> <span class="s2">&#34;cdd0922@gmail.com&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">github</span> <span class="p">=</span> <span class="s2">&#34;Roxxog/MyPortfolio_test&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="c">#  twitter = &#34;username&#34;</span>
@@ -719,7 +716,7 @@ Fenced Code Blocks Use triple backticks with a language identifier, like this:
 </span></span><span class="line"><span class="cl"><span class="c">#     weight = 4</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;About&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;크레딧&amp;라이선스&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;page/about/&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">4</span>
 </span></span><span class="line"><span class="cl">
@@ -1004,7 +1001,6 @@ Fenced Code Blocks Use triple backticks with a language identifier, like this:
 </span><span class="lnt">271
 </span><span class="lnt">272
 </span><span class="lnt">273
-</span><span class="lnt">274
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># This gets overridden when building for production</span>
@@ -1066,7 +1062,7 @@ Fenced Code Blocks Use triple backticks with a language identifier, like this:
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">subtitle</span> <span class="p">=</span> <span class="s2">&#34;2D Anime Style in 3D&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">mainSections</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;post&#34;</span><span class="p">,</span> <span class="s2">&#34;recipe&#34;</span><span class="p">,</span> <span class="s2">&#34;projects&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">logo</span> <span class="p">=</span> <span class="s2">&#34;/img/avatar-icon.png&#34;</span> <span class="c"># Expecting square dimensions</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">logo</span> <span class="p">=</span> <span class="s2">&#34;/img/portfolio-avatar.png&#34;</span> <span class="c"># Square home avatar that links to the home page</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">favicon</span> <span class="p">=</span> <span class="s2">&#34;/img/favicon.ico&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="c"># share_img = &#34;/img/share.jpg&#34; # Default social image, used instead of logo</span>
 </span></span><span class="line"><span class="cl">  <span class="c"># mobileMenuPosition = &#34;left&#34; # Side of the hamburger menu on narrow screens (&#34;right&#34; by default)</span>
@@ -1089,21 +1085,20 @@ Fenced Code Blocks Use triple backticks with a language identifier, like this:
 </span></span><span class="line"><span class="cl">    <span class="nx">provider</span> <span class="p">=</span> <span class="s2">&#34;fuse&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">bigimg</span><span class="p">]]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">src</span> <span class="p">=</span> <span class="s2">&#34;/img/triangle.jpg&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">desc</span> <span class="p">=</span> <span class="s2">&#34;Triangle&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">src</span> <span class="p">=</span> <span class="s2">&#34;/img/yurihead-nodes-banner.jpg&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">desc</span> <span class="p">=</span> <span class="s2">&#34;YuriHead material nodes&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">bigimg</span><span class="p">]]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">src</span> <span class="p">=</span> <span class="s2">&#34;/img/sphere.jpg&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">desc</span> <span class="p">=</span> <span class="s2">&#34;Sphere&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">position</span> <span class="p">=</span> <span class="s2">&#34;center top&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">src</span> <span class="p">=</span> <span class="s2">&#34;/img/hand-weight-paint-banner.jpg&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">desc</span> <span class="p">=</span> <span class="s2">&#34;Hand weight painting&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">bigimg</span><span class="p">]]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">src</span> <span class="p">=</span> <span class="s2">&#34;/img/hexagon.jpg&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">desc</span> <span class="p">=</span> <span class="s2">&#34;Hexagon&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">src</span> <span class="p">=</span> <span class="s2">&#34;/img/hair-shadow-nodes-banner.jpg&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">desc</span> <span class="p">=</span> <span class="s2">&#34;Hair shadow material nodes&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c"># For AI search summary limits, see [Params.seo] in the SEO &amp; i18n docs.</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">.</span><span class="nx">author</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Roxxog&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c">#  website = &#34;cdd0922@gmail.com&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c">#  website = &#34;&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">email</span> <span class="p">=</span> <span class="s2">&#34;cdd0922@gmail.com&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">github</span> <span class="p">=</span> <span class="s2">&#34;Roxxog/MyPortfolio_test&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="c">#  twitter = &#34;username&#34;</span>
@@ -1273,7 +1268,7 @@ Fenced Code Blocks Use triple backticks with a language identifier, like this:
 </span></span><span class="line"><span class="cl"><span class="c">#     weight = 4</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;About&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;크레딧&amp;라이선스&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;page/about/&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">weight</span> <span class="p">=</span> <span class="mi">4</span>
 </span></span><span class="line"><span class="cl">
