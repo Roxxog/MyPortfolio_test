@@ -90,9 +90,23 @@
   }
 
   .navbar-custom > .container-fluid > .d-flex {
+    display: flex;
     flex: 0 0 auto;
+    flex-wrap: nowrap;
     gap: 0;
     margin-left: auto;
+  }
+
+  .navbar-custom #toc-toggle {
+    order: 1;
+  }
+
+  .navbar-custom #theme-toggle {
+    order: 2;
+  }
+
+  .navbar-custom #search-toggle {
+    order: 3;
   }
 
   .navbar-custom .theme-toggle,
@@ -110,7 +124,10 @@
   }
 
   .navbar-custom .navbar-toggler {
+    order: 4;
+    position: static;
     margin-left: 0.15rem;
+    transform: none;
   }
 }
 
