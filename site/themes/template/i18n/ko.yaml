@@ -26,7 +26,7 @@
 - id: words
   translation: "단어"
 - id: readingTime
-  translation: ""
+  translation: "예상 읽기 시간 "
 
 # 404 page
 - id: pageNotFound
