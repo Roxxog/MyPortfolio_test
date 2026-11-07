@@ -93,7 +93,7 @@ enableGitInfo = true
 
 [Params.author]
   name = "Roxxog"
-#  website = "cdd0922@gmail.com"
+#  website = ""
   email = "cdd0922@gmail.com"
   github = "Roxxog/MyPortfolio_test"
 #  twitter = "username"
