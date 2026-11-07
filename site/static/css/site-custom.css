@@ -11,6 +11,14 @@
   font-weight: 700;
   vertical-align: middle;
 }
+
+/* Keep the video viewport dark while mobile browsers wait for the first frame. */
+.video-figure video,
+.post-image video {
+  background-color: #000;
+  color-scheme: dark;
+}
+
 .project-status {
   display: inline-block;
   margin-left: 0.45rem;
