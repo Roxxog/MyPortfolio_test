@@ -1,0 +1,29 @@
+{{- /* Keep the post contact links consistent with the site footer. */ -}}
+<div class="share-box" role="region" aria-label="Contact links">
+  <ul class="list-inline text-center footer-links" role="list">
+    {{ with .Site.Params.author.email }}
+    <li class="list-inline-item">
+      <a rel="noopener noreferrer" href="mailto:{{ . }}" title="Email me" aria-label="Email me">
+        <span class="fa-stack fa-lg">
+          <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+          <i class="fas fa-envelope fa-stack-1x fa-inverse" aria-hidden="true"></i>
+        </span>
+      </a>
+    </li>
+    {{ end }}
+    {{ with .Site.Params.author.github }}
+    {{ $github := . }}
+    {{ if not (or (hasPrefix $github "http://") (hasPrefix $github "https://")) }}
+      {{ $github = printf "https://github.com/%s" $github }}
+    {{ end }}
+    <li class="list-inline-item">
+      <a rel="noopener noreferrer" href="{{ $github }}" title="GitHub" aria-label="GitHub">
+        <span class="fa-stack fa-lg">
+          <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+          <i class="fab fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
+        </span>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</div>

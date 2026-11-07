@@ -37,33 +37,8 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/page/code-blocks/</loc>
-    <lastmod>2026-10-30T12:21:14+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/page/comments-and-social/</loc>
-    <lastmod>2026-10-30T12:21:14+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/page/configuration/</loc>
-    <lastmod>2026-10-30T12:21:14+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/page/figures-and-galleries/</loc>
-    <lastmod>2026-10-30T12:21:14+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/page/markdown-extensions/</loc>
-    <lastmod>2026-10-30T12:21:14+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/page/math-and-diagrams/</loc>
-    <lastmod>2026-10-30T12:21:14+09:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/page/</loc>
     <lastmod>2026-11-06T23:39:01+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/page/pages-and-layouts/</loc>
-    <lastmod>2026-10-30T12:21:14+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/post/</loc>
-  </url><url>
-    <loc>http://localhost:1313/recipe/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2026-11-07T13:41:02+09:00</lastmod>
@@ -71,15 +46,6 @@
     <loc>http://localhost:1313/search/</loc>
     <lastmod>2026-10-30T12:21:14+09:00</lastmod>
     <priority>0.1</priority>
-  </url><url>
-    <loc>http://localhost:1313/page/seo-and-i18n/</loc>
-    <lastmod>2026-10-30T12:21:14+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/page/shortcodes/</loc>
-    <lastmod>2026-10-30T12:21:14+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/page/theming/</loc>
-    <lastmod>2026-10-30T12:21:14+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/page/about/</loc>
     <lastmod>2026-11-06T23:39:01+09:00</lastmod>

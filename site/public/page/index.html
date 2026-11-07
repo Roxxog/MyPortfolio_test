@@ -83,36 +83,12 @@
         "itemListElement": [
           {
             "@type": "ListItem",
-            "name": "Code Blocks",
+            "name": "크레딧\u0026라이선스",
             "position": 1,
-            "url": "http://localhost:1313/page/code-blocks/"
-          },
-          {
-            "@type": "ListItem",
-            "name": "Comments \u0026 Social",
-            "position": 2,
-            "url": "http://localhost:1313/page/comments-and-social/"
-          },
-          {
-            "@type": "ListItem",
-            "name": "Configuration",
-            "position": 3,
-            "url": "http://localhost:1313/page/configuration/"
-          },
-          {
-            "@type": "ListItem",
-            "name": "Figures \u0026 Galleries",
-            "position": 4,
-            "url": "http://localhost:1313/page/figures-and-galleries/"
-          },
-          {
-            "@type": "ListItem",
-            "name": "Markdown Extensions",
-            "position": 5,
-            "url": "http://localhost:1313/page/markdown-extensions/"
+            "url": "http://localhost:1313/page/about/"
           }
         ],
-        "numberOfItems": 5
+        "numberOfItems": 1
       },
       "name": "Pages",
       "url": "http://localhost:1313/page/"
@@ -143,8 +119,6 @@
   
 <link rel="stylesheet" media="print" href="/css/print.9ea1f3dd144aefb5611357af9799c2d7ffcc61e2aeec77d2770b857a9b85f3e7.css" integrity="sha256-nqHz3RRK77VhE1evl5nC1//MYeKu7HfSdwuFepuF8&#43;c=" crossorigin="anonymous" />
   
-<link rel="stylesheet" href="/css/hugo-easy-gallery.9608ee84e14def5eb07b71b9c0b5bf97da6577a8080eea233f895c214c8631da.css" integrity="sha256-lgjuhOFN716we3G5wLW/l9pld6gIDuojP4lcIUyGMdo=" crossorigin="anonymous" />
-<script defer src="/js/tabs-sync.812f2ca3b52c6242f35624329d5ebc8042f888766f55e9a1de480584c916d7bd.js" integrity="sha256-gS8so7UsYkLzViQynV68gEL4iHZvVemh3kgFhMkW170=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" />
 <link rel="stylesheet" id="hljs-dark" media="(prefers-color-scheme: dark)" href="/css/syntax-dark.bcab7cbda70172cbe05403f32b3e40267f820f627c6b8ea82f1cad666b2c97b4.css" integrity="sha256-vKt8vacBcsvgVAPzKz5AJn&#43;CD2J8a46oLxytZmssl7Q=" crossorigin="anonymous" />
   <script>
@@ -315,15 +289,15 @@
           
           
             <article class="post-preview">
-    <a href="/page/code-blocks/">
+    <a href="/page/about/">
         <h2 class="post-title">
-            Code Blocks
+            크레딧&amp;라이선스
             
             
         </h2>
         
         <h3 class="post-subtitle">
-            Syntax highlighting, line numbers, and the copy button
+            Theme credits and information
         </h3>
         
     </a>
@@ -340,7 +314,7 @@
   
     <i class="fas fa-calendar"></i>&nbsp;1년 1월 1일에 게시됨
     
-      &nbsp;(2026년 10월 30일에 마지막으로 수정됨)
+      &nbsp;(2026년 11월 6일에 마지막으로 수정됨)
     
     
   
@@ -348,14 +322,14 @@
     
       &nbsp;|&nbsp;
     
-    <i class="fas fa-clock"></i>&nbsp;예상 읽기 시간 13&nbsp;분
+    <i class="fas fa-clock"></i>&nbsp;예상 읽기 시간 1&nbsp;분
     
   
   
     
       &nbsp;|&nbsp;
     
-    <i class="fas fa-book"></i>&nbsp;2734&nbsp;단어
+    <i class="fas fa-book"></i>&nbsp;86&nbsp;단어
     
   
   
@@ -373,435 +347,23 @@
         
         <div class="post-entry">
             
-            <p>Beautiful Hugo supports two syntax highlighting engines: Hugo&rsquo;s built-in <strong>Chroma</strong> (default) and client-side <strong>Highlight.js</strong>. This page demonstrates Chroma, which is fast and built when the page renders.</p>
-<h2 id="required-config">Required Config</h2>
-<p>Beautiful Hugo supports two syntax highlighting engines: Hugo&rsquo;s built-in <strong>Chroma</strong> (default) and client-side <strong>Highlight.js</strong>. See <a href="../configuration/#syntax-highlighting">Configuration — Syntax Highlighting</a> for the required <code>hugo.toml</code> settings for each engine.</p>
-<h2 id="fenced-code-blocks">Fenced Code Blocks</h2>
-<p>Use triple backticks with a language identifier, like this:</p>
-<div class="splitbox"><div class="left">
-<pre tabindex="0"><code>```json
-{
-  &#34;example&#34;: &#34;code&#34;
-}
-```
-</code></pre></div><div class="right">
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;example&#34;</span><span class="p">:</span> <span class="s2">&#34;code&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div>
-</div><div style="clear:both"></div></div>
-
-
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># python</span>
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Return the nth Fibonacci number.&#34;&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">n</span>
-</span></span><span class="line"><span class="cl">    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">b</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// go</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nx">main</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="s">&#34;fmt&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="kd">func</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nx">ch</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nb">make</span><span class="p">(</span><span class="kd">chan</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">go</span><span class="w"> </span><span class="kd">func</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">ch</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&#34;hello&#34;</span><span class="w"> </span><span class="p">}()</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="o">&lt;-</span><span class="nx">ch</span><span class="p">)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="p">}</span><span class="w">
-</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// javascript
-</span></span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">greet</span> <span class="o">=</span> <span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Hello, </span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">!`</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">};</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nx">greet</span><span class="p">(</span><span class="s2">&#34;World&#34;</span><span class="p">);</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="c"># toml</span>
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">subtitle</span> <span class="p">=</span> <span class="s2">&#34;My Site&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">colorScheme</span> <span class="p">=</span> <span class="s2">&#34;auto&#34;</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">selfHosted</span> <span class="p">=</span> <span class="kc">false</span>
-</span></span></code></pre></div><h2 id="line-numbers">Line Numbers</h2>
-<p>Use Hugo&rsquo;s <code>highlight</code> shortcode with <code>linenos</code> to add line numbers:</p>
-            <a href="/page/code-blocks/" class="post-read-more">[더 읽기]</a>
-            
-        </div>
-    </div>
-
-    
-
-</article>
-
-
-
-
-
-
-          
-            <article class="post-preview">
-    <a href="/page/comments-and-social/">
-        <h2 class="post-title">
-            Comments &amp; Social
-            
-            
-        </h2>
-        
-        <h3 class="post-subtitle">
-            Comment systems, social sharing, GitHub buttons, and footer icons
-        </h3>
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  
-  
-     
-  
-  
-  
-    <i class="fas fa-calendar"></i>&nbsp;1년 1월 1일에 게시됨
-    
-      &nbsp;(2026년 10월 30일에 마지막으로 수정됨)
-    
-    
-  
-  
-    
-      &nbsp;|&nbsp;
-    
-    <i class="fas fa-clock"></i>&nbsp;예상 읽기 시간 5&nbsp;분
-    
-  
-  
-    
-      &nbsp;|&nbsp;
-    
-    <i class="fas fa-book"></i>&nbsp;899&nbsp;단어
-    
-  
-  
-    
-      &nbsp;|&nbsp;
-    <i class="fas fa-user"></i>&nbsp;Roxxog
-  
-  
-</span>
-
-    </p>
-    <div class="post-entry-container">
-        
-        
-        
-        <div class="post-entry">
-            
-            <p>Beautiful Hugo supports five comment systems, social sharing buttons, GitHub repository buttons, and 42 social icon links in the footer, plus custom icons of your own.</p>
-<h2 id="comment-systems">Comment Systems</h2>
-<p>All comment systems are enabled per-page with <code>comments: true</code> in front matter. Only one comment system can be active at a time.</p>
-<h3 id="disqus">Disqus</h3>
-<p>The classic comment system, integrated via Hugo&rsquo;s built-in Disqus support:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Services</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">Services</span><span class="p">.</span><span class="nx">Disqus</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">Shortname</span> <span class="p">=</span> <span class="s2">&#34;your-disqus-shortname&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">Params</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">delayDisqus</span> <span class="p">=</span> <span class="kc">true</span>
-</span></span></code></pre></div><p><code>delayDisqus = true</code> defers loading until the user clicks a &ldquo;Show comments&rdquo; button, improving page load performance.</p>
-            <a href="/page/comments-and-social/" class="post-read-more">[더 읽기]</a>
-            
-        </div>
-    </div>
-
-    
-
-</article>
-
-
-
-
-
-
-          
-            <article class="post-preview">
-    <a href="/page/configuration/">
-        <h2 class="post-title">
-            Configuration
-            
-            
-        </h2>
-        
-        <h3 class="post-subtitle">
-            Every setting Beautiful Hugo supports
-        </h3>
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  
-  
-     
-  
-  
-  
-    <i class="fas fa-calendar"></i>&nbsp;1년 1월 1일에 게시됨
-    
-      &nbsp;(2026년 10월 30일에 마지막으로 수정됨)
-    
-    
-  
-  
-    
-      &nbsp;|&nbsp;
-    
-    <i class="fas fa-clock"></i>&nbsp;예상 읽기 시간 22&nbsp;분
-    
-  
-  
-    
-      &nbsp;|&nbsp;
-    
-    <i class="fas fa-book"></i>&nbsp;4653&nbsp;단어
-    
-  
-  
-    
-      &nbsp;|&nbsp;
-    <i class="fas fa-user"></i>&nbsp;Roxxog
-  
-  
-</span>
-
-    </p>
-    <div class="post-entry-container">
-        
-        
-        
-        <div class="post-entry">
-            
-            <p>This page is a complete reference for every configuration option in Beautiful Hugo. All settings go in your site&rsquo;s <code>hugo.toml</code> (or <code>config.toml</code>/<code>config.yaml</code>).</p>
-<h2 id="requirements">Requirements</h2>
-<p>The theme ships its own <code>hugo.toml</code> with a version constraint:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">module</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">module</span><span class="p">.</span><span class="nx">hugoVersion</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">min</span> <span class="p">=</span> <span class="s2">&#34;0.146.2&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="nx">extended</span> <span class="p">=</span> <span class="kc">false</span>
-</span></span></code></pre></div><p>Use Hugo 0.146.2 or later. The <strong>standard</strong> edition is sufficient; the theme has no SCSS and does not encode WebP images. If your Hugo version is too old, Hugo writes a warning and the theme stops the build with an error message.</p>
-            <a href="/page/configuration/" class="post-read-more">[더 읽기]</a>
-            
-        </div>
-    </div>
-
-    
-
-</article>
-
-
-
-
-
-
-          
-            <article class="post-preview">
-    <a href="/page/figures-and-galleries/">
-        <h2 class="post-title">
-            Figures &amp; Galleries
-            
-            
-        </h2>
-        
-        <h3 class="post-subtitle">
-            Image display with PhotoSwipe lightbox integration
-        </h3>
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  
-  
-     
-  
-  
-  
-    <i class="fas fa-calendar"></i>&nbsp;1년 1월 1일에 게시됨
-    
-      &nbsp;(2026년 10월 30일에 마지막으로 수정됨)
-    
-    
-  
-  
-    
-      &nbsp;|&nbsp;
-    
-    <i class="fas fa-clock"></i>&nbsp;예상 읽기 시간 6&nbsp;분
-    
-  
-  
-    
-      &nbsp;|&nbsp;
-    
-    <i class="fas fa-book"></i>&nbsp;1112&nbsp;단어
-    
-  
-  
-    
-      &nbsp;|&nbsp;
-    <i class="fas fa-user"></i>&nbsp;Roxxog
-  
-  
-</span>
-
-    </p>
-    <div class="post-entry-container">
-        
-        
-        
-        <div class="post-entry">
-            
-            <p>Beautiful Hugo provides powerful image handling through the <code>beautifulfigure</code> shortcode and <code>gallery</code> shortcode, both integrated with PhotoSwipe 5 for full-screen lightbox viewing.</p>
-<h2 id="the-figure--beautifulfigure-distinction">The figure / beautifulfigure Distinction</h2>
-<p>The <code>figure</code> shortcode is a router:</p>
+            <p>이 사이트는 Beautiful Hugo Themes를 이용해서 개설되었으며 크레딧과 라이선스는 아래와 같습니다.</p>
+<p>또한 이 사이트의 주요 콘텐츠들의 원본 캐릭터의 출처를 각 모델별로 명시하였습니다.</p>
+<p>원본 일러스트 소스 출처 보기<br>
+Fin : <a href="https://www.youtube.com/watch?v=Hp8FHbZNtW8">https://www.youtube.com/watch?v=Hp8FHbZNtW8</a><br>
+leeyuri : <a href="https://www.youtube.com/watch?v=56vc51wWKc4">https://www.youtube.com/watch?v=56vc51wWKc4</a><br>
+yangyanggung : <a href="https://www.youtube.com/watch?v=56vc51wWKc4">https://www.youtube.com/watch?v=56vc51wWKc4</a><br>
+yoonsea : <a href="https://www.youtube.com/watch?v=xIcxxcdKIyU">https://www.youtube.com/watch?v=xIcxxcdKIyU</a><br>
+yoonseul : <a href="https://www.youtube.com/watch?v=xIcxxcdKIyU">https://www.youtube.com/watch?v=xIcxxcdKIyU</a><br></p>
+<p>그 외 사이트 개설에 필요한 수정에는 전반적으로 AI가 사용되었음을 알립니다.</p>
+<p>Beautiful Hugo is a Hugo theme adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> by <a href="https://deanattali.com">Dean Attali</a>.</p>
+<p>It builds on <a href="https://getbootstrap.com/">Bootstrap 5</a>, <a href="https://fontawesome.com/">Font Awesome</a>, <a href="https://katex.org/">KaTeX</a>, <a href="https://photoswipe.com/">PhotoSwipe</a>, <a href="https://highlightjs.org/">Highlight.js</a>, and <a href="https://mermaid.js.org/">Mermaid</a>.</p>
 <ul>
-<li><strong>When <code>disableFigureOverride = false</code></strong> (default): <code>{{&lt; figure &gt;}}</code> delegates to <code>beautifulfigure</code> (PhotoSwipe-enhanced)</li>
-<li><strong>When <code>disableFigureOverride = true</code></strong>: <code>{{&lt; figure &gt;}}</code> uses Hugo&rsquo;s standard figure shortcode, and <code>{{&lt; beautifulfigure &gt;}}</code> remains available for PhotoSwipe</li>
+<li><strong>Source code</strong>: <a href="https://github.com/halogenica/beautifulhugo">github.com/halogenica/beautifulhugo</a></li>
+<li><strong>License</strong>: <a href="https://github.com/halogenica/beautifulhugo/blob/master/LICENSE">MIT</a></li>
+<li><strong>Minimum Hugo version</strong>: 0.146.2</li>
 </ul>
-<p>The example site uses <code>disableFigureOverride = true</code>, so <code>figure</code> gives a plain image and <code>beautifulfigure</code> gives the enhanced version.</p>
-            <a href="/page/figures-and-galleries/" class="post-read-more">[더 읽기]</a>
-            
-        </div>
-    </div>
 
-    
-
-</article>
-
-
-
-
-
-
-          
-            <article class="post-preview">
-    <a href="/page/markdown-extensions/">
-        <h2 class="post-title">
-            Markdown Extensions
-            
-            
-        </h2>
-        
-        <h3 class="post-subtitle">
-            Utility classes and theme-dependent content
-        </h3>
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  
-  
-     
-  
-  
-  
-    <i class="fas fa-calendar"></i>&nbsp;1년 1월 1일에 게시됨
-    
-      &nbsp;(2026년 10월 30일에 마지막으로 수정됨)
-    
-    
-  
-  
-    
-      &nbsp;|&nbsp;
-    
-    <i class="fas fa-clock"></i>&nbsp;예상 읽기 시간 4&nbsp;분
-    
-  
-  
-    
-      &nbsp;|&nbsp;
-    
-    <i class="fas fa-book"></i>&nbsp;818&nbsp;단어
-    
-  
-  
-    
-      &nbsp;|&nbsp;
-    <i class="fas fa-user"></i>&nbsp;Roxxog
-  
-  
-</span>
-
-    </p>
-    <div class="post-entry-container">
-        
-        
-        
-        <div class="post-entry">
-            
-            <p>Beautiful Hugo provides several CSS classes that extend standard Markdown with theme-dependent visibility and layout utilities. There are two ways to use them:</p>
-<div class="tabs-shortcode" id="tabs-1" data-tabs-group="syntax">
-  <ul class="nav nav-tabs" id="tabs-1-tablist" role="tablist"><li class="nav-item" role="presentation">
-        <button
-          class="nav-link active"
-          id="syntax-pane-1-tab"
-          type="button"
-          role="tab"
-          data-bs-toggle="tab"
-          data-bs-target="#syntax-pane-1"
-          data-tab-group="syntax"
-          data-tab-key="raw-html-1"
-          aria-controls="syntax-pane-1"
-          aria-selected="true">Raw HTML</button>
-      </li><li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="syntax-pane-2-tab"
-          type="button"
-          role="tab"
-          data-bs-toggle="tab"
-          data-bs-target="#syntax-pane-2"
-          data-tab-group="syntax"
-          data-tab-key="block-attributes-2"
-          aria-controls="syntax-pane-2"
-          aria-selected="false">Block Attributes</button>
-      </li></ul>
-
-  <div class="tab-content" id="tabs-1-content">
-    
-<div
-      class="tab-pane fade show active"
-      id="syntax-pane-1"
-      role="tabpanel"
-      aria-labelledby="syntax-pane-1-tab"
-      tabindex="0"><p>Use standard HTML tags with the CSS classes directly in your Markdown. This requires enabling <code>markup.goldmark.renderer.unsafe = true</code> in your site config:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">renderer</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">unsafe</span> <span class="p">=</span> <span class="kc">true</span>
-</span></span></code></pre></div><p>Without this setting, Hugo&rsquo;s Goldmark renderer strips raw HTML from Markdown files.</p>
-</div>
-<div
-      class="tab-pane fade"
-      id="syntax-pane-2"
-      role="tabpanel"
-      aria-labelledby="syntax-pane-2-tab"
-      tabindex="0"><p>Apply CSS classes to Markdown blocks using the <code>{.class}</code> attribute syntax. This requires enabling <code>markup.goldmark.parser.attribute.block = true</code> in your site config:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">goldmark</span><span class="p">.</span><span class="nx">parser</span><span class="p">.</span><span class="nx">attribute</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">  <span class="nx">block</span> <span class="p">=</span> <span class="kc">true</span>
-</span></span></code></pre></div><p>The <code>{.class}</code> attribute must be on its own line immediately after the block. This only works for block-level elements.</p>
-</div>
-
-  </div>
-</div>
-            <a href="/page/markdown-extensions/" class="post-read-more">[더 읽기]</a>
             
         </div>
     </div>
@@ -818,15 +380,6 @@
           
         </div>
         
-  <ul class="post-pager">
-    
-    
-      <li class="pager-next">
-        <a href="/page/page/2/">이전 게시물 &rarr;</a>
-      </li>
-    
-  </ul>
-
 
       </div>
     </div>
@@ -838,7 +391,7 @@
     <span class="offcanvas-title toc-title" id="toc-title">글</span>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="목차 닫기"></button>
   </div>
-  <nav class="offcanvas-body toc-body"><ul class="toc-post-list"><li><a href="/page/code-blocks/">Code Blocks</a></li><li><a href="/page/comments-and-social/">Comments &amp; Social</a></li><li><a href="/page/configuration/">Configuration</a></li><li><a href="/page/figures-and-galleries/">Figures &amp; Galleries</a></li><li><a href="/page/markdown-extensions/">Markdown Extensions</a></li><li><a href="/page/math-and-diagrams/">Math &amp; Diagrams</a></li><li><a href="/page/pages-and-layouts/">Pages &amp; Layouts</a></li><li><a href="/page/seo-and-i18n/">SEO &amp; i18n</a></li><li><a href="/page/shortcodes/">Shortcodes</a></li><li><a href="/page/theming/">Theming</a></li><li><a href="/page/about/">크레딧&amp;라이선스</a></li></ul></nav>
+  <nav class="offcanvas-body toc-body"><ul class="toc-post-list"><li><a href="/page/about/">크레딧&amp;라이선스</a></li></ul></nav>
 </div>
     
       
