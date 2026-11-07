@@ -157,6 +157,11 @@ enableGitInfo = true
   url = "/#projects"
   weight = 1
 
+[[menu.main]]
+  name = "주요 기법"
+  url = "page/major-techniques/"
+  weight = 2
+
 # [[menu.main]]
 #     identifier = "setup"
 #     name = "Setup"
