@@ -7,15 +7,26 @@
             {{ . }}
           </div>
         {{ end }}
-        {{ if .IsHome }}
-          <h2 id="projects">작품 목록</h2>
+        {{ if .IsHome }}<section class="home-projects" aria-labelledby="projects">
+          <header class="home-projects__header">
+            <p class="home-projects__eyebrow">PROJECT ARCHIVE</p>
+            <h2 id="projects">작품 목록</h2>
+            <p>작품과 제작 과정을 기록한 게시글입니다.</p>
+          </header>
+          <div class="posts-list home-projects__list">
+            {{ $pag := partial "func/paginate.html" . }}
+            {{ range $pag.Pages }}
+              {{ partial "post_preview.html" . }}
+            {{ end }}
+          </div>
+        </section>{{ else }}
+          <div class="posts-list">
+            {{ $pag := partial "func/paginate.html" . }}
+            {{ range $pag.Pages }}
+              {{ partial "post_preview.html" . }}
+            {{ end }}
+          </div>
         {{ end }}
-        <div class="posts-list">
-          {{ $pag := partial "func/paginate.html" . }}
-          {{ range $pag.Pages }}
-            {{ partial "post_preview.html" . }}
-          {{ end }}
-        </div>
         {{ partial "paginator.html" . }}
       </div>
     </div>

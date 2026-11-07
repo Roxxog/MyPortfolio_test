@@ -12,6 +12,68 @@
   vertical-align: middle;
 }
 
+/* Give the home page's project archive a clear start and a recognizable list area. */
+.home-projects {
+  margin-top: 4.5rem;
+  padding-top: 2rem;
+  border-top: 2px solid #d8dde3;
+  scroll-margin-top: 2rem;
+}
+
+.home-projects__header {
+  margin-bottom: 1.5rem;
+}
+
+.home-projects__eyebrow {
+  margin: 0 0 0.35rem;
+  color: #526273;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.home-projects__header h2 {
+  margin: 0 0 0.4rem;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+.home-projects__header > p:last-child {
+  margin: 0;
+  color: #626b75;
+}
+
+.home-projects__list {
+  padding: 0 1.5rem;
+  border: 1px solid #d8dde3;
+  border-radius: 0.75rem;
+  background: #fff;
+}
+
+[data-theme="dark"] .home-projects {
+  border-top-color: #46505a;
+}
+
+[data-theme="dark"] .home-projects__eyebrow,
+[data-theme="dark"] .home-projects__header > p:last-child {
+  color: #b5c0ca;
+}
+
+[data-theme="dark"] .home-projects__list {
+  border-color: #46505a;
+  background: #20262c;
+}
+
+@media (max-width: 575.98px) {
+  .home-projects {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+  }
+
+  .home-projects__list {
+    padding: 0 1rem;
+  }
+}
+
 /* Keep the mobile menu toggle at the far right without crowding navbar icons. */
 @media (max-width: 767.98px) {
   .navbar-custom > .container-fluid {
